@@ -33,33 +33,27 @@ This repository was created as part of self-learning and skill development in te
 ---
 
 ## 📁 Project Structure
-PracticeAutomationExcercise/
-│
-
-├── src/
-
-
-│ 
-├── main/ # (Optional) Application-level code
-
-
-│└── test/
-
-
-
-│├── pages/ # Page Object Model classes
-
-│ ├── tests/ # Test classes
-
-│ └── utils/ # Utility/helper classes
-
+PracticeAutomationExercise/
+ src/
+ main/
+java/
+utils/              # Generic utilities (e.g., config reader, logger, driver factory)
 
 
 │
-├── pom.xml # Maven configuration
+test/
+java/
+ - base/              # Base classes like TestBase or Driver setup
+ - pages/             # Page Object classes (e.g., LoginPage.java, HomePage.java)
+ - tests/             # Test classes (e.g., LoginTests.java)
+ - testdata/          # Test data if needed (JSON, Excel, etc.)
 
-└── README.md # Project documentation
 
+│
+- testng.xml                     # Test suite config
+- pom.xml                        # Maven config with dependencies
+- README.md                      # Project documentation
+- .gitignore                     # Ignore files/folders from Git
 
 ---
 
