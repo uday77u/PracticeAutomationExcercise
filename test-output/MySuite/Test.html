@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>2/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jul 24 18:38:13 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>130 seconds (130633 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCase.TC001_RegisterUser_chatGPTimproved.verifyUserRegistrationFlow()'><b>verifyUserRegistrationFlow</b><br>Test class: testCase.TC001_RegisterUser_chatGPTimproved<br>Test method: Verify user registration, login and account deletion<br/>
+<a href="#Output-1847559273" onClick='toggleBox("Output-1847559273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1847559273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1847559273">
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully<br/>
+'New User Signup!' is visible<br/>
+Signup form submitted<br/>
+'ENTER ACCOUNT INFORMATION' is visible<br/>
+Filled account details<br/>
+Clicked on Create Account<br/>
+'ACCOUNT CREATED!' is visible<br/>
+Clicked on Continue<br/>
+User is logged in as User1<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>testCase.TC001_RegisterUser_chatGPTimproved@f78a47e</td></tr>
+<tr>
+<td title='testCase.TC002_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPasswordFlow()'><b>verifyLoginUserWithCorrectEmailAndPasswordFlow</b><br>Test class: testCase.TC002_LoginUserWithCorrectEmailAndPassword<br>Test method: Verify Login User with correct Email And Password<br/>
+<a href="#Output-1740095856" onClick='toggleBox("Output-1740095856", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1740095856" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1740095856">
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully<br/>
+'Login to your account' is visible<br/>
+Entered correct email address and password, Clicked 'login' button<br/>
+Login page is displayed<br/>
+Verified that 'Logged in as username' is visible and matched with user name<br/>
+Clicked on 'Delete Account' button and Verified that 'ACCOUNT DELETED!' is visible<br/>
+click on 'Continue'button after delete Account,and Account is deleted successfully<br/>
+</div>
+</td>
+<td></td>
+<td>37</td>
+<td>testCase.TC002_LoginUserWithCorrectEmailAndPassword@6e6f2380</td></tr>
+</table><p>
+</body>
+</html>
