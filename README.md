@@ -94,7 +94,7 @@ bash: mvn test
 API test layer using RestAssured (future scope)
 
 ## 🙋‍♂️ About Me
-I'm a QA enthusiast with a strong interest in automation testing. This project is part of my continuous learning journey and career preparation. Connect with me on LinkedIn.
+I'm a QA enthusiast with a strong interest in automation testing. This project is part of my continuous learning journey and career preparation. Connect with me on LinkedIn or mail - uday77u@gmail.com. 
 
 ## 📄 License
 This project is open-source and available under the MIT License.
