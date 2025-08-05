@@ -1,0 +1,113 @@
+package com.automationExcercise.pageObjects;
+
+import java.util.List;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.CacheLookup;
+import org.openqa.selenium.support.FindBy;
+
+public class ProductsPage extends BasePage {
+
+	public ProductsPage(WebDriver driver) {
+		super(driver);
+		// TODO Auto-generated constructor stub
+	}
+	//-----------------------------------Locators--------------------------------
+
+
+@FindBy(xpath="//h2[normalize-space()='All Products']") @CacheLookup private WebElement allProducts;
+@FindBy(css = "a[href='/product_details/1']") private WebElement FirstProduct;
+@FindBy(xpath="//a[@data-product-id='2']") @CacheLookup private WebElement FirstProductName;
+@FindBy(xpath="//p[contains(text(),'Category')]") @CacheLookup private WebElement category;
+@FindBy(xpath="//div[@class='product-information']/span") @CacheLookup private WebElement Price;
+@FindBy(xpath="//b[text()='Availability:']") @CacheLookup private WebElement availability;
+@FindBy(xpath="//b[text()='Condition:']") @CacheLookup private WebElement condition;
+@FindBy(xpath="//b[text()='Brand:']") @CacheLookup private WebElement brand;
+
+@FindBy(id = "search_product") private WebElement searchProduct;
+@FindBy(id = "submit_search") private WebElement submitSearch;
+@FindBy(xpath="//h2[text()='Searched Products']")  private WebElement msgSearchedProducts;
+
+@FindBy(xpath="//a[@data-product-id='1']")  private WebElement btnAddToCartProduct1;
+@FindBy(xpath="//a[@data-product-id='3']")  private WebElement btnAddToCartProduct3;
+/* Improved
+public List<WebElement> getSearchedProducts() {
+    return driver.findElements(By.xpath("//div[@class='features_items']//div[@class='productinfo text-center']/p"));
+}
+*/
+
+@FindBy(xpath = "//div[@class='productinfo text-center']/p")  List<WebElement> searchedProductsList; 
+
+@FindBy(xpath ="//button[normalize-space()='Continue Shopping']" ) public WebElement btnContinueShopping;
+@FindBy(xpath="//a[@data-product-id='3' and text()='Add to cart']")  private WebElement btnProduct3AddToCart;
+@FindBy(xpath = "//u[text()='View Cart']") public WebElement btnViewCart;
+
+
+
+
+//------------------------------Methods------------------------------------------------------
+public boolean msgAllProducts() {
+	return allProducts.isDisplayed();
+}
+public void clickFirstProduct() {
+	FirstProduct.click();
+}
+public boolean FirstProductNameExist() {
+	return FirstProductName.isDisplayed();
+}
+
+public boolean ProductCategoryExist() {
+	return category.isDisplayed();
+}
+
+public boolean ProductPriceExist() {
+	return Price.isDisplayed();
+}
+
+public boolean ProductAvailabilityExist() {
+	return availability.isDisplayed();
+}
+
+public boolean ProductConditionExist() {
+	return condition.isDisplayed();
+}
+
+public boolean ProductionBrandExist() {
+	return brand.isDisplayed();
+}
+
+public void setSearchProduct(String productName) {
+	searchProduct.sendKeys(productName);
+}
+
+public void clickSubmitSearch() {
+	submitSearch.click();
+}
+
+public boolean msgSearchedProductsExist() {
+	return msgSearchedProducts.isDisplayed();
+}
+public void clickbtnAddToCartProduct1() {
+	btnAddToCartProduct1.click();
+}
+
+public WebElement LocatorBtnAddToCartProduct1() {
+	return btnAddToCartProduct1;
+}
+public List<WebElement> getSearchedProductsList() {
+	return searchedProductsList;
+}
+public void clickBtnContinueShopping() {
+	btnContinueShopping.click();
+}
+public WebElement LocatorBtnAddToCartProduct3() {
+	return btnAddToCartProduct3;
+}
+public void clickBtnProduct3AddToCart() {
+	btnProduct3AddToCart.click();
+}
+public void clickBtnViewCart() {
+	btnViewCart.click();
+}
+}
