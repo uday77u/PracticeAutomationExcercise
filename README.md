@@ -1,22 +1,36 @@
-# PracticeAutomationExcercise – Selenium Automation
+# Practice Automation Exercise
 
-This project is for learning and practice,and update my skills.Tasks involving end-to-end test automation of a sample web application using Java, Selenium WebDriver, and TestNG.
+This project is a Selenium-based test automation framework designed to automate test scenarios on the [Automation Practice](http://automationpractice.com/) demo website. It demonstrates the use of Selenium WebDriver, TestNG, and Java to automate UI workflows for learning and practice purposes.
 
-## 🔧 Tools Used
-- Java
-- Selenium WebDriver
-- TestNG
-- Eclipse
+## 📌 Project Purpose
 
-## 🧪 Features Covered
-- User login
-- Form filling and submission
-- Assertions and validation checks
+This repository was created as part of self-learning and skill development in test automation. It simulates real-world test case implementations and follows basic automation best practices.
 
-## 🚀 How to Run
-1. Clone the repo
-2. Import into Eclipse
-3. Run `testng.xml`
+---
 
-## 👤 Author
-Udayashankar L K
+## 🚀 Technologies Used
+
+- **Java**
+- **Selenium WebDriver**
+- **TestNG**
+- **Maven** (for build management)
+- **Git** (for version control)
+- **IDE**: IntelliJ IDEA or Eclipse
+
+---
+
+## 🧪 Test Scenarios Covered
+
+- Navigate to homepage
+- Register a new user
+- Log in with valid credentials
+- Add item to cart
+- Checkout process
+- Log out
+
+
+
+---
+
+## 📁 Project Structure
+
