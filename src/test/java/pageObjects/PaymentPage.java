@@ -11,14 +11,14 @@ public class PaymentPage extends BasePage{
 		// TODO Auto-generated constructor stub
 	}
 	//---------------Payment Locators----------------------------------------
-		@FindBy(css = "[name='name_on_card']") public WebElement txtNameOnCard;
-		@FindBy(css = "[name='card_number']") public WebElement txtCardNumber;
-		@FindBy(css = "[name='cvc']") public WebElement txtCVC;
-		@FindBy(css = "[name='expiry_month']") public WebElement txtExpiryMonth;
-		@FindBy(css = "[name='expiry_year']") public WebElement txtExpiryYear;
-		@FindBy(id = "submit") public WebElement btnPayAndConfirmOrder;
+		@FindBy(css = "[name='name_on_card']") private WebElement txtNameOnCard;
+		@FindBy(css = "[name='card_number']") private WebElement txtCardNumber;
+		@FindBy(css = "[name='cvc']") private WebElement txtCVC;
+		@FindBy(css = "[name='expiry_month']") private WebElement txtExpiryMonth;
+		@FindBy(css = "[name='expiry_year']") private WebElement txtExpiryYear;
+		@FindBy(id = "submit") private WebElement btnPayAndConfirmOrder;
 		
-		@FindBy(id = "success_message") public WebElement msgSuccess;
+		@FindBy(xpath = "//div[@class='alert-success alert']") private WebElement msgSuccess;
 
 		
 		

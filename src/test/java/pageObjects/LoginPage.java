@@ -12,18 +12,18 @@ public class LoginPage extends BasePage{
 //-------------------------------------------------Locators-----------------------------------------------------------
 	
 	@FindBy(xpath = "//a[text()=' Logged in as ']")
-	WebElement loginAs;
+	private WebElement loginAs;
 	@FindBy(xpath = "//a[text()=' Delete Account']")
-	WebElement Deletelogin;
+	private WebElement Deletelogin;
 	
 	@FindBy(xpath = "//b[text()='Account Deleted!']")
-	WebElement DeleteAccount;
+	private WebElement DeleteAccount;
 	
 	@FindBy(xpath = "//a[text()='Continue']")
-	WebElement ContinueAfterDelete;
+	private WebElement ContinueAfterDelete;
 	
 	@FindBy(xpath = "//a[text()=' Logout']")
-	WebElement Logout;
+	private WebElement Logout;
 	
 	
 	

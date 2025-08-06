@@ -1,0 +1,122 @@
+/*
+ * Test Case 16: Place Order: Login before Checkout
+1. Launch browser
+2. Navigate to url 'http://automationexercise.com'
+3. Verify that home page is visible successfully
+4. Click 'Signup / Login' button
+5. Fill email, password and click 'Login' button
+6. Verify 'Logged in as username' at top
+7. Add products to cart
+8. Click 'Cart' button
+9. Verify that cart page is displayed
+10. Click Proceed To Checkout
+11. Verify Address Details and Review Your Order
+12. Enter description in comment text area and click 'Place Order'
+13. Enter payment details: Name on Card, Card Number, CVC, Expiration date
+14. Click 'Pay and Confirm Order' button
+15. Verify success message 'Your order has been placed successfully!'
+16. Click 'Delete Account' button
+17. Verify 'ACCOUNT DELETED!' and click 'Continue' button
+ */
+package testCases;
+
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
+
+import org.testng.Reporter;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import BaseTest.BaseClass;
+import pageObjects.CartPage;
+import pageObjects.CheckoutPage;
+import pageObjects.HomePage;
+import pageObjects.LoginPage;
+import pageObjects.PaymentDonePage;
+import pageObjects.PaymentPage;
+
+public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
+	@Test
+	public void testPlaceOrderLoginBeforeCheckout() throws InterruptedException {
+		HomePage Home=new HomePage(driver);
+		LoginPage Login=new LoginPage(driver);
+		CartPage Cart=new CartPage(driver);
+		CheckoutPage Checkout= new CheckoutPage(driver);
+		PaymentPage payment=new PaymentPage(driver);
+		PaymentDonePage PayDone=new PaymentDonePage(driver);
+		
+		// Step 1-3: Navigate to home page and verify
+        driver.get(baseURL);
+        Reporter.log("Navigating to baseURL: " + baseURL, false);
+        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
+        Reporter.log("Home Page is displayed successfully\nStep 1-3: Navigate to home page and verified", false);
+        
+        //step 4-6: Click 'Signup / Login' button,Fill email,password and click 'Login' button,
+        //Verify 'Logged in as username' at top
+        Home.clickSignup();
+        Home.setEmailAddressLogin(userEmail);
+        Home.setPassword(password);
+        Home.clickLogin();
+        assertEquals(driver.getTitle(), "Automation Exercise","Login page title is mis-match");
+        assertTrue(Login.msgLoginAsUserName().contains(userName), "mis match in user name");
+        Reporter.log("Verified 'Logged in as username' at top",true);
+        
+        //step 7-9:Add products to cart, Click 'Cart' button, Verify that cart page is displayed
+       Home.mouseHoverToProduct1();
+       Home.clickbtnAddToCartProduct1();
+       Home.clickbtnCart();
+       assertTrue(driver.getCurrentUrl().contains("cart"), "Cart page is not displayed");
+       Reporter.log("Verified that cart page is displayed");
+       
+        //step 10-11:Click Proceed To Checkout,Verify Address Details and Review Your Order
+        Cart.clickBtnProceedToCheckout();
+        
+        assertTrue(driver.getCurrentUrl().contains("checkout"), "Checkout page is not displayed");
+        SoftAssert sa= new SoftAssert();
+        Thread.sleep(3000);
+        sa.assertTrue(Checkout.getDispBillingAddressFirstLastname().contains(userName),"user name:'"+userName+"' and address name:'"+Checkout.getDispBillingAddressFirstLastname()+"' are mis match");
+        sa.assertTrue(Checkout.getDispDeliveryAddressFirstLastname().contains(userName),"user name:"+userName+" and address name:'"+Checkout.getDispDeliveryAddressFirstLastname()+"' are mis match");
+        sa.assertAll();
+        Reporter.log("Verified Address Details");
+        
+        //--verify review order is pending
+        
+        
+        //step 12-15:Enter description in comment text area and click 'Place Order',
+        // Enter payment details: Name on Card, Card Number, CVC, Expiration date
+        //Click 'Pay and Confirm Order' button,Verify success message 'Your order has been placed successfully!'
+       Checkout.setTxtCommentArea("Good Product");
+       Checkout.clickBtnPlaceOrder();
+       assertTrue(driver.getCurrentUrl().contains("payment"));
+       
+       payment.settxtNameOnCard("Name");
+       payment.settxtCardNumber("12543");
+       payment.settxtCVC("cvc54");
+       payment.settxtExpiryMonth("June");
+       payment.settxtExpiryYear("2027");
+       
+       payment.clickbtnPayAndConfirmOrder();
+       
+       //assertTrue(payment.msgSuccessExist(), "succes message is not displayed"); //next page opens qickly,unable to capture mesage
+       //assertEquals( payment.getMsgSuccess(), "Your order has been placed successfully!", "Success message is mis-match.");
+
+       assertTrue(driver.getCurrentUrl().contains("payment_done"),"payment done page is displayed"+driver.getCurrentUrl()+"!=payment_done");
+       assertTrue(PayDone.msgYourOrderConformedExist(), "succes message is not displayed:YourOrderConformed.");
+       assertTrue( PayDone.getMsgYourOrderConformed().contains("confirmed"), "Success message is mis-match. Message:"+PayDone.getMsgYourOrderConformed());
+       Reporter.log("Verified success message 'Your order has been placed successfully!'");
+        
+      //step 16-17: Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button
+     
+       /*
+       PayDone.clickBtnContinue();
+       Login.clickDeletelogin();
+       assertEquals(Login.msgDeleteAccount(),"ACCOUNT DELETED!"," 'ACCOUNT DELETED!' is not visible");
+       Reporter.log("Clicked on 'Delete Account' button and Verified that 'ACCOUNT DELETED!' is visible");
+       
+       Login.clickContinueBtnAfterDelete();
+       Reporter.log("click on 'Continue'button after delete Account,and Account is deleted successfully");
+        */
+	}
+	
+
+}

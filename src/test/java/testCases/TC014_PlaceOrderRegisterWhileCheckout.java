@@ -60,19 +60,19 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
         Reporter.log("Home Page is displayed successfully\nStep 1-3: Navigate to home page and verify", false);
         
         //step 4-6: Add products to cart, Click 'Cart' button, Verify that cart page is displayed
-         dragToWebElement(driver,home.addToCartTshirt);
-         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.addToCartTshirt);
+         dragToWebElement(driver,home.LocatoraddToCartTshirt());
+         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatoraddToCartTshirt());
   
          WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
-         wait.until(ExpectedConditions.elementToBeClickable(home.btnContinueShopping));
-         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.btnContinueShopping);
+         wait.until(ExpectedConditions.elementToBeClickable(home.LocatorbtnContinueShopping()));
+         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatorbtnContinueShopping());
        
          
-         dragToWebElement(driver,home.addToCartDress);
-         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.addToCartDress);
+         dragToWebElement(driver,home.LocatoraddToCartDress());
+         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatoraddToCartDress());
          //home.clickAddToCartDress();
          
-         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.btnContinueShopping);
+         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatorbtnContinueShopping());
          //home.clickBtnContinueShopping();
        Thread.sleep(3000);
        

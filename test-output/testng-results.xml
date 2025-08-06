@@ -12,75 +12,21 @@
     </line>
     <line>
       <![CDATA[Home Page is displayed successfully
-Step 1-3: Navigate to home page and verify]]>
+Step 1-3: Navigate to home page and verified]]>
     </line>
     <line>
-      <![CDATA[step 4-6:Add products to cart, Click 'Cart' button, Verify that cart page is displayed]]>
+      <![CDATA[Verified 'Logged in as username' at top]]>
     </line>
     <line>
-      <![CDATA[step 7-8: Click Proceed To Checkout, Click 'Register / Login' button]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Signup link]]>
-    </line>
-    <line>
-      <![CDATA['New User Signup!'- is visible]]>
-    </line>
-    <line>
-      <![CDATA[Entered username]]>
-    </line>
-    <line>
-      <![CDATA[Entered Email]]>
-    </line>
-    <line>
-      <![CDATA[clicked on Signup]]>
-    </line>
-    <line>
-      <![CDATA[step 9: Fill all details in Signup and create account]]>
-    </line>
-    <line>
-      <![CDATA[Filled account details]]>
-    </line>
-    <line>
-      <![CDATA[Clicked on Create Account]]>
-    </line>
-    <line>
-      <![CDATA[Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top]]>
-    </line>
-    <line>
-      <![CDATA[step 10-11: Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top]]>
-    </line>
-    <line>
-      <![CDATA[step 12-14:Click 'Cart' button, Click 'Proceed To Checkout' button,  Verify Address Details and Review Your Order]]>
-    </line>
-    <line>
-      <![CDATA[step 15: Enter description in comment text area and click 'Place Order']]>
-    </line>
-    <line>
-      <![CDATA[step 16-17: Enter payment details: Name on Card, Card Number, CVC, Expiration date, Click 'Pay and Confirm Order' button]]>
-    </line>
-    <line>
-      <![CDATA[step 18: Verify success message 'Your order has been placed successfully!]]>
-    </line>
-    <line>
-      <![CDATA[click on deleteAccount]]>
-    </line>
-    <line>
-      <![CDATA[click on continue]]>
-    </line>
-    <line>
-      <![CDATA[Deleted the account and the HomePagedisplaced ]]>
-    </line>
-    <line>
-      <![CDATA[Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button]]>
+      <![CDATA[Verified that cart page is displayed]]>
     </line>
   </reporter-output>
-  <suite started-at="2025-08-05T15:15:11 IST" name="Default suite" finished-at="2025-08-05T15:17:51 IST" duration-ms="159266">
+  <suite started-at="2025-08-06T17:27:27 IST" name="Default suite" finished-at="2025-08-06T17:28:26 IST" duration-ms="59163">
     <groups>
     </groups>
-    <test started-at="2025-08-05T15:15:11 IST" name="Default test" finished-at="2025-08-05T15:17:51 IST" duration-ms="159266">
-      <class name="testCases.TC014_PlaceOrderRegisterWhileCheckout">
-        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC014_PlaceOrderRegisterWhileCheckout@f0c8a99]" started-at="2025-08-05T15:15:11 IST" name="setup" finished-at="2025-08-05T15:15:26 IST" duration-ms="14338" status="PASS">
+    <test started-at="2025-08-06T17:27:27 IST" name="Default test" finished-at="2025-08-06T17:28:26 IST" duration-ms="59163">
+      <class name="testCases.TC016_PlaceOrderLoginBeforeCheckout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:testCases.TC016_PlaceOrderLoginBeforeCheckout@740cae06]" started-at="2025-08-06T17:27:27 IST" name="setup" finished-at="2025-08-06T17:27:52 IST" duration-ms="24688" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Browser is Launched]]>
@@ -90,82 +36,28 @@ Step 1-3: Navigate to home page and verify]]>
             </line>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="VerifyPlaceOrderRegisterWhileCheckout()[pri:0, instance:testCases.TC014_PlaceOrderRegisterWhileCheckout@f0c8a99]" started-at="2025-08-05T15:15:26 IST" name="VerifyPlaceOrderRegisterWhileCheckout" description="PlaceOrderRegisterWhileCheckoute" finished-at="2025-08-05T15:17:47 IST" duration-ms="141160" status="PASS">
+        <test-method signature="testPlaceOrderLoginBeforeCheckout()[pri:0, instance:testCases.TC016_PlaceOrderLoginBeforeCheckout@740cae06]" started-at="2025-08-06T17:27:52 IST" name="testPlaceOrderLoginBeforeCheckout" finished-at="2025-08-06T17:28:24 IST" duration-ms="32103" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[Navigating to baseURL: http://automationexercise.com]]>
             </line>
             <line>
               <![CDATA[Home Page is displayed successfully
-Step 1-3: Navigate to home page and verify]]>
+Step 1-3: Navigate to home page and verified]]>
             </line>
             <line>
-              <![CDATA[step 4-6:Add products to cart, Click 'Cart' button, Verify that cart page is displayed]]>
+              <![CDATA[Verified 'Logged in as username' at top]]>
             </line>
             <line>
-              <![CDATA[step 7-8: Click Proceed To Checkout, Click 'Register / Login' button]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Signup link]]>
-            </line>
-            <line>
-              <![CDATA['New User Signup!'- is visible]]>
-            </line>
-            <line>
-              <![CDATA[Entered username]]>
-            </line>
-            <line>
-              <![CDATA[Entered Email]]>
-            </line>
-            <line>
-              <![CDATA[clicked on Signup]]>
-            </line>
-            <line>
-              <![CDATA[step 9: Fill all details in Signup and create account]]>
-            </line>
-            <line>
-              <![CDATA[Filled account details]]>
-            </line>
-            <line>
-              <![CDATA[Clicked on Create Account]]>
-            </line>
-            <line>
-              <![CDATA[Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top]]>
-            </line>
-            <line>
-              <![CDATA[step 10-11: Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top]]>
-            </line>
-            <line>
-              <![CDATA[step 12-14:Click 'Cart' button, Click 'Proceed To Checkout' button,  Verify Address Details and Review Your Order]]>
-            </line>
-            <line>
-              <![CDATA[step 15: Enter description in comment text area and click 'Place Order']]>
-            </line>
-            <line>
-              <![CDATA[step 16-17: Enter payment details: Name on Card, Card Number, CVC, Expiration date, Click 'Pay and Confirm Order' button]]>
-            </line>
-            <line>
-              <![CDATA[step 18: Verify success message 'Your order has been placed successfully!]]>
-            </line>
-            <line>
-              <![CDATA[click on deleteAccount]]>
-            </line>
-            <line>
-              <![CDATA[click on continue]]>
-            </line>
-            <line>
-              <![CDATA[Deleted the account and the HomePagedisplaced ]]>
-            </line>
-            <line>
-              <![CDATA[Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button]]>
+              <![CDATA[Verified that cart page is displayed]]>
             </line>
           </reporter-output>
-        </test-method> <!-- VerifyPlaceOrderRegisterWhileCheckout -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC014_PlaceOrderRegisterWhileCheckout@f0c8a99]" started-at="2025-08-05T15:17:47 IST" name="tearDown" finished-at="2025-08-05T15:17:51 IST" duration-ms="3679" status="PASS">
+        </test-method> <!-- testPlaceOrderLoginBeforeCheckout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC016_PlaceOrderLoginBeforeCheckout@740cae06]" started-at="2025-08-06T17:28:24 IST" name="tearDown" finished-at="2025-08-06T17:28:26 IST" duration-ms="2295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC014_PlaceOrderRegisterWhileCheckout -->
+      </class> <!-- testCases.TC016_PlaceOrderLoginBeforeCheckout -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

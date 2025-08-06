@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.TC014_PlaceOrderRegisterWhileCheckout">
+      <class name="testCases.TC016_PlaceOrderLoginBeforeCheckout">
         <methods>
           <include name="tearDown"/>
-          <include name="VerifyPlaceOrderRegisterWhileCheckout"/>
+          <include name="testPlaceOrderLoginBeforeCheckout"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCase.TC014_PlaceOrderRegisterWhileCheckout -->
+      </class> <!-- testCases.TC016_PlaceOrderLoginBeforeCheckout -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

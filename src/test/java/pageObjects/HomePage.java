@@ -21,7 +21,7 @@ public HomePage(WebDriver driver) {
 //-------------------------Locators--------------------------------------------------------------------
 
 @FindBy(xpath=("//a[normalize-space()='Signup / Login']"))
-WebElement LnkSignup;
+private WebElement LnkSignup;
 
 @FindBy(xpath="//input[@placeholder='Name']")
 private WebElement Name;
@@ -33,10 +33,10 @@ private WebElement emailAddress;
 private WebElement BtnSignup;
 
 @FindBy(xpath="//h2[text()='New User Signup!']")
-WebElement msgSignup;
+private WebElement msgSignup;
 
 @FindBy(xpath="//h2[text()='Login to your account']")
-WebElement msgLoginToAccount;
+private WebElement msgLoginToAccount;
 
 
 
@@ -51,10 +51,10 @@ private WebElement login;
 
 
 @FindBy(xpath = "//p[text()='Your email or password is incorrect!']")
-WebElement errorMsgIncorrectEmailPassword;
+private WebElement errorMsgIncorrectEmailPassword;
 
 @FindBy(xpath = "//p[text()='Email Address already exist!']")
-WebElement errorMsgEmailAlready;
+private WebElement errorMsgEmailAlready;
 
 @FindBy(xpath="//a[contains(text(),'Contact')]") 
 private WebElement contactUs;
@@ -72,10 +72,10 @@ private WebElement contactUs;
 @FindBy(xpath  = "//a[@href='/product_details/4']") private WebElement btnViewProduct4;
 
 
-@FindBy(xpath="//div[3]//div[1]//div[1]//div[2]//div[1]//a[1]") public WebElement addToCartTshirt;
-@FindBy(xpath="//div[5]//div[1]//div[1]//div[2]//div[1]//a[1]") public WebElement addToCartDress;
+@FindBy(xpath="//div[3]//div[1]//div[1]//div[2]//div[1]//a[1]") private WebElement addToCartTshirt;
+@FindBy(xpath="//div[5]//div[1]//div[1]//div[2]//div[1]//a[1]") private WebElement addToCartDress;
 @FindBy(xpath  = "//button[text()='Continue Shopping']")
-public WebElement btnContinueShopping;
+private WebElement btnContinueShopping;
 
 @FindBy(xpath = ("//div[@class='alert-success alert']")) private WebElement msgAlertSentMail;
 
@@ -89,6 +89,8 @@ public WebElement btnContinueShopping;
 public WebElement LocatorProduct1() {
 	return product1;
 }
+
+
 
 public WebElement LocatorProduct2() {
 	return product2;
@@ -105,11 +107,17 @@ public void mouseHoverToProduct2() {
      act.moveToElement(LocatorProduct2()).perform();
 }
 
+public WebElement LocatoraddToCartTshirt() {
+	return addToCartTshirt;
+}
 
+public WebElement LocatorbtnContinueShopping() {
+	return btnContinueShopping;
+}
 
-
-
-
+public WebElement LocatoraddToCartDress() {
+	return addToCartDress;
+}
 
 
 
