@@ -1,8 +1,10 @@
 package pageObjects;
 
+import java.awt.RenderingHints.Key;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -192,7 +194,15 @@ public void clickbtnSubscribeArrow() {
 }
 
 public void clickbtnCart() {
-	btnCart.click();
+	//btnCart.click();
+	
+	//sol2
+	//Actions act=new Actions(driver);
+	//act.moveToElement(btnContinueShopping).click().perform();
+	
+	btnCart.sendKeys(Keys.ENTER);
+	
+	
 }
 public void clickBtnViewProduct4() {
 	btnViewProduct4.click();
@@ -258,10 +268,7 @@ public void clickLnkViewCart() {
 	
 	JavascriptExecutor js=(JavascriptExecutor)driver;
 	 js.executeScript("arguments[0].click();", LnkViewCart);
-	
 }
-
-
 
 
 

@@ -12,17 +12,18 @@ public class CartPage extends BasePage {
 	}
 //-------------------------------------------Locators-----------------------------------------
 	@FindBy(xpath = "//a[text()='Stylish Dress']")
-	WebElement StylishDress;
+	private WebElement StylishDress;
 	@FindBy(xpath = "//a[text()='Men Tshirt']")
-	WebElement Tshirt;
+	private WebElement Tshirt;
 	@FindBy(xpath = "//a[text()='Proceed To Checkout']")
-	WebElement btnProceedToCheckout;
+	private WebElement btnProceedToCheckout;
 	@FindBy(xpath = "//u[text()='Register / Login']")
-	WebElement btnRegisterOrLogin;
+	private WebElement btnRegisterOrLogin;
 	
+	@FindBy(xpath = "//a[@class='cart_quantity_delete']")
+	private WebElement product1DeleteCrossMark;
 	
-	
-	
+
 	
 //------------------------------------------Method--------------------------------------------
 	public boolean StylishDressExist() {
@@ -38,6 +39,9 @@ public class CartPage extends BasePage {
 		btnRegisterOrLogin.click();
 	}
 	
+	public void clickProduct1DeleteCrossMark() {
+		product1DeleteCrossMark.click();
+	}
 	
 	
 }

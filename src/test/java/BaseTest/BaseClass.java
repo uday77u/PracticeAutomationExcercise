@@ -3,12 +3,16 @@ package BaseTest;
 import java.io.File;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
+import java.time.Duration;
 import java.util.Date;
 
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -52,4 +56,20 @@ public class BaseClass {
 		return targetFilePath;
 
 }
+	//utility method to verify the current page URL contains segment
+	public boolean isCurrentUrlWithSegment(String segment) {
+		return driver.getCurrentUrl().contains(segment);
+	}
+	
+	//utility method to verify the current page Title contains segment
+	public boolean isCurrentTitleWithSegment(String segment) {
+		return driver.getTitle().contains(segment);
+	}
+	
+	//utility method to explicit wait for web element to be click able
+	public void waitForWebElementToBeClickable(WebElement webElement) {
+		WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait.until(ExpectedConditions.elementToBeClickable(webElement));
+	}
+	
 }
