@@ -30,7 +30,7 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
         driver.get(baseURL);
         Reporter.log("Navigating to baseURL: " + baseURL, false);
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully", false);
+        Reporter.log("Home Page is displayed successfully", true);
         
         //step 4-5: Scroll down to footer, Verify text 'SUBSCRIPTION'
         JavascriptExecutor js=(JavascriptExecutor) driver;
@@ -45,17 +45,17 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
         js.executeScript("arguments[0].scrollIntoView();", home.LocatorHomePageFooter());
         Thread.sleep(3000);
         assertEquals(home.msgSubscription(), true,"Subscription text is not exist");
-        Reporter.log("Scroll down to footer, Verify text 'SUBSCRIPTION'");
+        Reporter.log("Scroll down to footer, Verify text 'SUBSCRIPTION'",true);
         
         //step 6: Enter email address in input and click arrow button
         home.setSusbscribeEmailname(userEmail);
         home.clickbtnSubscribeArrow();
-        Reporter.log("Entered email address in input and click arrow button");
+        Reporter.log("Entered email address in input and click arrow button",true);
 
         //step 7: Verify success message 'You have been successfully subscribed!' is visible
         assertTrue(home.getmsgAlertSentMailExist(),"Success message is not visible.");
         assertEquals(home.getMsgAlertSentMail(), "You have been successfully subscribed!","Mis-match in alert Message");
-        Reporter.log("Verify success message 'You have been successfully subscribed!' is visible");
+        Reporter.log("Verify success message 'You have been successfully subscribed!' is visible",true);
         
         
 }

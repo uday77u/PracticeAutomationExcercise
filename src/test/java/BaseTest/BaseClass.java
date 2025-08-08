@@ -6,7 +6,9 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.Date;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -72,4 +74,10 @@ public class BaseClass {
 		wait.until(ExpectedConditions.elementToBeClickable(webElement));
 	}
 	
+	//utility method to drag the element to view
+	public void dragToViewWebElement(WebDriver driver,WebElement webelement) {
+		JavascriptExecutor js=(JavascriptExecutor) driver;
+		js.executeScript("arguments[0].scrollIntoView", webelement);
+	}
+
 }

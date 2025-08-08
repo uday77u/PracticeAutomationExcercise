@@ -1,17 +1,13 @@
 package pageObjects;
 
-import java.awt.RenderingHints.Key;
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class HomePage extends BasePage {
 
@@ -87,17 +83,15 @@ private WebElement btnContinueShopping;
 @FindBy(xpath = "(//a[@data-product-id='2' and text()='Add to cart'])[1]") private WebElement btnAddToCartProduct2;
 @FindBy(xpath = "//u[text()='View Cart']") private WebElement LnkViewCart;
 
+@FindBy(xpath = "//h2[text()='Category']") private WebElement Categories;
 
 public WebElement LocatorProduct1() {
 	return product1;
 }
 
-
-
 public WebElement LocatorProduct2() {
 	return product2;
 }
-
 
 public void mouseHoverToProduct1() {
 	 Actions act =new Actions(driver);
@@ -121,8 +115,9 @@ public WebElement LocatoraddToCartDress() {
 	return addToCartDress;
 }
 
-
-
+public WebElement LocatorCategories() {
+	return Categories;
+}
 
 
 
