@@ -42,9 +42,10 @@ public List<WebElement> getSearchedProducts() {
 @FindBy(xpath ="//button[normalize-space()='Continue Shopping']" ) public WebElement btnContinueShopping;
 @FindBy(xpath="//a[@data-product-id='3' and text()='Add to cart']")  private WebElement btnProduct3AddToCart;
 @FindBy(xpath = "//u[text()='View Cart']") public WebElement btnViewCart;
+@FindBy(xpath = "//h2[text()='Brands']") private WebElement txtBrand;
 
-
-
+@FindBy(xpath = "//a[text()='Kookie Kids']") private WebElement KookieKidsBrand;
+@FindBy(xpath = "//a[text()='Babyhug']") private WebElement BabyhugBrand;
 
 //------------------------------Methods------------------------------------------------------
 public boolean msgAllProducts() {
@@ -110,4 +111,18 @@ public void clickBtnProduct3AddToCart() {
 public void clickBtnViewCart() {
 	btnViewCart.click();
 }
+public boolean isTxtBrandVisible() {
+	return txtBrand.isDisplayed();
+}
+public WebElement LocatorTxtBrand() {
+	return txtBrand;
+}
+public void clickKookieKidsBrand() {
+	KookieKidsBrand.click();
+}
+public void clickBabyhugBrand() {
+	BabyhugBrand.click();
+}
+
+
 }

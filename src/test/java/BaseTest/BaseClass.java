@@ -32,6 +32,7 @@ public class BaseClass {
 		Reporter.log("Browser is Launched", false);
 		
 		driver.manage().window().maximize();
+		driver.manage().timeouts().getImplicitWaitTimeout();
 		Reporter.log("Browser Window is maximized ", false);
 		
 		driver.get(baseURL);
@@ -80,4 +81,9 @@ public class BaseClass {
 		js.executeScript("arguments[0].scrollIntoView", webelement);
 	}
 
+	//utility wait for visibility of an element
+		public void waitForVisibilityOfWebelement(WebElement webelement) {
+			WebDriverWait wait=new WebDriverWait(driver, Duration.ofSeconds(15));
+			wait.until(ExpectedConditions.visibilityOf(webelement));
+		}
 }

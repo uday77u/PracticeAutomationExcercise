@@ -85,6 +85,15 @@ private WebElement btnContinueShopping;
 
 @FindBy(xpath = "//h2[text()='Category']") private WebElement Categories;
 
+@FindBy(xpath = "//a[@href='#Women']") private WebElement womenCategories;
+@FindBy(xpath = "//a[text()='Dress ']") private WebElement DressSubWomenCategories;
+@FindBy(xpath = "//span[contains(text(),'Dress')]") private WebElement messageDressOnPage;
+
+@FindBy(xpath = "//a[@href='#Men']") private WebElement menCategories;
+@FindBy(xpath = "//a[text()='Jeans ']") private WebElement JeansSubWomenCategories;
+@FindBy(xpath = "//span[text()='Jeans']") private WebElement messageJeansOnPage;
+
+
 public WebElement LocatorProduct1() {
 	return product1;
 }
@@ -265,9 +274,34 @@ public void clickLnkViewCart() {
 	 js.executeScript("arguments[0].click();", LnkViewCart);
 }
 
+public void clickBtnWomenCategories() {
+	womenCategories.click();
+}
+public void clickBtnDressSubWomenCategories() {
+	DressSubWomenCategories.click();
+}
 
+public boolean isMessageDressOnPage() {
+	return messageDressOnPage.isDisplayed();
+}
 
+public void clickBtnMenCategories() {
+	menCategories.click();
+}
+public void clickBtnJeansSubMenCategories() {
+	JeansSubWomenCategories.click();
+}
 
+public boolean isMessageJeansOnPage() {
+	return messageJeansOnPage.isDisplayed();
+}
+public WebElement LocatorMessageDressOnPage() {
+	return messageDressOnPage;
+}
+
+public WebElement LocatorMessageJeansOnPage() {
+	return messageJeansOnPage;
+}
 
 
 
