@@ -1,10 +1,8 @@
-package testCases;
+package pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
-import pageObjects.BasePage;
 
 public class KookieKidsPage extends BasePage {
 

@@ -22,7 +22,12 @@ public class ProductDetailsPage extends BasePage {
 
 @FindBy(xpath="//u[normalize-space()='View Cart']")  private WebElement lnkViewCart;
 @FindBy(css =".cart_quantity")  private WebElement qtyInCart;
-	
+
+@FindBy(xpath = "//a[text()='Write Your Review']") private WebElement msgWriteReview;
+@FindBy(css = "input[placeholder='Your Name']") private WebElement txtReviewName;
+@FindBy(css = "input[placeholder='Email Address']") private WebElement txtReviewEmailAddress;
+@FindBy(css = "textarea[placeholder='Add Review Here!']") private WebElement txtAreaReviewHere;
+@FindBy(css = "#button-review") private WebElement buttonReview;
 	
 	
 	//-----------------------Methods--------------------------------------------------
@@ -43,4 +48,26 @@ public class ProductDetailsPage extends BasePage {
 		return qtyInCart.getText();
 	}
 
+
+public boolean isMsgWriteReviewDisplayed() {
+	return msgWriteReview.isDisplayed();
+}
+public String getMsgWriteReview() {
+	return msgWriteReview.getText();
+}
+public void enterReviewName(String name) {
+	txtReviewName.sendKeys(name);
+}
+
+public void enterReviewEmailAddress(String email) {
+	txtReviewEmailAddress.sendKeys(email);
+}
+
+public void enterReviewHere(String review) {
+	txtAreaReviewHere.sendKeys(review);
+}
+
+public void clickButtonReview() {
+	buttonReview.click();
+}
 }

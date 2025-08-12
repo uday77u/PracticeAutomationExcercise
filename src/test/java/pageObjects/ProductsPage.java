@@ -13,6 +13,7 @@ public class ProductsPage extends BasePage {
 		super(driver);
 		// TODO Auto-generated constructor stub
 	}
+	
 	//-----------------------------------Locators--------------------------------
 
 
@@ -46,6 +47,9 @@ public List<WebElement> getSearchedProducts() {
 
 @FindBy(xpath = "//a[text()='Kookie Kids']") private WebElement KookieKidsBrand;
 @FindBy(xpath = "//a[text()='Babyhug']") private WebElement BabyhugBrand;
+
+
+@FindBy(xpath ="//a[text()='View Product' and @href='/product_details/2']") private WebElement btnViewProduct2;
 
 //------------------------------Methods------------------------------------------------------
 public boolean msgAllProducts() {
@@ -123,6 +127,11 @@ public void clickKookieKidsBrand() {
 public void clickBabyhugBrand() {
 	BabyhugBrand.click();
 }
+
+public void clickBtnViewProduct2() {
+	btnViewProduct2.click();
+}
+
 
 
 }

@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.Point;
@@ -8,6 +10,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.FindBys;
 
 public class HomePage extends BasePage {
 
@@ -92,7 +95,11 @@ private WebElement btnContinueShopping;
 @FindBy(xpath = "//a[@href='#Men']") private WebElement menCategories;
 @FindBy(xpath = "//a[text()='Jeans ']") private WebElement JeansSubWomenCategories;
 @FindBy(xpath = "//span[text()='Jeans']") private WebElement messageJeansOnPage;
-
+@FindBy(xpath = "//p[contains(text(),'Copyright')]") private WebElement footerCopyright;
+@FindBy(xpath = "//h2[text()='recommended items']") private WebElement msgRecommendedItems;
+@FindBy(css = "#recommended-item-carousel") private List<WebElement> RecommendedItemsList;
+@FindBy(css = "#recommended-item-carousel") private WebElement RecommendedItems;
+@FindBy(xpath = "//a[text()='Add to cart' and @data-product-id='4']") private WebElement AddToCartRecommendedProduct4;
 
 public WebElement LocatorProduct1() {
 	return product1;
@@ -128,6 +135,9 @@ public WebElement LocatorCategories() {
 	return Categories;
 }
 
+public WebElement LocatorMsgRecommendedItems() {
+	return msgRecommendedItems;
+}
 
 
 //---------------------------------------------Methods for Locators------------------------------------
@@ -303,13 +313,27 @@ public WebElement LocatorMessageJeansOnPage() {
 	return messageJeansOnPage;
 }
 
+public boolean areFooterWebElementsDisplayed() {
+	return footerCopyright.isDisplayed()
+			&& Subscription.isDisplayed()
+			&& btnSubscribeArrow.isDisplayed();
+}
 
+public void isMsgRecommendedItems() {
+	msgRecommendedItems.isDisplayed();
+}
 
+//future implement for all recommended items visibility
+public boolean areRecommendedItemsEmpty() {
+	return !RecommendedItemsList.isEmpty();
+}
 
-
-
-
-
+public boolean isRecommendedItems() {
+	return RecommendedItems.isDisplayed();
+}
+public void clickAddToCartRecommendedProduct4() {
+	AddToCartRecommendedProduct4.click();
+}
 
 
 
