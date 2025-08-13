@@ -15,7 +15,8 @@ public class PaymentDonePage extends BasePage{
 @FindBy(xpath="//p[normalize-space()='Congratulations! Your order has been confirmed!']") private WebElement msgYourOrderConformed;
 @FindBy(xpath="//a[normalize-space()='Download Invoice']") private WebElement btnDownloadInvoice;
 @FindBy(xpath="//a[normalize-space()='Continue']") private WebElement btnContinue;
-	
+
+
 public boolean msgYourOrderConformedExist() {
 	return msgYourOrderConformed.isDisplayed();
 }
@@ -25,5 +26,8 @@ public String getMsgYourOrderConformed() {
 
 public void clickBtnContinue() {
 	btnContinue.click();
+}
+public void clickBtnDownloadInvoice() {
+	btnDownloadInvoice.click();
 }
 }
