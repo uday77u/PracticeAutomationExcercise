@@ -100,6 +100,11 @@ private WebElement btnContinueShopping;
 @FindBy(css = "#recommended-item-carousel") private List<WebElement> RecommendedItemsList;
 @FindBy(css = "#recommended-item-carousel") private WebElement RecommendedItems;
 @FindBy(xpath = "//a[text()='Add to cart' and @data-product-id='4']") private WebElement AddToCartRecommendedProduct4;
+@FindBy(css = "#scrollUp") private WebElement scrollUpArrow;
+
+@FindBy(xpath = "//h2[contains(text(),'Full-Fledged')]") private WebElement msgFullFledged;
+
+
 
 public WebElement LocatorProduct1() {
 	return product1;
@@ -325,21 +330,34 @@ public void isMsgRecommendedItems() {
 
 //future implement for all recommended items visibility
 public boolean areRecommendedItemsEmpty() {
-	return !RecommendedItemsList.isEmpty();
+	return RecommendedItemsList.isEmpty();
 }
 
 public boolean isRecommendedItems() {
 	return RecommendedItems.isDisplayed();
 }
 public void clickAddToCartRecommendedProduct4() {
-	AddToCartRecommendedProduct4.click();
+	//AddToCartRecommendedProduct4.click();
+	//sol4
+	JavascriptExecutor js=(JavascriptExecutor)driver;
+	js.executeScript("arguments[0].click();", btnContinueShopping);
+}
+public void clickScrollUpArrow() {
+	//scrollUpArrow.click();
+	Actions ac=new Actions(driver);
+	ac.click(scrollUpArrow).perform();;
 }
 
+public boolean isMsgFullFledgedDisplayed() {
+	return msgFullFledged.isDisplayed();
+}
+public String getMsgFullFledged() {
+	return msgFullFledged.getText();
+}
 
-
-
-
-
+public WebElement LocatorMsgFullFledged() {
+	return msgFullFledged;
+}
 
 
 
