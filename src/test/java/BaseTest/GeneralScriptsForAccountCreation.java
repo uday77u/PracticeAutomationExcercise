@@ -65,7 +65,7 @@ public class GeneralScriptsForAccountCreation extends BaseClass {
 		    //Reporter.log("click on continue",true);
 		    
 		    assertTrue(signup.msgLoggedInAs(userName),"'LoggedInAs(userName)'- is not visible");
-		    Reporter.log("'LoggedInAs: "+userName+"\n",true);
+		    Reporter.log("Successfully 'LoggedInAs: "+userName,true);
 
 		}
 	 

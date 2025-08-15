@@ -1,0 +1,172 @@
+<html>
+<head>
+<title>TestNG:  chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 15 01:04:15 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>235 seconds (235969 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage()'><b>testVerifyAddressDetailsInCheckoutPage</b><br>Test class: testCases.TC023_VerifyAddressDetailsInCheckoutPage<br/>
+<a href="#Output-527658240" onClick='toggleBox("Output-527658240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-527658240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-527658240">
+Test Case:5.
+testVerifyAddressDetailsInCheckoutPage started executing...<br/>
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully
+Navigate to home page and verified<br/>
+'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>
+Entered username: BUGwvr<br/>
+Entered Email: iSqmIU@gmailVsdZ<br/>
+Filled account details<br/>
+Clicked on Create Account<br/>
+'Acount created'- is visible<br/>
+Successfully 'LoggedInAs: BUGwvr<br/>
+Add products to cart, Click 'Cart' button, Verified that cart page is displayed<br/>
+Verified that the delivery address is same address filled at the time registration of account<br/>
+Verified that the billing address is same address filled at the time registration of account<br/>
+Deleted the account and the HomePagedisplaced <br/>
+testVerifyAddressDetailsInCheckoutPage got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>47</td>
+<td>testCases.TC023_VerifyAddressDetailsInCheckoutPage@1df8da7a</td></tr>
+<tr>
+<td title='testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality()'><b>testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</b><br>Test class: testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality<br/>
+<a href="#Output-810898134" onClick='toggleBox("Output-810898134", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-810898134" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-810898134">
+Test Case:8.
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality started executing...<br/>
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully
+Navigate to home page and verified<br/>
+Verified 'SUBSCRIPTION' is visible<br/>
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality@660acfb</td></tr>
+<tr>
+<td title='testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality()'><b>testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</b><br>Test class: testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality<br/>
+<a href="#Output-1548993077" onClick='toggleBox("Output-1548993077", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1548993077" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1548993077">
+Test Case:7.
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality started executing...<br/>
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully
+Navigate to home page and verified<br/>
+Verified 'SUBSCRIPTION' is visible<br/>
+Verified that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen<br/>
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality@7486b455</td></tr>
+<tr>
+<td title='testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder()'><b>testDownloadInvoiceAfterPurchaseOrder</b><br>Test class: testCases.TC024_DownloadInvoiceAfterPurchaseOrder<br/>
+<a href="#Output-162752456" onClick='toggleBox("Output-162752456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-162752456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-162752456">
+Test Case:6.
+testDownloadInvoiceAfterPurchaseOrder started executing...<br/>
+Navigating to baseURL: http://automationexercise.com<br/>
+Home Page is displayed successfully
+Navigate to home page and verified<br/>
+Add products to cart, Click 'Cart' button, Verified that cart page is displayed<br/>
+'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>
+Entered username: OWmSjs<br/>
+Entered Email: puqizp@gmailQkmT<br/>
+Filled account details<br/>
+Clicked on Create Account<br/>
+'Acount created'- is visible<br/>
+Successfully 'LoggedInAs: OWmSjs<br/>
+Commented and navigated to payment page<br/>
+Deleted the account and the HomePagedisplaced <br/>
+testDownloadInvoiceAfterPurchaseOrder got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>57</td>
+<td>testCases.TC024_DownloadInvoiceAfterPurchaseOrder@23941fb4</td></tr>
+</table><p>
+</body>
+</html>

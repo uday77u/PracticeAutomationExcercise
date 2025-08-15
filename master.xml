@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Suite">
+	<listeners>
+		<listener class-name="utilities.ReportManagerExtentAndTestNG"></listener>
+	</listeners>  
+
+	<test thread-count="5" name="firefox Test">
+		<parameter name="Browser" value="firefox"></parameter>
+    <classes>
+      <class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
+      <class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
+      <class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
+      <class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="chrome Test">
+	  <parameter name="Browser" value="chrome"></parameter>
+    <classes>
+      <class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
+      <class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
+      <class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
+      <class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

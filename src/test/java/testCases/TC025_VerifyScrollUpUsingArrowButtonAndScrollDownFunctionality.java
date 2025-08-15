@@ -50,7 +50,7 @@ public class TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality exte
         waitForVisibilityOfWebelement(homePage.LocatorMsgFullFledged());
         assertTrue(homePage.isMsgFullFledgedDisplayed(), "'Full-Fledged' text messge not visible");
         
-        Reporter.log("Verified that page is scrolled up and '"+homePage.getMsgFullFledged()+"' text is visible on screen\n", true);
+        Reporter.log("Verified that page is scrolled up and '"+homePage.getMsgFullFledged()+"' text is visible on screen", true);
 	}
 	//scroll down 
 	public void scrollDownPageToBottom() {

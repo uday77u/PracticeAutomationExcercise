@@ -1,0 +1,82 @@
+18:33:43.578 [main] DEBUG testCases.TC009_Improved - logging started
+18:33:43.610 [main] INFO  testCases.TC009_Improved - ***** TC009_SearchProduct *****
+18:33:43.755 [main] INFO  testCases.TC009_Improved - Step 1: Launching browser and navigating to: http://automationexercise.com
+18:33:46.553 [main] INFO  testCases.TC009_Improved - Step 2: Verifying home page title
+18:33:46.631 [main] INFO  testCases.TC009_Improved - Step 3: Clicking on 'Products' button
+18:33:50.976 [main] INFO  testCases.TC009_Improved - Step 4: Verifying ALL PRODUCTS page title
+18:33:50.993 [main] INFO  testCases.TC009_Improved - Step 5: Searching for product: Shirt
+18:33:54.238 [main] INFO  testCases.TC009_Improved - Step 6: Verifying 'SEARCHED PRODUCTS' section is visible
+18:33:54.376 [main] INFO  testCases.TC009_Improved - Step 7: Verifying all search results contain: shirt
+18:33:55.408 [main] ERROR testCases.TC009_Improved - Test failed
+java.lang.AssertionError: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1590) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.11.0.jar:7.11.0]
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:59) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+19:11:01.216 [main] DEBUG testCases.TC009_Improved - logging started
+19:11:01.249 [main] INFO  testCases.TC009_Improved - ***** TC009_SearchProduct *****
+19:11:01.672 [main] INFO  testCases.TC009_Improved - Step 1: Launching browser and navigating to: http://automationexercise.com
+19:11:14.483 [main] INFO  testCases.TC009_Improved - Step 2: Verifying home page title
+19:11:14.575 [main] INFO  testCases.TC009_Improved - Step 3: Clicking on 'Products' button
+19:11:27.037 [main] INFO  testCases.TC009_Improved - Step 4: Verifying ALL PRODUCTS page title
+19:11:27.450 [main] INFO  testCases.TC009_Improved - Step 5: Searching for product: Shirt
+19:11:40.522 [main] INFO  testCases.TC009_Improved - Step 6: Verifying 'SEARCHED PRODUCTS' section is visible
+19:11:41.496 [main] INFO  testCases.TC009_Improved - Step 7: Verifying all search results contain: shirt
+19:11:46.050 [main] ERROR testCases.TC009_Improved - Test failed
+java.lang.AssertionError: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1590) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.11.0.jar:7.11.0]
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:59) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]

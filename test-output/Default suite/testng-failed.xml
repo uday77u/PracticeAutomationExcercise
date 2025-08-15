@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder">
+      <class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality">
         <methods>
-          <include name="testDownloadInvoiceAfterPurchaseOrder"/>
+          <include name="testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
           <include name="tearDown"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.TC024_DownloadInvoiceAfterPurchaseOrder -->
+      </class> <!-- testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -20,11 +20,11 @@ import org.testng.ITestResult;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class ExtentReportManager implements ITestListener {
-	public ExtentHtmlReporter sparkReporter;
+	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
 
@@ -39,7 +39,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
-		sparkReporter = new ExtentHtmlReporter(".\\reports\\" + repName);// specify location of the report
+		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("AutomationExcercise"
 				+ " Automation Report"); // Title of report
@@ -82,7 +82,7 @@ public class ExtentReportManager implements ITestListener {
 		test.log(Status.INFO, result.getThrowable().getMessage());
 		
 		try {
-			String imgPath = new BaseTest.BaseClass().captureScreen(result.getName());
+			String imgPath = new BaseTest.BaseClass().getScreenshot(result.getName());
 			test.addScreenCaptureFromPath(imgPath);
 			
 		} catch (IOException e1) {
