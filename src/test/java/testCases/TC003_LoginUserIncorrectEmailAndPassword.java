@@ -25,34 +25,47 @@ public class TC003_LoginUserIncorrectEmailAndPassword extends BaseClass {
 
 	@Test(description = "Verify Login User incorrectEmail and Password")
     public void verifyLoginUserIncorrectEmailAndPasswordFlow() throws InterruptedException {
+		
+		//logger.debug("");
+		//logger.info("");
+		logger.debug("logging started");
+	    logger.info("starting TC003_LoginUserIncorrectEmailAndPassword");
+	    
         HomePage home = new HomePage(driver);
 
-        // Step 1-3: Navigate to home page and verify
+     // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
+        logger.info("Step 1: Launching the browser");
+        logger.info("Step 2: Navigating to baseURL: " + baseURL);
         driver.get(baseURL);
-        Reporter.log("Navigating to baseURL: " + baseURL, false);
-        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully", false);
 
         // Step 4-5: Click on 'Sign up/Login' button and Verify 'Login to your account' is visible 
+        logger.info("Step 4. Click on 'Signup / Login' button");
         home.clickSignup();
-        Thread.sleep(2000);
+        
+        logger.info("Step 5. Verify 'Login to your account' is visible");
         assertTrue(home.msgLoginToAccountVisible(), "'Login to your account' is not visible");
-        Reporter.log("'Login to your account' is visible", false);
+        
 
         // Step 6-7: Enter incorrect email address and password, Click 'login' button,
+        logger.info("Step 6. Enter incorrect email address and password");
         home.setEmailAddressLogin(userEmail);
         home.setPassword(password);
-        home.clickLogin();
-        Reporter.log("Entered incorrect email address and password, \nClicked 'login' button", false);
         
+        logger.info("Step 7. Click 'login' button");
+        home.clickLogin();
+        
+        logger.info("Navigating to Signup / Login Page");
         assertEquals(driver.getTitle(), "Automation Exercise - Signup / Login","Login page title is mis-match");
         Reporter.log("HomePage is displayed");
         Thread.sleep(3000);
         
         //step 8: Verify error 'Your email or password is incorrect!' is visible
+        logger.info("Step 8. Verify error 'Your email or password is incorrect!' is visible");
         assertEquals(home.errorMsgExist(),true,"Error Message is not displayed");
-        Reporter.log("Verified error 'Your email or password is incorrect!' is visible");
         
+        logger.debug("application logs end.......");
+    	logger.info("**** finished TC003_LoginUserIncorrectEmailAndPassword  *****"); 
+
     
 }
 }

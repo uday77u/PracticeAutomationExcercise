@@ -51,23 +51,35 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
 
 	@Test(description = "PlaceOrderRegisterWhileCheckoute")
     public void VerifyPlaceOrderRegisterWhileCheckout() throws InterruptedException, IOException {
+		//logger.debug("");
+		//logger.info("");
+		logger.debug("logging started");
+	    logger.info("starting TC014_PlaceOrderRegisterWhileCheckout");
+	    
         HomePage home = new HomePage(driver);
-        
-        // Step 1-3: Navigate to home page and verify
+        CartPage cart=new CartPage(driver);
+        SignupPage signup=new SignupPage(driver);
+        CheckoutPage checkout=new CheckoutPage(driver);
+
+     // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
+        logger.info("Step 1: Launching the browser");
+        logger.info("Step 2: Navigating to baseURL: " + baseURL);
         driver.get(baseURL);
-        Reporter.log("Navigating to baseURL: " + baseURL, false);
-        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully\nStep 1-3: Navigate to home page and verify", false);
         
+        logger.info("Step 3: Verifying that home page is visible successfully");
+        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
+ 
         //step 4-6: Add products to cart, Click 'Cart' button, Verify that cart page is displayed
+        logger.info("4. Add products to cart");
          dragToWebElement(driver,home.LocatoraddToCartTshirt());
          ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatoraddToCartTshirt());
-  
+         
+         logger.info("5. Click 'Cart' button");
          WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(10));
          wait.until(ExpectedConditions.elementToBeClickable(home.LocatorbtnContinueShopping()));
          ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatorbtnContinueShopping());
        
-         
+         logger.info("6. Verify that cart page is displayed");
          dragToWebElement(driver,home.LocatoraddToCartDress());
          ((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.LocatoraddToCartDress());
          //home.clickAddToCartDress();
@@ -83,39 +95,48 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
          
          
         //step 7-8: Click Proceed To Checkout, Click 'Register / Login' button
-        CartPage cart=new CartPage(driver);
+         logger.info("7. Click Proceed To Checkout");
+        
         cart.clickBtnProceedToCheckout();
+        
+        logger.info("8. Click 'Register / Login' button");
         cart.clickBtnRegisterOrLogin();
         Reporter.log("step 7-8: Click Proceed To Checkout, Click 'Register / Login' button");
         
         //step 9: Fill all details in Signup and create account
+        logger.info("9. Fill all details in Signup and create account");
         GenericScript gs= new  GenericScript(driver);
         gs.CreateAccountWithRandomData(home);
         Reporter.log("step 9: Fill all details in Signup and create account");
 		
         //step 10-11: Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top
-        SignupPage signup=new SignupPage(driver);
+        logger.info("10. Verify 'ACCOUNT CREATED!' and click 'Continue' button");
+        
 	    gs.fillAccountDetailsWithRandomData(signup);
 	    assertEquals(signup.msgAccountCreated(), true,"'Acount created'- is not visible");
+	    
+	    logger.info("11. Verify ' Logged in as username' at top");
 	    signup.clickContinue();
-	    assertEquals(signup.msgLoggedInAs(gs.RandomUserName),true,"'LoggedInAs(userName)'- is not visible");
-	    Reporter.log("Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top");
-	    Reporter.log("step 10-11: Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top");
-	        
+	    assertEquals(signup.msgLoggedInAs(gs.RandomUserName),true,"'LoggedInAs(userName)'- is not visible");	        
 		
         //step 12-14:Click 'Cart' button, Click 'Proceed To Checkout' button,  Verify Address Details and Review Your Order
 	        //((JavascriptExecutor) driver).executeScript("arguments[0].click();", home.btnCart);
+	    logger.info("12.Click 'Cart' button");
 	        home.clickbtnCart();
+	        
+	        logger.info("13. Click 'Proceed To Checkout' button");
 	        cart.clickBtnProceedToCheckout();
-	        Reporter.log("step 12-14:Click 'Cart' button, Click 'Proceed To Checkout' button,  Verify Address Details and Review Your Order");
+	        
+	        logger.info("14. Verify Address Details and Review Your Order");
 	        
         //step 15: Enter description in comment text area and click 'Place Order'
-	        CheckoutPage checkout=new CheckoutPage(driver);
+	        logger.info("15. Enter description in comment text area and click 'Place Order'");
+	        
 	        checkout.setTxtCommentArea("commenting Hello");
 	        checkout.clickBtnPlaceOrder();
-	        Reporter.log("step 15: Enter description in comment text area and click 'Place Order'");
 	        
         //step 16-17: Enter payment details: Name on Card, Card Number, CVC, Expiration date, Click 'Pay and Confirm Order' button
+	        logger.info("16. Enter payment details: Name on Card, Card Number, CVC, Expiration date");
 	        PaymentPage payment=new PaymentPage(driver);
 	        payment.settxtNameOnCard("asdf");
 	        payment.settxtCardNumber("14555");
@@ -124,6 +145,8 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
 	        Thread.sleep(3000);
 	        payment.settxtExpiryYear("2058");
 	        Thread.sleep(3000);
+	        
+	        logger.info("17. Click 'Pay and Confirm Order' button");
 	        payment.clickbtnPayAndConfirmOrder();
 	        Thread.sleep(3000);
 	        Reporter.log("step 16-17: Enter payment details: Name on Card, Card Number, CVC, Expiration date, Click 'Pay and Confirm Order' button");
@@ -137,19 +160,21 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
 	        Reporter.log("step 18: Verify success message 'Your order has been placed successfully!");
 	        */
 	       
-	        
+	        logger.info("18. Verify success message 'Your order has been placed successfully!'");
 	        PaymentDonePage payDone=new PaymentDonePage(driver);
 	        assertTrue(payDone.msgYourOrderConformedExist(),"no msgSuccessExist");
 	        assertEquals(payDone.getMsgYourOrderConformed(), "Congratulations! Your order has been confirmed!"); 
 	        payDone.clickBtnContinue();
 	        
-	        Reporter.log("step 18: Verify success message 'Your order has been placed successfully!");
-	        
         //step 19-20: Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button
+	        logger.info("19. Click 'Delete Account' button");
+	        logger.info("20. Verify 'ACCOUNT DELETED!' and click 'Continue' button");
 	        gs.DeleteAccount(signup);
-       Reporter.log("Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button");
         
-        
+       
+       logger.debug("application logs end.......");
+   	logger.info("**** finished TC014_PlaceOrderRegisterWhileCheckout  *****"); 
+       
 }
 
 	 // Utility method to wait for an element to be visible

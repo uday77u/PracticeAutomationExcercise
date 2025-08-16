@@ -36,12 +36,14 @@ public class BaseClass {
 	
 	public static WebDriver driver;
 	public Logger logger;
+	
 	@BeforeClass
 	@Parameters({"Browser"})
-	public void setup(String Br)
+	public void setup(String Br)//
 	{
 		logger=LogManager.getLogger(this.getClass());
 		
+		//browsers 
 		if (Br.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 			Reporter.log("Chrome browser is Launched.", true);
@@ -59,6 +61,10 @@ public class BaseClass {
 		{
 			Reporter.log("Enter Proper Browser name.", true);return;
 		}
+	
+		//driver=new ChromeDriver();
+		//Reporter.log("Chrome browser is Launched.", true);
+		
 		driver.manage().window().maximize();
 		driver.manage().timeouts().getImplicitWaitTimeout();
 		Reporter.log("Browser Window is maximized.", true);

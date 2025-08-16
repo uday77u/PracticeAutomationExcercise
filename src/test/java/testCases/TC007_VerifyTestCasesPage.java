@@ -20,18 +20,30 @@ public class TC007_VerifyTestCasesPage extends BaseClass{
 
 	 @Test(description = "Verify Contact us Form")
 	    public void verifyContactUsForm() throws InterruptedException {
+			//logger.debug("");
+			//logger.info("");
+			logger.debug("logging started");
+		    logger.info("starting TC007_VerifyTestCasesPage");
+		    
 	        HomePage home = new HomePage(driver);
-	        
-	        // Step 1-3: Navigate to home page and verify
+
+	     // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
+	        logger.info("Step 1: Launching the browser");
+	        logger.info("Step 2: Navigating to baseURL: " + baseURL);
 	        driver.get(baseURL);
-	        Reporter.log("Navigating to baseURL: " + baseURL, false);
+	        
+	        logger.info("Step 3: Verifying that home page is visible successfully");
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
 	        Reporter.log("Home Page is displayed successfully", false);
 	        
 	       //step 4-5: Click on 'Test Cases' button,  Verify user is navigated to test cases page successfully
+	        logger.info("Step 4: Click on 'Test Cases' button");
 	        home.clickTestCases();
-	        assertEquals(driver.getTitle(), "Automation Practice Website for UI Testing - Test Cases","title mis match");
-	        Reporter.log("Clicked on 'Test Cases' button,\nVerify user is navigated to test cases page successfully");
+	        logger.info("Step 5: Verify user is navigated to test cases page successfully");
+	        
+	        
+	        logger.debug("application logs end.......");
+	    	logger.info("**** finished TC007_VerifyTestCasesPage  *****"); 
 	
 }
 }

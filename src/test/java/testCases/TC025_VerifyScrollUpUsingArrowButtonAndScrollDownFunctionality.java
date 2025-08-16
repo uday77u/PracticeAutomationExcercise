@@ -32,25 +32,49 @@ public class TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality exte
 	public void testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality() throws InterruptedException {
 		HomePage homePage=new HomePage(driver);
 		
-		// Step 1-3: Navigate to home page and verify
-        driver.get(baseURL);
-        Reporter.log("Navigating to baseURL: " + baseURL, true);
+		//logger.debug("");
+		//logger.info("");
+		logger.debug("logging started");
+		logger.info("starting TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality");
+			    
+		HomePage home = new HomePage(driver);
+
+		// Step 1-3: Navigate to home page and  Verify that home page is visible successfully
+		logger.info("Step 1: Launching the browser");
+		logger.info("Step 2: Navigating to baseURL: " + baseURL);
+		driver.get(baseURL);
+        
+        logger.info("Step 3: Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully\nNavigate to home page and verified", true);
+		
+        
+        
+        
+        
         
         //step 4-5: Scroll down page to bottom, Verify 'SUBSCRIPTION' is visible
+        logger.info("4. Scroll down page to bottom");
         scrollDownPageToBottom();
         Thread.sleep(3000);
+        
+        logger.info("5. Verify 'SUBSCRIPTION' is visible");
         assertTrue(homePage.msgSubscription(), "'SUBSCRIPTION' is not visible");
         Reporter.log("Verified 'SUBSCRIPTION' is visible",true);
         Thread.sleep(3000);
+        
         //step 6-7: Click on arrow at bottom right side to move upward
         //Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+        logger.info("6. Click on arrow at bottom right side to move upward");
         homePage.clickScrollUpArrow();
+        
+        logger.info("7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen");
         waitForVisibilityOfWebelement(homePage.LocatorMsgFullFledged());
         assertTrue(homePage.isMsgFullFledgedDisplayed(), "'Full-Fledged' text messge not visible");
         
         Reporter.log("Verified that page is scrolled up and '"+homePage.getMsgFullFledged()+"' text is visible on screen", true);
+        
+        logger.debug("application logs end.......");
+    	logger.info("**** finished TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality  *****"); 
 	}
 	//scroll down 
 	public void scrollDownPageToBottom() {

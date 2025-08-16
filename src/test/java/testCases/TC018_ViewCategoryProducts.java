@@ -32,18 +32,33 @@ public class TC018_ViewCategoryProducts extends BaseClass {
 	
 	@Test
 	public void testViewCategoryProducts() throws InterruptedException {
-		HomePage homePage=new HomePage(driver);
-		
-		// Step 1-2: Navigate to home page and verify
+		//logger.debug("");
+		//logger.info("");
+		logger.debug("logging started");
+	    logger.info("starting TC018_ViewCategoryProducts");
+	    
+        HomePage homePage = new HomePage(driver);
+
+     // Step 1-2: Navigate to home page and  Verify that home page is visible successfully
+        logger.info("Step 1: Launching the browser");
+        logger.info("Step 2: Navigating to baseURL: " + baseURL);
         driver.get(baseURL);
-        Reporter.log("Navigating to baseURL: " + baseURL, false);
+        
+        logger.info("Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully\nStep 1-3: Navigate to home page and verified", true);
+        
+        
+        
+        
+        
+        
+        
         
         //step 3:Verify that categories are visible on left side bar
         //----error webelement is null
         
        //dragToViewWebElement(driver, Home.LocatorHomePageFooter());
+        logger.info("3. Verify that categories are visible on left side bar");
        JavascriptExecutor js=(JavascriptExecutor) driver;
        js.executeScript("arguments[0].scrollIntoView();", homePage.LocatorCategories());
        Thread.sleep(3000);
@@ -51,23 +66,33 @@ public class TC018_ViewCategoryProducts extends BaseClass {
        
         //step 4-5: Click on 'Women' category,Click on any category link under 'Women' category, for example: Dress 
         //step 6:Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'
+       logger.info("4. Click on 'Women' category");
         homePage.clickBtnWomenCategories();
+        
+        logger.info("5. Click on any category link under 'Women' category, for example: Dress");
         homePage.clickBtnDressSubWomenCategories();
         frameFindingForWebelement();
         driver.switchTo().frame(6);
         waitForVisibilityOfWebelement(homePage.LocatorMessageDressOnPage());
+        
+        logger.info("6. Verify that category page is displayed and confirm text 'WOMEN - TOPS PRODUCTS'");
         assertTrue(homePage.isMessageDressOnPage(),"'Dress' is not displayed on page,unable to navigate 'Dress categories page'.");
         Reporter.log("Verified that category page is displayed and confirm text 'WOMEN - DRESS PRODUCTS",true);
         driver.switchTo().defaultContent();
         
         //step 7: On left side bar, click on any sub-category link of 'Men' category, 
         //step 8:Verify that user is navigated to that category page
+        logger.info("7. On left side bar, click on any sub-category link of 'Men' category");
         homePage.clickBtnMenCategories();
+        
+        logger.info("8. Verify that user is navigated to that category page");
         homePage.clickBtnJeansSubMenCategories();
         waitForVisibilityOfWebelement(homePage.LocatorMessageJeansOnPage());
         assertTrue(homePage.isMessageJeansOnPage(),"\"'Jeans' is not displayed on page,unable to navigate 'Jeans categories page'.");
         Reporter.log("Verified that category page is displayed and confirm text 'MEN - JEANS PRODUCTS",true);
 
+        logger.debug("application logs end.......");
+    	logger.info("**** finished TC018_ViewCategoryProducts  *****"); 
         
 	}
 	
@@ -89,5 +114,6 @@ public class TC018_ViewCategoryProducts extends BaseClass {
 		}
 
 	}
+	
 	
 }

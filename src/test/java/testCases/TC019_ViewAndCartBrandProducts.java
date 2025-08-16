@@ -30,14 +30,26 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
 		ProductsPage productPage=new ProductsPage(driver);
 		KookieKidsPage kookieKidsPage=new KookieKidsPage(driver);
 				
-		// Step 1-2: Navigate to home page and verify
-        driver.get(baseURL);
-        Reporter.log("Navigating to baseURL: " + baseURL, true);
-        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully\nStep 1-3: Navigate to home page and verified", true);
-        
+		//logger.debug("");
+		//logger.info("");
+		logger.debug("logging started");
+		logger.info("starting TC019_ViewAndCartBrandProducts");
+			    
+		HomePage home = new HomePage(driver);
+
+		// Step 1-2: Navigate to home page and  Verify that home page is visible successfully
+		logger.info("Step 1: Launching the browser");
+		logger.info("Step 2: Navigating to baseURL: " + baseURL);
+		driver.get(baseURL);
+		        
+		logger.info("Verifying that home page is visible successfully");
+		assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
+		
         //step 3-4: Click on 'Products' button,Verify that Brands are visible on left side bar
+		logger.info("3. Click on 'Products' button");
         homePage.clickProducts();
+        
+        logger.info("4. Verify that Brands are visible on left side bar");
         assertTrue(isCurrentTitleWithSegment("Products"), "Product page is not displayed");
         Reporter.log("product Page is displayed successfully",true);
         waitForVisibilityOfWebelement(productPage.LocatorTxtBrand());
@@ -47,7 +59,10 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
         Reporter.log("Verified that Brands are visible on left side bar",true);
         
         //step 5-6: Click on any brand name, Verify that user is navigated to brand page and brand products are displayed 
+        logger.info("5. Click on any brand name");
         productPage.clickKookieKidsBrand();
+        
+        logger.info("6. Verify that user is navigated to brand page and brand products are displayed");
         assertTrue(isCurrentTitleWithSegment("Kookie Kids"), "Unable to navigate to page:Kookie Kids.");
         assertTrue(kookieKidsPage.isMessageBrandKookieKidsProducts(), "'BrandKookie Kids Products' is not displayed in the page");
 
@@ -55,11 +70,17 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
         Reporter.log(" Verified that user is navigated to brand page and brand products are displayed",true);
         
         //step 7-8: On left side bar, click on any other brand link,Verify that user is navigated to that brand page and can see products
+        logger.info("7. On left side bar, click on any other brand link");
         productPage.clickBabyhugBrand();
+        
+        logger.info("8. Verify that user is navigated to that brand page and can see products");
         assertTrue(isCurrentTitleWithSegment("Babyhug"),"Unable to navigate to page:Babyhug.");
        
-        
+        logger.debug("application logs end.......");
+    	logger.info("**** finished TC019_ViewAndCartBrandProducts  *****"); 
 	}
+	
+	
 	
 	 /** Improved code
      * Reusable method to verify a brand page without checking product titles

@@ -2,6 +2,7 @@ package pageObjects;
 
 import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -94,7 +95,21 @@ public boolean msgSearchedProductsExist() {
 	return msgSearchedProducts.isDisplayed();
 }
 public void clickbtnAddToCartProduct1() {
-	btnAddToCartProduct1.click();
+	 //sol1
+    //product.clickbtnAddToCartProduct1();
+    
+    //sol2
+    //WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+    //wait.until(ExpectedConditions.elementToBeClickable(product.LocatorBtnAddToCartProduct1()));
+    //product.clickbtnAddToCartProduct1();
+    
+    //sol3
+    //((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", product.LocatorBtnAddToCartProduct1());
+    //product.LocatorBtnAddToCartProduct1().click();
+    
+    //final soln
+    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", LocatorBtnAddToCartProduct1());
+    
 }
 
 public WebElement LocatorBtnAddToCartProduct1() {

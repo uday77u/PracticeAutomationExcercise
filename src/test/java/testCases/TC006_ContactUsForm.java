@@ -30,21 +30,34 @@ public class TC006_ContactUsForm extends BaseClass{
 
 	 @Test(description = "Verify Contact us Form")
 	    public void verifyContactUsForm() throws InterruptedException {
-	        HomePage home = new HomePage(driver);
+		 
+		 	HomePage home = new HomePage(driver);
+	        ContactUsFormPage contactus=new ContactUsFormPage(driver);
 	        
-	        // Step 1-3: Navigate to home page and verify
+			//logger.debug("");
+			//logger.info("Step ");
+			logger.debug("logging started");
+		    logger.info("starting TC006_ContactUsForm");
+		    
+	        
+	     // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
+	        logger.info("Step 1: Launching the browser");
+	        logger.info("Step 2: Navigating to baseURL: " + baseURL);
 	        driver.get(baseURL);
-	        Reporter.log("Navigating to baseURL: " + baseURL, false);
+
+	        logger.info("Step 3: Verifying that home page is visible successfully");
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
 	        Reporter.log("Home Page is displayed successfully", false);
 	        
 	        //step 4-5: Click on 'Contact Us' button, Verify 'GET IN TOUCH' is visible
+	        logger.info("Step 4: Click on 'Contact Us' button");
 	        home.clickContactUs();
-	        ContactUsFormPage contactus=new ContactUsFormPage(driver);
-	        assertEquals(contactus.msgGetInTouch(), true,"GET IN TOUCH is not visible");
-	        Reporter.log("Clicked on 'Contact Us' button,\n Verified 'GET IN TOUCH' is visible");
 	        
+	        logger.info("Step 5: Verify 'GET IN TOUCH' is visible");
+	        assertEquals(contactus.msgGetInTouch(), true,"GET IN TOUCH is not visible");
+
 	        //step 6-10: Enter name, email, subject and message,Upload file,Click 'Submit' button,Click OK button
+	        logger.info("Step 6: Enter name, email, subject and message");
 	        contactus.setName(userName);
 	        contactus.setemail(userEmail);
 	        contactus.setSubject("Sub message");
@@ -55,24 +68,34 @@ public class TC006_ContactUsForm extends BaseClass{
 	        js.executeScript("arguments[0].scrollIntoView();", contactus.locatorUploadFile());
 	        Thread.sleep(4000);
 	        
-	        /*Upload file step
+	        logger.info("Step 7: Upload file --Skipped--");
+	        /*Upload file step --skip--
 	        contactus.clickUploadFile();
 	        Thread.sleep(4000);
 	        */
 	        
+	        logger.info("Step 8: Click 'Submit' button");
 	        contactus.clickSubmit();
 	        Thread.sleep(2000);
 	        Reporter.log("Entered name, email, subject and message,Upload file,Click 'Submit' button,Click OK button");
 	        
+	        logger.info("Step 9: Click OK button");
 	        driver.switchTo().alert().accept();
+	        
 	        //10. Verify success message 'Success! Your details have been submitted successfully.' is visible
+	        logger.info("Step 10: Verify success message 'Success! Your details have been submitted successfully.' is visible");
 	        assertEquals(contactus.msgSuccessExist(),true, "Success! message is not displayed");
-	        Reporter.log(" Verify success message 'Success! Your details have been submitted successfully.' is visible");
 
 	       //step 11: Click 'Home' button and verify that landed to home page successfully
+	        logger.info("Step 11: Click 'Home' button and verify that landed to home page successfully");
 	        contactus.clickHome();
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-	        Reporter.log("Clicked 'Home' button and verify that landed to home page successfully");
+	        
+	        
+	        
+	        logger.debug("application logs end.......");
+	    	logger.info("**** finished TC006_ContactUsForm  *****"); 
+	        
 	        
 	        
 }

@@ -1,0 +1,44 @@
+17:51:29.167 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - Step 1: Launching the browser
+17:51:29.174 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - Step 2: Navigating to baseURL: http://automationexercise.com
+17:51:32.451 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - Step 3: Verifying that home page is visible successfully
+17:51:32.468 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - 4. Click 'Cart' button
+17:51:32.773 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - 5. Scroll down to footer
+17:51:35.863 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - 6. Verify text 'SUBSCRIPTION'
+17:51:35.886 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - 7. Enter email address in input and click arrow button
+17:51:36.122 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - 8. Verify success message 'You have been successfully subscribed!' is visible
+17:51:36.180 [main] DEBUG testCases.TC011_VerifySubscriptionInCartPage - application logs end.......
+17:51:36.181 [main] INFO  testCases.TC011_VerifySubscriptionInCartPage - **** finished TC011_VerifySubscriptionInCartPage  *****
+17:51:57.456 [main] DEBUG testCases.TC012_AddProductsInCart - logging started
+17:51:57.456 [main] INFO  testCases.TC012_AddProductsInCart - starting TC012_AddProductsInCart
+17:51:57.456 [main] INFO  testCases.TC012_AddProductsInCart - Step 1: Launching the browser
+17:51:57.457 [main] INFO  testCases.TC012_AddProductsInCart - Step 2: Navigating to baseURL: http://automationexercise.com
+17:51:59.549 [main] INFO  testCases.TC012_AddProductsInCart - Step 3: Verifying that home page is visible successfully
+17:51:59.572 [main] INFO  testCases.TC012_AddProductsInCart - Step 4: Click 'Products' button
+17:52:05.093 [main] INFO  testCases.TC012_AddProductsInCart - Step 5: Hover over first product and click 'Add to cart'
+17:52:55.531 [main] DEBUG testCases.TC013_VerifyProductQuantityInCart - logging started
+17:52:55.531 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - starting TC013_VerifyProductQuantityInCart
+17:52:55.531 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 1: Launching the browser
+17:52:55.531 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 2: Navigating to baseURL: http://automationexercise.com
+17:53:00.717 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 3: Verifying that home page is visible successfully
+17:53:00.723 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 4: Click 'View Product' for any product on home page
+17:53:05.151 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 5: Verify product detail is opened
+17:53:05.159 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 6: Increase quantity to 4
+17:53:05.159 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 7: Click 'Add to cart' button
+17:53:22.812 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 8: Click 'View Cart' button
+17:53:25.621 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - Step 9: Verify that product is displayed in cart page with exact quantity
+17:53:26.155 [main] DEBUG testCases.TC013_VerifyProductQuantityInCart - application logs end.......
+17:53:26.155 [main] INFO  testCases.TC013_VerifyProductQuantityInCart - **** finished TC013_VerifyProductQuantityInCart  *****
+17:54:07.063 [main] DEBUG testCases.TC014_PlaceOrderRegisterWhileCheckout - logging started
+17:54:07.063 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - starting TC014_PlaceOrderRegisterWhileCheckout
+17:54:07.072 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - Step 1: Launching the browser
+17:54:07.072 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - Step 2: Navigating to baseURL: http://automationexercise.com
+17:54:10.201 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - Step 3: Verifying that home page is visible successfully
+17:54:10.214 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - 4. Add products to cart
+17:54:10.360 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - 5. Click 'Cart' button
+17:54:11.114 [main] INFO  testCases.TC014_PlaceOrderRegisterWhileCheckout - 6. Verify that cart page is displayed
+17:54:54.161 [main] DEBUG testCases.TC015_PlaceOrderRegisterBeforeCheckout - logging started
+17:54:54.162 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - starting TC015_PlaceOrderRegisterBeforeCheckout
+17:54:54.162 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - Step 1: Launching the browser
+17:54:54.163 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - Step 2: Navigating to baseURL: http://automationexercise.com
+17:54:57.087 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - Step 3: Verifying that home page is visible successfully
+17:54:57.091 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - 4. Click 'Signup / Login' button
