@@ -15,7 +15,6 @@ import static org.testng.Assert.assertTrue;
 
 import java.time.Duration;
 
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -30,14 +29,13 @@ import pageObjects.HomePage;
 public class TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality extends BaseClass{
 	@Test
 	public void testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality() throws InterruptedException {
+		try {
 		HomePage homePage=new HomePage(driver);
 		
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
 		logger.info("starting TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality");
-			    
-		HomePage home = new HomePage(driver);
 
 		// Step 1-3: Navigate to home page and  Verify that home page is visible successfully
 		logger.info("Step 1: Launching the browser");
@@ -73,6 +71,15 @@ public class TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality exte
         
         Reporter.log("Verified that page is scrolled up and '"+homePage.getMsgFullFledged()+"' text is visible on screen", true);
         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality  *****"); 
 	}

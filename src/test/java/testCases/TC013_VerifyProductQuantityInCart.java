@@ -25,7 +25,7 @@ public class TC013_VerifyProductQuantityInCart extends BaseClass{
 
 	@Test(description = "VerifyProductQuantityInCart")
     public void VerifyProductQuantityInCart() throws InterruptedException {
-		
+		try {
 		HomePage home = new HomePage(driver);
         ProductDetailsPage proDetail=new ProductDetailsPage(driver);
         
@@ -72,7 +72,15 @@ public class TC013_VerifyProductQuantityInCart extends BaseClass{
          logger.info("Step 9: Verify that product is displayed in cart page with exact quantity");
          assertEquals(proDetail.getQtyInCart(),qty,"Mis match in quantity");
 
-         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifyProductQuantityInCart: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifyProductQuantityInCart: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
          logger.debug("application logs end.......");
      	logger.info("**** finished TC013_VerifyProductQuantityInCart  *****"); 
          

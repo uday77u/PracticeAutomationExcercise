@@ -24,6 +24,7 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
 
 	@Test(description = "Verify Subscription In Home Page")
     public void VerifySubscriptionInHomePage() throws InterruptedException {
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -68,7 +69,15 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
         assertTrue(home.getmsgAlertSentMailExist(),"Success message is not visible.");
         assertEquals(home.getMsgAlertSentMail(), "You have been successfully subscribed!","Mis-match in alert Message");
         
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifySubscriptionInHomePage: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifySubscriptionInHomePage: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC010_VerifySubscriptionInHomePage  *****"); 
         

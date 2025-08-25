@@ -58,8 +58,8 @@ public class ReportManagerExtentAndTestNG implements ITestListener{
 	public void onTestStart(ITestResult result) {
 		i++;
 		Reporter.log("Test Case:"+i+".\n"+result.getMethod().getMethodName()+" started executing...",true);
-		test = extent.createTest(result.getMethod().getMethodName());
-		//test = extent.createTest(result.getTestClass().getName());
+		//test = extent.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getTestClass().getName());
 	}
 
 	@Override

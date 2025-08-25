@@ -26,6 +26,7 @@ import pageObjects.ProductsPage;
 public class TC019_ViewAndCartBrandProducts extends BaseClass{
 	@Test
 	public void testViewAndCartBrandProducts() {
+		try {
 		HomePage homePage=new HomePage(driver);
 		ProductsPage productPage=new ProductsPage(driver);
 		KookieKidsPage kookieKidsPage=new KookieKidsPage(driver);
@@ -34,8 +35,7 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
 		//logger.info("");
 		logger.debug("logging started");
 		logger.info("starting TC019_ViewAndCartBrandProducts");
-			    
-		HomePage home = new HomePage(driver);
+
 
 		// Step 1-2: Navigate to home page and  Verify that home page is visible successfully
 		logger.info("Step 1: Launching the browser");
@@ -76,6 +76,15 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
         logger.info("8. Verify that user is navigated to that brand page and can see products");
         assertTrue(isCurrentTitleWithSegment("Babyhug"),"Unable to navigate to page:Babyhug.");
        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testViewAndCartBrandProducts: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testViewAndCartBrandProducts: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC019_ViewAndCartBrandProducts  *****"); 
 	}

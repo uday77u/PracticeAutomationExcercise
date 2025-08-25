@@ -20,7 +20,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -41,7 +40,7 @@ public class TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality ex
         driver.get(baseURL);
 
         logger.info("Step 3: Verifying that home page is visible successfully");
-        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
+        assertEquals(driver.getCurrentUrl(), "https://automationexercise.com/", "Home page URL mismatch");
         
         //step 4-5: Scroll down page to bottom, Verify 'SUBSCRIPTION' is visible
         scrollDownPageToBottom();
@@ -59,10 +58,13 @@ public class TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality ex
 		
 		
 		}
-		catch (Exception e) {
-			logger.error("test failed..");
-			Assert.fail("An exception occurred: " + e.getMessage());
-		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
         
 		logger.debug("application logs end.......");
 		logger.info("**** finished TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality  *****"); 

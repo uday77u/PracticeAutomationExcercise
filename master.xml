@@ -7,71 +7,71 @@
 	
   <test thread-count="5" name="Chrome Test">
 	  <parameter name="Browser" value="chrome"></parameter>
+	  
     <classes>
-<class name="testCases.TC001_RegisterUser"/>
-<class name="testCases.TC001_RegisterUser_improved"/>
-<class name="testCases.TC002_LoginUserWithCorrectEmailAndPassword"/>
-<class name="testCases.TC003_LoginUserIncorrectEmailAndPassword"/>
-<class name="testCases.TC004_LogoutUser"/>
-<class name="testCases.TC005_RegisterUserWithExistingEmail"/>
-<class name="testCases.TC006_ContactUsForm"/>
-<class name="testCases.TC007_VerifyTestCasesPage"/>
-<class name="testCases.TC008_VerifyAllProductsAndProductDetailPage"/>
-<class name="testCases.TC009_Improved"/>
-<class name="testCases.TC009_SearchProduct"/>
-<class name="testCases.TC010_VerifySubscriptionInHomePage"/>
-<class name="testCases.TC011_VerifySubscriptionInCartPage"/>
-<class name="testCases.TC012_AddProductsInCart"/>
-<class name="testCases.TC013_VerifyProductQuantityInCart"/>
-<class name="testCases.TC014_PlaceOrderRegisterWhileCheckout"/>
-<class name="testCases.TC015_PlaceOrderRegisterBeforeCheckout"/>
-<class name="testCases.TC016_PlaceOrderLoginBeforeCheckout"/>
-<class name="testCases.TC017_RemoveProductsFromCart"/>
-<class name="testCases.TC018_ViewCategoryProducts"/>
-<class name="testCases.TC019_ViewAndCartBrandProducts"/>
-<class name="testCases.TC020_SearchProductsAndVerifyCartAfterLogin"/>
-<class name="testCases.TC021_AddReviewOnProduct"/>
-<class name="testCases.TC022_AddToCartFromRecommendedItems"/>
-<class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
-<class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
-<class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
-<class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
-
-    </classes>
+			<class name="testCases.TC001_RegisterUser"/>
+			<class name="testCases.TC001_RegisterUser_improved"/>
+			<class name="testCases.TC002_LoginUserWithCorrectEmailAndPassword"/>
+			<class name="testCases.TC003_LoginUserIncorrectEmailAndPassword"/>
+			<class name="testCases.TC004_LogoutUser"/>
+			<class name="testCases.TC005_RegisterUserWithExistingEmail"/>
+			<class name="testCases.TC006_ContactUsForm"/>
+			<class name="testCases.TC007_VerifyTestCasesPage"/>
+			<class name="testCases.TC008_VerifyAllProductsAndProductDetailPage"/>
+			<class name="testCases.TC009_Improved"/>
+			<class name="testCases.TC009_SearchProduct"/>
+			<class name="testCases.TC010_VerifySubscriptionInHomePage"/>
+			<class name="testCases.TC011_VerifySubscriptionInCartPage"/>
+			<class name="testCases.TC012_AddProductsInCart"/>
+			<class name="testCases.TC013_VerifyProductQuantityInCart"/>
+			<class name="testCases.TC014_PlaceOrderRegisterWhileCheckout"/>
+			<class name="testCases.TC015_PlaceOrderRegisterBeforeCheckout"/>
+			<class name="testCases.TC016_PlaceOrderLoginBeforeCheckout"/>
+			<class name="testCases.TC017_RemoveProductsFromCart"/>
+			<class name="testCases.TC018_ViewCategoryProducts"/>
+			<class name="testCases.TC019_ViewAndCartBrandProducts"/>
+			<class name="testCases.TC020_SearchProductsAndVerifyCartAfterLogin"/>
+			<class name="testCases.TC021_AddReviewOnProduct"/>
+			<class name="testCases.TC022_AddToCartFromRecommendedItems"/>
+			<class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
+			<class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
+			<class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
+			<class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
+    </classes> 
   </test> <!-- Test -->
+  
   
     <test thread-count="5" name="FireFox Test">
 		<parameter name="Browser" value="firefox"></parameter>
     <classes>
       <class name="testCases.TC001_RegisterUser"/>
-<class name="testCases.TC001_RegisterUser_improved"/>
-<class name="testCases.TC002_LoginUserWithCorrectEmailAndPassword"/>
-<class name="testCases.TC003_LoginUserIncorrectEmailAndPassword"/>
-<class name="testCases.TC004_LogoutUser"/>
-<class name="testCases.TC005_RegisterUserWithExistingEmail"/>
-<class name="testCases.TC006_ContactUsForm"/>
-<class name="testCases.TC007_VerifyTestCasesPage"/>
-<class name="testCases.TC008_VerifyAllProductsAndProductDetailPage"/>
-<class name="testCases.TC009_Improved"/>
-<class name="testCases.TC009_SearchProduct"/>
-<class name="testCases.TC010_VerifySubscriptionInHomePage"/>
-<class name="testCases.TC011_VerifySubscriptionInCartPage"/>
-<class name="testCases.TC012_AddProductsInCart"/>
-<class name="testCases.TC013_VerifyProductQuantityInCart"/>
-<class name="testCases.TC014_PlaceOrderRegisterWhileCheckout"/>
-<class name="testCases.TC015_PlaceOrderRegisterBeforeCheckout"/>
-<class name="testCases.TC016_PlaceOrderLoginBeforeCheckout"/>
-<class name="testCases.TC017_RemoveProductsFromCart"/>
-<class name="testCases.TC018_ViewCategoryProducts"/>
-<class name="testCases.TC019_ViewAndCartBrandProducts"/>
-<class name="testCases.TC020_SearchProductsAndVerifyCartAfterLogin"/>
-<class name="testCases.TC021_AddReviewOnProduct"/>
-<class name="testCases.TC022_AddToCartFromRecommendedItems"/>
-<class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
-<class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
-<class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
-<class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
-
+		<class name="testCases.TC001_RegisterUser_improved"/>
+		<class name="testCases.TC002_LoginUserWithCorrectEmailAndPassword"/>
+		<class name="testCases.TC003_LoginUserIncorrectEmailAndPassword"/>
+		<class name="testCases.TC004_LogoutUser"/>
+		<class name="testCases.TC005_RegisterUserWithExistingEmail"/>
+		<class name="testCases.TC006_ContactUsForm"/>
+		<class name="testCases.TC007_VerifyTestCasesPage"/>
+		<class name="testCases.TC008_VerifyAllProductsAndProductDetailPage"/>
+		<class name="testCases.TC009_Improved"/>
+		<class name="testCases.TC009_SearchProduct"/>
+		<class name="testCases.TC010_VerifySubscriptionInHomePage"/>
+		<class name="testCases.TC011_VerifySubscriptionInCartPage"/>
+		<class name="testCases.TC012_AddProductsInCart"/>
+		<class name="testCases.TC013_VerifyProductQuantityInCart"/>
+		<class name="testCases.TC014_PlaceOrderRegisterWhileCheckout"/>
+		<class name="testCases.TC015_PlaceOrderRegisterBeforeCheckout"/>
+		<class name="testCases.TC016_PlaceOrderLoginBeforeCheckout"/>
+		<class name="testCases.TC017_RemoveProductsFromCart"/>
+		<class name="testCases.TC018_ViewCategoryProducts"/>
+		<class name="testCases.TC019_ViewAndCartBrandProducts"/>
+		<class name="testCases.TC020_SearchProductsAndVerifyCartAfterLogin"/>
+		<class name="testCases.TC021_AddReviewOnProduct"/>
+		<class name="testCases.TC022_AddToCartFromRecommendedItems"/>
+		<class name="testCases.TC023_VerifyAddressDetailsInCheckoutPage"/>
+		<class name="testCases.TC024_DownloadInvoiceAfterPurchaseOrder"/>
+		<class name="testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality"/>
+		<class name="testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

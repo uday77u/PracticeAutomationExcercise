@@ -26,7 +26,7 @@ public class TC005_RegisterUserWithExistingEmail extends BaseClass {
 
 	@Test(description = "Verify Register user with Existing Email")
     public void verifyRegisterUserWithExistingEmailFlow() {
-		
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -61,7 +61,15 @@ public class TC005_RegisterUserWithExistingEmail extends BaseClass {
         assertEquals(home.errorMsgEmailAlreadyExist(), true,"Verify error 'Email Address already exist!' is not visible");
         Reporter.log("Verified error 'Email Address already exist!' is visible");
         
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in verifyRegisterUserWithExistingEmailFlow: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in verifyRegisterUserWithExistingEmailFlow: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC005_RegisterUserWithExistingEmail  *****"); 
         

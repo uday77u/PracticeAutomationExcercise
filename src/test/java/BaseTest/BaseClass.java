@@ -20,6 +20,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import org.apache.logging.log4j.Logger;
@@ -39,7 +40,7 @@ public class BaseClass {
 	
 	@BeforeClass
 	@Parameters({"Browser"})
-	public void setup(String Br)//
+	public void setup(@Optional("chrome") String Br)//
 	{
 		logger=LogManager.getLogger(this.getClass());
 		

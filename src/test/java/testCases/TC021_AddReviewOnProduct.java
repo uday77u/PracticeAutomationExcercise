@@ -28,6 +28,7 @@ import pageObjects.ProductsPage;
 public class TC021_AddReviewOnProduct extends BaseClass {
 	@Test
 	public void testAddReviewOnProduct() {
+		try {
 		
 		//logger.debug("");
 		//logger.info("");
@@ -78,6 +79,15 @@ public class TC021_AddReviewOnProduct extends BaseClass {
         assertTrue(driver.getPageSource().contains("Thank you for your review."),"'Thank you for your review.' is not displayed");
         Reporter.log("Verify success message 'Thank you for your review.'\n");
         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testAddReviewOnProduct: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testAddReviewOnProduct: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC021_AddReviewOnProduct  *****"); 
         

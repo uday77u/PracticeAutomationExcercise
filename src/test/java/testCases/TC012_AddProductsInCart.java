@@ -16,14 +16,8 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.time.Duration;
-
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedCondition;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -34,6 +28,7 @@ import pageObjects.ProductsPage;
 public class TC012_AddProductsInCart extends BaseClass {
 	@Test(description = "AddProductsInCart")
     public void VerifyAddProductsInCart() throws InterruptedException {
+		try {
 		
         HomePage home = new HomePage(driver);
         ProductsPage product=new ProductsPage(driver);
@@ -88,7 +83,15 @@ public class TC012_AddProductsInCart extends BaseClass {
         //Step 10. Verify their prices, quantity and total price
          logger.info("Step 10: Verify their prices, quantity and total price--**Pending Skiped step**");
          
-         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifyAddProductsInCart: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifyAddProductsInCart: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
          logger.debug("application logs end.......");
      	logger.info("**** finished TC012_AddProductsInCart  *****"); 
 }

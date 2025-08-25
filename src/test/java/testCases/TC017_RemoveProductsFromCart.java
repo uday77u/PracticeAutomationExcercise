@@ -25,6 +25,7 @@ public class TC017_RemoveProductsFromCart extends BaseClass{
 
 	@Test
 	public void testRemoveProductsFromCart() {
+		try {
 		HomePage Home=new HomePage(driver);
 		CartPage Cart=new CartPage(driver);
 		
@@ -32,8 +33,6 @@ public class TC017_RemoveProductsFromCart extends BaseClass{
 		//logger.info("");
 		logger.debug("logging started");
 	    logger.info("starting TC017_RemoveProductsFromCart");
-	    
-        HomePage home = new HomePage(driver);
 
      // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
@@ -66,7 +65,15 @@ public class TC017_RemoveProductsFromCart extends BaseClass{
 		assertTrue(driver.getPageSource().contains("cart_info_table"), "cart_info_table is Present in the SourcePage");//only one product,removing product leads to removing product
 		Reporter.log("Verified that product is removed from the cart", true);
 		
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testRemoveProductsFromCart: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testRemoveProductsFromCart: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC017_RemoveProductsFromCart  *****"); 
 	}

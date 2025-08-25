@@ -24,10 +24,8 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.awt.event.ActionEvent;
 import java.io.IOException;
 
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -44,7 +42,7 @@ public class TC015_PlaceOrderRegisterBeforeCheckout extends BaseClass {
 
 	@Test(description = "PlaceOrderRegisterBeforeCheckout")
     public void VerifyPlaceOrderRegisterBeforeCheckout() throws InterruptedException, IOException {
-       
+       try {
 		HomePage home = new HomePage(driver);
         SignupPage signup=new SignupPage(driver);
         CartPage cart=new CartPage(driver);
@@ -148,7 +146,14 @@ public class TC015_PlaceOrderRegisterBeforeCheckout extends BaseClass {
 	      gs.DeleteAccount(signup);
 	      Reporter.log("Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button");
         
-        
+   	}
+   	catch (AssertionError ae) {
+           logger.error("❌ Assertion failed in VerifyPlaceOrderRegisterBeforeCheckout: " + ae.getMessage(), ae);
+           throw ae; // rethrow so TestNG marks test as failed
+       } catch (Exception e) {
+           logger.error("❌ Unexpected exception in VerifyPlaceOrderRegisterBeforeCheckout: " + e.getMessage(), e);
+           throw e; // rethrow so TestNG marks test as failed
+       }
 	        
 	      logger.debug("application logs end.......");
 	      logger.info("**** finished TC015_PlaceOrderRegisterBeforeCheckout  *****"); 

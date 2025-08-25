@@ -28,6 +28,7 @@ public class TC009_SearchProduct extends BaseClass{
 	
 	@Test(description = "SearchProduct")
     public void VerifySearchProduct() throws InterruptedException {
+		try {
 		logger.debug("logging started");
 		logger.info("*****TC009_SearchProduct*****");
 		try {
@@ -94,6 +95,15 @@ public class TC009_SearchProduct extends BaseClass{
 	        Assert.fail("Failure occurred: " + t.getMessage());
 	    }
     
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifySearchProduct: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifySearchProduct: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
 	logger.debug("application logs end.......");
 	logger.info("**** finished TC009_SearchProduct  *****"); 
         

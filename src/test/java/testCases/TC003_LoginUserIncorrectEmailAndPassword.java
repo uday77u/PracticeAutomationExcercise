@@ -25,7 +25,7 @@ public class TC003_LoginUserIncorrectEmailAndPassword extends BaseClass {
 
 	@Test(description = "Verify Login User incorrectEmail and Password")
     public void verifyLoginUserIncorrectEmailAndPasswordFlow() throws InterruptedException {
-		
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -63,6 +63,15 @@ public class TC003_LoginUserIncorrectEmailAndPassword extends BaseClass {
         logger.info("Step 8. Verify error 'Your email or password is incorrect!' is visible");
         assertEquals(home.errorMsgExist(),true,"Error Message is not displayed");
         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in verifyLoginUserIncorrectEmailAndPasswordFlow: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in verifyLoginUserIncorrectEmailAndPasswordFlow: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC003_LoginUserIncorrectEmailAndPassword  *****"); 
 

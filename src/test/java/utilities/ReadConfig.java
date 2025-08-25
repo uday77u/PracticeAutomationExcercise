@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ReadConfig {
-	Properties pro;
+	static Properties pro;
 	public ReadConfig()
 	{
 		File srcPath = new File("./src/test/resources/config.properties");
@@ -37,5 +37,8 @@ public class ReadConfig {
 		String pwd = pro.getProperty("password");
 		return pwd;
 	}
+    public static String getProperty(String key) {
+        return pro.getProperty(key);
+    }
 
 }

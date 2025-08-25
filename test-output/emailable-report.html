@@ -1,0 +1,455 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Master-Suite</th></tr>
+<tr><td><a href="#t0">Chrome Test</a></td><td class="num">18</td><td class="num">0</td><td class="num">0</td><td class="num attn">11</td><td class="num">1,508,783</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">FireFox Test</a></td><td class="num">13</td><td class="num">0</td><td class="num">0</td><td class="num attn">16</td><td class="num">1,281,183</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">31</th><th class="num">0</th><th class="num">0</th><th class="num attn">27</th><th class="num">2,789,966</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Master-Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Chrome Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC004_LogoutUser</td><td><a href="#m0">verifyLogoutUserFlow</a></td><td rowspan="1">1756140792534</td><td rowspan="1">11376</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC005_RegisterUserWithExistingEmail</td><td><a href="#m1">verifyRegisterUserWithExistingEmailFlow</a></td><td rowspan="1">1756140820402</td><td rowspan="1">11615</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC008_VerifyAllProductsAndProductDetailPage</td><td><a href="#m2">VerifyAllProductsAndProductDetailPage</a></td><td rowspan="1">1756140974137</td><td rowspan="1">12290</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC009_Improved</td><td><a href="#m3">VerifySearchProduct</a></td><td rowspan="1">1756141005566</td><td rowspan="1">2931</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC009_SearchProduct</td><td><a href="#m4">VerifySearchProduct</a></td><td rowspan="1">1756141027044</td><td rowspan="1">21685</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC012_AddProductsInCart</td><td><a href="#m5">VerifyAddProductsInCart</a></td><td rowspan="1">1756141147214</td><td rowspan="1">55836</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC015_PlaceOrderRegisterBeforeCheckout</td><td><a href="#m6">VerifyPlaceOrderRegisterBeforeCheckout</a></td><td rowspan="1">1756141416552</td><td rowspan="1">43531</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC016_PlaceOrderLoginBeforeCheckout</td><td><a href="#m7">testPlaceOrderLoginBeforeCheckout</a></td><td rowspan="1">1756141474302</td><td rowspan="1">8656</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC018_ViewCategoryProducts</td><td><a href="#m8">testViewCategoryProducts</a></td><td rowspan="1">1756141518979</td><td rowspan="1">16459</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC020_SearchProductsAndVerifyCartAfterLogin</td><td><a href="#m9">testSearchProductsAndVerifyCartAfterLogin</a></td><td rowspan="1">1756141602335</td><td rowspan="1">2485</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC022_AddToCartFromRecommendedItems</td><td><a href="#m10">testAddToCartFromRecommendedItems</a></td><td rowspan="1">1756141642788</td><td rowspan="1">21021</td></tr><tr><th colspan="4">Chrome Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">testCases.TC001_RegisterUser</td><td><a href="#m11">VerifyHomePage</a></td><td rowspan="1">1756140586730</td><td rowspan="1">2453</td></tr><tr class="passedeven"><td><a href="#m12">verifySignupRegistration</a></td><td rowspan="1">1756140589204</td><td rowspan="1">53038</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC001_RegisterUser_improved</td><td><a href="#m13">verifyUserRegistrationFlow</a></td><td rowspan="1">1756140666236</td><td rowspan="1">32241</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC002_LoginUserWithCorrectEmailAndPassword</td><td><a href="#m14">verifyLoginUserWithCorrectEmailAndPasswordFlow</a></td><td rowspan="1">1756140712978</td><td rowspan="1">32099</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC003_LoginUserIncorrectEmailAndPassword</td><td><a href="#m15">verifyLoginUserIncorrectEmailAndPasswordFlow</a></td><td rowspan="1">1756140761983</td><td rowspan="1">14272</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC006_ContactUsForm</td><td><a href="#m16">verifyContactUsForm</a></td><td rowspan="1">1756140853674</td><td rowspan="1">61580</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC007_VerifyTestCasesPage</td><td><a href="#m17">verifyContactUsForm</a></td><td rowspan="1">1756140950821</td><td rowspan="1">8963</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC010_VerifySubscriptionInHomePage</td><td><a href="#m18">VerifySubscriptionInHomePage</a></td><td rowspan="1">1756141071822</td><td rowspan="1">10519</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC011_VerifySubscriptionInCartPage</td><td><a href="#m19">VerifySubscriptionInCartPage</a></td><td rowspan="1">1756141092966</td><td rowspan="1">18533</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC013_VerifyProductQuantityInCart</td><td><a href="#m20">VerifyProductQuantityInCart</a></td><td rowspan="1">1756141227497</td><td rowspan="1">25463</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC014_PlaceOrderRegisterWhileCheckout</td><td><a href="#m21">VerifyPlaceOrderRegisterWhileCheckout</a></td><td rowspan="1">1756141272877</td><td rowspan="1">120501</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC017_RemoveProductsFromCart</td><td><a href="#m22">testRemoveProductsFromCart</a></td><td rowspan="1">1756141495516</td><td rowspan="1">8739</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC019_ViewAndCartBrandProducts</td><td><a href="#m23">testViewAndCartBrandProducts</a></td><td rowspan="1">1756141551713</td><td rowspan="1">33604</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC021_AddReviewOnProduct</td><td><a href="#m24">testAddReviewOnProduct</a></td><td rowspan="1">1756141617391</td><td rowspan="1">13173</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC023_VerifyAddressDetailsInCheckoutPage</td><td><a href="#m25">testVerifyAddressDetailsInCheckoutPage</a></td><td rowspan="1">1756141676107</td><td rowspan="1">105805</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC024_DownloadInvoiceAfterPurchaseOrder</td><td><a href="#m26">testDownloadInvoiceAfterPurchaseOrder</a></td><td rowspan="1">1756141816666</td><td rowspan="1">103280</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</td><td><a href="#m27">testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</a></td><td rowspan="1">1756141958241</td><td rowspan="1">21288</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</td><td><a href="#m28">testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</a></td><td rowspan="1">1756141996514</td><td rowspan="1">12994</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">FireFox Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">testCases.TC001_RegisterUser</td><td><a href="#m29">verifySignupRegistration</a></td><td rowspan="1">1756142089819</td><td rowspan="1">33200</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC004_LogoutUser</td><td><a href="#m30">verifyLogoutUserFlow</a></td><td rowspan="1">1756142356522</td><td rowspan="1">15362</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC005_RegisterUserWithExistingEmail</td><td><a href="#m31">verifyRegisterUserWithExistingEmailFlow</a></td><td rowspan="1">1756142409383</td><td rowspan="1">11823</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC008_VerifyAllProductsAndProductDetailPage</td><td><a href="#m32">VerifyAllProductsAndProductDetailPage</a></td><td rowspan="1">1756142550793</td><td rowspan="1">15443</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC009_Improved</td><td><a href="#m33">VerifySearchProduct</a></td><td rowspan="1">1756142600929</td><td rowspan="1">19584</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC009_SearchProduct</td><td><a href="#m34">VerifySearchProduct</a></td><td rowspan="1">1756142655692</td><td rowspan="1">17198</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC012_AddProductsInCart</td><td><a href="#m35">VerifyAddProductsInCart</a></td><td rowspan="1">1756142779963</td><td rowspan="1">6072</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC014_PlaceOrderRegisterWhileCheckout</td><td><a href="#m36">VerifyPlaceOrderRegisterWhileCheckout</a></td><td rowspan="1">1756142856068</td><td rowspan="1">7078</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC015_PlaceOrderRegisterBeforeCheckout</td><td><a href="#m37">VerifyPlaceOrderRegisterBeforeCheckout</a></td><td rowspan="1">1756142894438</td><td rowspan="1">6284</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC016_PlaceOrderLoginBeforeCheckout</td><td><a href="#m38">testPlaceOrderLoginBeforeCheckout</a></td><td rowspan="1">1756142924507</td><td rowspan="1">5017</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC017_RemoveProductsFromCart</td><td><a href="#m39">testRemoveProductsFromCart</a></td><td rowspan="1">1756142958542</td><td rowspan="1">2951</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC018_ViewCategoryProducts</td><td><a href="#m40">testViewCategoryProducts</a></td><td rowspan="1">1756142984259</td><td rowspan="1">8513</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC020_SearchProductsAndVerifyCartAfterLogin</td><td><a href="#m41">testSearchProductsAndVerifyCartAfterLogin</a></td><td rowspan="1">1756143044528</td><td rowspan="1">8770</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC022_AddToCartFromRecommendedItems</td><td><a href="#m42">testAddToCartFromRecommendedItems</a></td><td rowspan="1">1756143133875</td><td rowspan="1">21462</td></tr><tr class="failedeven"><td rowspan="1">testCases.TC023_VerifyAddressDetailsInCheckoutPage</td><td><a href="#m43">testVerifyAddressDetailsInCheckoutPage</a></td><td rowspan="1">1756143177460</td><td rowspan="1">23215</td></tr><tr class="failedodd"><td rowspan="1">testCases.TC024_DownloadInvoiceAfterPurchaseOrder</td><td><a href="#m44">testDownloadInvoiceAfterPurchaseOrder</a></td><td rowspan="1">1756143219698</td><td rowspan="1">3360</td></tr><tr><th colspan="4">FireFox Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">testCases.TC001_RegisterUser</td><td><a href="#m45">VerifyHomePage</a></td><td rowspan="1">1756142089518</td><td rowspan="1">291</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC001_RegisterUser_improved</td><td><a href="#m46">verifyUserRegistrationFlow</a></td><td rowspan="1">1756142178417</td><td rowspan="1">31174</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC002_LoginUserWithCorrectEmailAndPassword</td><td><a href="#m47">verifyLoginUserWithCorrectEmailAndPasswordFlow</a></td><td rowspan="1">1756142243560</td><td rowspan="1">28414</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC003_LoginUserIncorrectEmailAndPassword</td><td><a href="#m48">verifyLoginUserIncorrectEmailAndPasswordFlow</a></td><td rowspan="1">1756142304518</td><td rowspan="1">17372</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC006_ContactUsForm</td><td><a href="#m49">verifyContactUsForm</a></td><td rowspan="1">1756142455294</td><td rowspan="1">27020</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC007_VerifyTestCasesPage</td><td><a href="#m50">verifyContactUsForm</a></td><td rowspan="1">1756142512387</td><td rowspan="1">8406</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC010_VerifySubscriptionInHomePage</td><td><a href="#m51">VerifySubscriptionInHomePage</a></td><td rowspan="1">1756142707078</td><td rowspan="1">11044</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC011_VerifySubscriptionInCartPage</td><td><a href="#m52">VerifySubscriptionInCartPage</a></td><td rowspan="1">1756142751213</td><td rowspan="1">6804</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC013_VerifyProductQuantityInCart</td><td><a href="#m53">VerifyProductQuantityInCart</a></td><td rowspan="1">1756142805465</td><td rowspan="1">16912</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC019_ViewAndCartBrandProducts</td><td><a href="#m54">testViewAndCartBrandProducts</a></td><td rowspan="1">1756143014179</td><td rowspan="1">13153</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC021_AddReviewOnProduct</td><td><a href="#m55">testAddReviewOnProduct</a></td><td rowspan="1">1756143070659</td><td rowspan="1">8622</td></tr><tr class="passedodd"><td rowspan="1">testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</td><td><a href="#m56">testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</a></td><td rowspan="1">1756143248739</td><td rowspan="1">18647</td></tr><tr class="passedeven"><td rowspan="1">testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</td><td><a href="#m57">testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</a></td><td rowspan="1">1756143287398</td><td rowspan="1">3095</td></tr></tbody>
+</table>
+<h2>Chrome Test</h2><h3 id="m0">testCases.TC004_LogoutUser#verifyLogoutUserFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:6.
+verifyLogoutUserFlow started executing...<br/>'Login to your account' is visible<br/>Entered correct email address and password, Clicked 'login' button<br/>verifyLogoutUserFlow got failed.<br/>--Taken screenshot:verifyLogoutUserFlow</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">testCases.TC005_RegisterUserWithExistingEmail#verifyRegisterUserWithExistingEmailFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:7.
+verifyRegisterUserWithExistingEmailFlow started executing...<br/>'New User Signup!' is visible<br/>Entered name and already registered email address,Clicked 'Signup' button<br/>verifyRegisterUserWithExistingEmailFlow got failed.<br/>--Taken screenshot:verifyRegisterUserWithExistingEmailFlow</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[text()=&apos;Email Address already exist!&apos;]&quot;}
+  (Session info: chrome=139.0.7258.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2744a59492a38d3832657f7f9a1427b9, findElement {using=xpath, value=//p[text()=&apos;Email Address already exist!&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50044}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50044/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2744a59492a38d3832657f7f9a1427b9
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
+	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">testCases.TC008_VerifyAllProductsAndProductDetailPage#VerifyAllProductsAndProductDetailPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:10.
+VerifyAllProductsAndProductDetailPage started executing...<br/>Home Page is displayed successfully<br/>VerifyAllProductsAndProductDetailPage got failed.<br/>--Taken screenshot:VerifyAllProductsAndProductDetailPage</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-product-id=&apos;2&apos;]&quot;}
+  (Session info: chrome=139.0.7258.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71aea728f4beb4357882159880e9e629, findElement {using=xpath, value=//a[@data-product-id=&apos;2&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50306}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50306/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71aea728f4beb4357882159880e9e629
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:97)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">testCases.TC009_Improved#VerifySearchProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:11.
+VerifySearchProduct started executing...<br/>VerifySearchProduct got failed.<br/>--Taken screenshot:VerifySearchProduct</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure occurred: Home page title mismatch expected [Automation Exercise] but found [automationexercise.com | 520: Web server is returning an unknown error]
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">testCases.TC009_SearchProduct#VerifySearchProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:12.
+VerifySearchProduct started executing...<br/>Home Page is displayed successfully<br/>Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully<br/>Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible<br/>VerifySearchProduct got failed.<br/>--Taken screenshot:VerifySearchProduct</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
+	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">testCases.TC012_AddProductsInCart#VerifyAddProductsInCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:15.
+VerifyAddProductsInCart started executing...<br/>Home Page is displayed successfully<br/>VerifyAddProductsInCart got failed.<br/>--Taken screenshot:VerifyAddProductsInCart</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[@data-product-id=&apos;1&apos;]&quot;}
+  (Session info: chrome=139.0.7258.139)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [71a4165e87e8ac51a64d7e0a10c5232b, findElement {using=xpath, value=//a[@data-product-id=&apos;1&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50540}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50540/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 71a4165e87e8ac51a64d7e0a10c5232b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.getText(Unknown Source)
+	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">testCases.TC015_PlaceOrderRegisterBeforeCheckout#VerifyPlaceOrderRegisterBeforeCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:18.
+VerifyPlaceOrderRegisterBeforeCheckout started executing...<br/>Clicked on Signup link<br/>'New User Signup!'- is visible<br/>Entered username<br/>Entered Email<br/>clicked on Signup<br/>Filled account details<br/>Clicked on Create Account<br/> Click 'Signup / Login' button,Fill all details in Signup and create account<br/>Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top<br/>Add products to cart, Click 'Cart' button, Verify that cart page is displayed<br/>VerifyPlaceOrderRegisterBeforeCheckout got failed.<br/>--Taken screenshot:VerifyPlaceOrderRegisterBeforeCheckout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Expected name:tZka is not in Delivery Address:Mr. oIRS RQsr expected [true] but found [false]
+	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:107)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">testCases.TC016_PlaceOrderLoginBeforeCheckout#testPlaceOrderLoginBeforeCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:19.
+testPlaceOrderLoginBeforeCheckout started executing...<br/>testPlaceOrderLoginBeforeCheckout got failed.<br/>--Taken screenshot:testPlaceOrderLoginBeforeCheckout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">testCases.TC018_ViewCategoryProducts#testViewCategoryProducts</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:21.
+testViewCategoryProducts started executing...<br/>draged<br/>testViewCategoryProducts got failed.<br/>--Taken screenshot:testViewCategoryProducts</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: no such frame
+  (Session info: chrome=139.0.7258.139)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ddb9c733d831c2156103e36643a07e9b, switchToFrame {id=8}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 139.0.7258.139, chrome: {chromedriverVersion: 139.0.7258.138 (884e54ea8d4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50917}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50917/devtoo..., se:cdpVersion: 139.0.7258.139, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ddb9c733d831c2156103e36643a07e9b
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1107)
+	at testCases.TC018_ViewCategoryProducts.frameFindingForWebelement(TC018_ViewCategoryProducts.java:113)
+	at testCases.TC018_ViewCategoryProducts.testViewCategoryProducts(TC018_ViewCategoryProducts.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">testCases.TC020_SearchProductsAndVerifyCartAfterLogin#testSearchProductsAndVerifyCartAfterLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:23.
+testSearchProductsAndVerifyCartAfterLogin started executing...<br/>testSearchProductsAndVerifyCartAfterLogin got failed.<br/>--Taken screenshot:testSearchProductsAndVerifyCartAfterLogin</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Home page title mismatch expected [Automation Exercise] but found [automationexercise.com | 520: Web server is returning an unknown error]
+	at testCases.TC020_SearchProductsAndVerifyCartAfterLogin.testSearchProductsAndVerifyCartAfterLogin(TC020_SearchProductsAndVerifyCartAfterLogin.java:53)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">testCases.TC022_AddToCartFromRecommendedItems#testAddToCartFromRecommendedItems</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:25.
+testAddToCartFromRecommendedItems started executing...<br/>Verify 'RECOMMENDED ITEMS' are visible<br/>testAddToCartFromRecommendedItems got failed.<br/>--Taken screenshot:testAddToCartFromRecommendedItems</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Unable to navigate to Cart page expected [true] but found [false]
+	at testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems(TC022_AddToCartFromRecommendedItems.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">testCases.TC001_RegisterUser#VerifyHomePage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:1.
+VerifyHomePage started executing...<br/>Navigating to baseUrl: http://automationexercise.com<br/>HomePage is displayed successfully<br/>VerifyHomePage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">testCases.TC001_RegisterUser#verifySignupRegistration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:2.
+verifySignupRegistration started executing...<br/>Home Page is displayed successfully<br/>'LoggedInAs(userName)<br/>verifySignupRegistration got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">testCases.TC001_RegisterUser_improved#verifyUserRegistrationFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:3.
+verifyUserRegistrationFlow started executing...<br/>Navigating to baseURL: http://automationexercise.com<br/>Home Page is displayed successfully<br/>'New User Signup!' is visible<br/>Signup form submitted<br/>'ENTER ACCOUNT INFORMATION' is visible<br/>Filled account details<br/>Clicked on Create Account<br/>'ACCOUNT CREATED!' is visible<br/>Clicked on Continue<br/>User is logged in as User1<br/>verifyUserRegistrationFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">testCases.TC002_LoginUserWithCorrectEmailAndPassword#verifyLoginUserWithCorrectEmailAndPasswordFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:4.
+verifyLoginUserWithCorrectEmailAndPasswordFlow started executing...<br/>'Login to your account' is visible<br/>verifyLoginUserWithCorrectEmailAndPasswordFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">testCases.TC003_LoginUserIncorrectEmailAndPassword#verifyLoginUserIncorrectEmailAndPasswordFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:5.
+verifyLoginUserIncorrectEmailAndPasswordFlow started executing...<br/>HomePage is displayed<br/>verifyLoginUserIncorrectEmailAndPasswordFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">testCases.TC006_ContactUsForm#verifyContactUsForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:8.
+verifyContactUsForm started executing...<br/>Home Page is displayed successfully<br/>Entered name, email, subject and message,Upload file,Click 'Submit' button,Click OK button<br/>verifyContactUsForm got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">testCases.TC007_VerifyTestCasesPage#verifyContactUsForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:9.
+verifyContactUsForm started executing...<br/>Home Page is displayed successfully<br/>verifyContactUsForm got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">testCases.TC010_VerifySubscriptionInHomePage#VerifySubscriptionInHomePage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:13.
+VerifySubscriptionInHomePage started executing...<br/>Home Page is displayed successfully<br/>Scroll down to footer, Verify text 'SUBSCRIPTION'<br/>VerifySubscriptionInHomePage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">testCases.TC011_VerifySubscriptionInCartPage#VerifySubscriptionInCartPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:14.
+VerifySubscriptionInCartPage started executing...<br/>Home Page is displayed successfully<br/>VerifySubscriptionInCartPage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m20">testCases.TC013_VerifyProductQuantityInCart#VerifyProductQuantityInCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:16.
+VerifyProductQuantityInCart started executing...<br/>Home Page is displayed successfully<br/>VerifyProductQuantityInCart got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m21">testCases.TC014_PlaceOrderRegisterWhileCheckout#VerifyPlaceOrderRegisterWhileCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:17.
+VerifyPlaceOrderRegisterWhileCheckout started executing...<br/>step 4-6:Add products to cart, Click 'Cart' button, Verify that cart page is displayed<br/>step 7-8: Click Proceed To Checkout, Click 'Register / Login' button<br/>Clicked on Signup link<br/>'New User Signup!'- is visible<br/>Entered username<br/>Entered Email<br/>clicked on Signup<br/>step 9: Fill all details in Signup and create account<br/>Filled account details<br/>Clicked on Create Account<br/>step 16-17: Enter payment details: Name on Card, Card Number, CVC, Expiration date, Click 'Pay and Confirm Order' button<br/>click on deleteAccount<br/>click on continue<br/>Deleted the account and the HomePagedisplaced <br/>VerifyPlaceOrderRegisterWhileCheckout got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m22">testCases.TC017_RemoveProductsFromCart#testRemoveProductsFromCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:20.
+testRemoveProductsFromCart started executing...<br/>Verified that cart page is displayed<br/>Verified that product is removed from the cart<br/>testRemoveProductsFromCart got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m23">testCases.TC019_ViewAndCartBrandProducts#testViewAndCartBrandProducts</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:22.
+testViewAndCartBrandProducts started executing...<br/>product Page is displayed successfully<br/>Verified that Brands are visible on left side bar<br/> Verified that user is navigated to brand page and brand products are displayed<br/>testViewAndCartBrandProducts got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m24">testCases.TC021_AddReviewOnProduct#testAddReviewOnProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:24.
+testAddReviewOnProduct started executing...<br/>Verified user is navigated to ALL PRODUCTS page successfully<br/>Verified 'Write Your Review' is visible<br/>Verify success message 'Thank you for your review.'
+<br/>testAddReviewOnProduct got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m25">testCases.TC023_VerifyAddressDetailsInCheckoutPage#testVerifyAddressDetailsInCheckoutPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:26.
+testVerifyAddressDetailsInCheckoutPage started executing...<br/>'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>Entered username: XIMPsz<br/>Entered Email: zhRUDD@gmailwBNG<br/>Filled account details<br/>Clicked on Create Account<br/>'Acount created'- is visible<br/>Successfully 'LoggedInAs: XIMPsz<br/>Add products to cart, Click 'Cart' button, Verified that cart page is displayed<br/>Verified that the delivery address is same address filled at the time registration of account<br/>Verified that the billing address is same address filled at the time registration of account<br/>Deleted the account and the HomePagedisplaced <br/>testVerifyAddressDetailsInCheckoutPage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m26">testCases.TC024_DownloadInvoiceAfterPurchaseOrder#testDownloadInvoiceAfterPurchaseOrder</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:27.
+testDownloadInvoiceAfterPurchaseOrder started executing...<br/>Add products to cart, Click 'Cart' button, Verified that cart page is displayed<br/>'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>Entered username: kfZhRO<br/>Entered Email: FgMzrV@gmailSfMY<br/>Filled account details<br/>Clicked on Create Account<br/>'Acount created'- is visible<br/>Successfully 'LoggedInAs: kfZhRO<br/>Commented and navigated to payment page<br/>Deleted the account and the HomePagedisplaced <br/>testDownloadInvoiceAfterPurchaseOrder got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m27">testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality#testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:28.
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality started executing...<br/>Verified 'SUBSCRIPTION' is visible<br/>Verified that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen<br/>testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m28">testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality#testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:29.
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality started executing...<br/>Verified 'SUBSCRIPTION' is visible<br/>testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>FireFox Test</h2><h3 id="m29">testCases.TC001_RegisterUser#verifySignupRegistration</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:31.
+verifySignupRegistration started executing...<br/>Home Page is displayed successfully<br/>verifySignupRegistration got failed.<br/>--Taken screenshot:verifySignupRegistration</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Mismatch in the title expected [Automation Exercise - Signup] but found [Automation Exercise - Signup / Login]
+	at testCases.TC001_RegisterUser.verifySignupRegistration(TC001_RegisterUser.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m30">testCases.TC004_LogoutUser#verifyLogoutUserFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:35.
+verifyLogoutUserFlow started executing...<br/>'Login to your account' is visible<br/>Entered correct email address and password, Clicked 'login' button<br/>verifyLogoutUserFlow got failed.<br/>--Taken screenshot:verifyLogoutUserFlow</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m31">testCases.TC005_RegisterUserWithExistingEmail#verifyRegisterUserWithExistingEmailFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:36.
+verifyRegisterUserWithExistingEmailFlow started executing...<br/>'New User Signup!' is visible<br/>Entered name and already registered email address,Clicked 'Signup' button<br/>verifyRegisterUserWithExistingEmailFlow got failed.<br/>--Taken screenshot:verifyRegisterUserWithExistingEmailFlow</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Email Address already exist!&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [109e7809-a0c8-4073-a956-3012edb36e82, findElement {using=xpath, value=//p[text()=&apos;Email Address already exist!&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11920, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 109e7809-a0c8-4073-a956-3012edb36e82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
+	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m32">testCases.TC008_VerifyAllProductsAndProductDetailPage#VerifyAllProductsAndProductDetailPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:39.
+VerifyAllProductsAndProductDetailPage started executing...<br/>Home Page is displayed successfully<br/>VerifyAllProductsAndProductDetailPage got failed.<br/>--Taken screenshot:VerifyAllProductsAndProductDetailPage</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-product-id=&apos;2&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [36c8a98e-cefa-4a66-af4a-8b8099ffe175, findElement {using=xpath, value=//a[@data-product-id=&apos;2&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14788, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 36c8a98e-cefa-4a66-af4a-8b8099ffe175
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:97)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m33">testCases.TC009_Improved#VerifySearchProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:40.
+VerifySearchProduct started executing...<br/>VerifySearchProduct got failed.<br/>--Taken screenshot:VerifySearchProduct</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m34">testCases.TC009_SearchProduct#VerifySearchProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:41.
+VerifySearchProduct started executing...<br/>Home Page is displayed successfully<br/>Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully<br/>Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible<br/>VerifySearchProduct got failed.<br/>--Taken screenshot:VerifySearchProduct</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
+	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m35">testCases.TC012_AddProductsInCart#VerifyAddProductsInCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:44.
+VerifyAddProductsInCart started executing...<br/>Home Page is displayed successfully<br/>VerifyAddProductsInCart got failed.<br/>--Taken screenshot:VerifyAddProductsInCart</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 763) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [42ed9ed7-fa41-4ecc-b462-58c61527f148, actions {actions=[org.openqa.selenium.interactions.Sequence@3e6f3ad5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9964, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 42ed9ed7-fa41-4ecc-b462-58c61527f148
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m36">testCases.TC014_PlaceOrderRegisterWhileCheckout#VerifyPlaceOrderRegisterWhileCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:46.
+VerifyPlaceOrderRegisterWhileCheckout started executing...<br/>VerifyPlaceOrderRegisterWhileCheckout got failed.<br/>--Taken screenshot:VerifyPlaceOrderRegisterWhileCheckout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: mis match title expected [Automation Exercise - Checkout] but found []
+	at testCases.TC014_PlaceOrderRegisterWhileCheckout.VerifyPlaceOrderRegisterWhileCheckout(TC014_PlaceOrderRegisterWhileCheckout.java:93)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m37">testCases.TC015_PlaceOrderRegisterBeforeCheckout#VerifyPlaceOrderRegisterBeforeCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:47.
+VerifyPlaceOrderRegisterBeforeCheckout started executing...<br/>Clicked on Signup link<br/>'New User Signup!'- is visible<br/>Entered username<br/>Entered Email<br/>clicked on Signup<br/>VerifyPlaceOrderRegisterBeforeCheckout got failed.<br/>--Taken screenshot:VerifyPlaceOrderRegisterBeforeCheckout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;id_gender1&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [aab2b803-4e02-4d7e-a660-ef2b22887c73, findElement {using=xpath, value=//input[@id=&apos;id_gender1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18204, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: aab2b803-4e02-4d7e-a660-ef2b22887c73
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.SignupPage.clickMr(SignupPage.java:125)
+	at BaseTest.GenericScript.fillAccountDetailsWithRandomData(GenericScript.java:102)
+	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m38">testCases.TC016_PlaceOrderLoginBeforeCheckout#testPlaceOrderLoginBeforeCheckout</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:48.
+testPlaceOrderLoginBeforeCheckout started executing...<br/>testPlaceOrderLoginBeforeCheckout got failed.<br/>--Taken screenshot:testPlaceOrderLoginBeforeCheckout</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m39">testCases.TC017_RemoveProductsFromCart#testRemoveProductsFromCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:49.
+testRemoveProductsFromCart started executing...<br/>testRemoveProductsFromCart got failed.<br/>--Taken screenshot:testRemoveProductsFromCart</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1, actions {actions=[org.openqa.selenium.interactions.Sequence@7b5ffde0]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9428, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart(TC017_RemoveProductsFromCart.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m40">testCases.TC018_ViewCategoryProducts#testViewCategoryProducts</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:50.
+testViewCategoryProducts started executing...<br/>draged<br/>testViewCategoryProducts got failed.<br/>--Taken screenshot:testViewCategoryProducts</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchFrameException: Unable to locate frame with index: 6
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [5fcf479a-f7da-4c68-8841-4c9ee415dad7, switchToFrame {id=6}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4752, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5fcf479a-f7da-4c68-8841-4c9ee415dad7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1107)
+	at testCases.TC018_ViewCategoryProducts.testViewCategoryProducts(TC018_ViewCategoryProducts.java:73)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m41">testCases.TC020_SearchProductsAndVerifyCartAfterLogin#testSearchProductsAndVerifyCartAfterLogin</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:52.
+testSearchProductsAndVerifyCartAfterLogin started executing...<br/>Verified user is navigated to ALL PRODUCTS page successfully<br/>Total displayed products: 14<br/>testSearchProductsAndVerifyCartAfterLogin got failed.<br/>--Taken screenshot:testSearchProductsAndVerifyCartAfterLogin</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: The following asserts failed:
+	Mis match in displayed product:little girls mr. panda shirt and searched product:Top expected [true] but found [false],
+	Mis match in displayed product:colour blocked shirt – sky blue and searched product:Top expected [true] but found [false]
+	at testCases.TC020_SearchProductsAndVerifyCartAfterLogin.testSearchProductsAndVerifyCartAfterLogin(TC020_SearchProductsAndVerifyCartAfterLogin.java:82)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 27 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m42">testCases.TC022_AddToCartFromRecommendedItems#testAddToCartFromRecommendedItems</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:54.
+testAddToCartFromRecommendedItems started executing...<br/>Verify 'RECOMMENDED ITEMS' are visible<br/>testAddToCartFromRecommendedItems got failed.<br/>--Taken screenshot:testAddToCartFromRecommendedItems</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Unable to navigate to Cart page expected [true] but found [false]
+	at testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems(TC022_AddToCartFromRecommendedItems.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m43">testCases.TC023_VerifyAddressDetailsInCheckoutPage#testVerifyAddressDetailsInCheckoutPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:55.
+testVerifyAddressDetailsInCheckoutPage started executing...<br/>'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>Entered username: DaQKaF<br/>Entered Email: NPSpWm@gmailYWQe<br/>Filled account details<br/>Clicked on Create Account<br/>'Acount created'- is visible<br/>Successfully 'LoggedInAs: DaQKaF<br/>testVerifyAddressDetailsInCheckoutPage got failed.<br/>--Taken screenshot:testVerifyAddressDetailsInCheckoutPage</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2de920da-a249-4a5c-8604-a93c534118e8, actions {actions=[org.openqa.selenium.interactions.Sequence@3fe1a2ff]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8232, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2de920da-a249-4a5c-8604-a93c534118e8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage(TC023_VerifyAddressDetailsInCheckoutPage.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m44">testCases.TC024_DownloadInvoiceAfterPurchaseOrder#testDownloadInvoiceAfterPurchaseOrder</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:56.
+testDownloadInvoiceAfterPurchaseOrder started executing...<br/>testDownloadInvoiceAfterPurchaseOrder got failed.<br/>--Taken screenshot:testDownloadInvoiceAfterPurchaseOrder</div></td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [def48db0-1f01-4bf5-be77-1a471e70e786, actions {actions=[org.openqa.selenium.interactions.Sequence@8dc73c7]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6820, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: def48db0-1f01-4bf5-be77-1a471e70e786
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder(TC024_DownloadInvoiceAfterPurchaseOrder.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m45">testCases.TC001_RegisterUser#VerifyHomePage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:30.
+VerifyHomePage started executing...<br/>Navigating to baseUrl: http://automationexercise.com<br/>HomePage is displayed successfully<br/>VerifyHomePage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m46">testCases.TC001_RegisterUser_improved#verifyUserRegistrationFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:32.
+verifyUserRegistrationFlow started executing...<br/>Navigating to baseURL: http://automationexercise.com<br/>Home Page is displayed successfully<br/>'New User Signup!' is visible<br/>Signup form submitted<br/>'ENTER ACCOUNT INFORMATION' is visible<br/>Filled account details<br/>Clicked on Create Account<br/>'ACCOUNT CREATED!' is visible<br/>Clicked on Continue<br/>User is logged in as User1<br/>verifyUserRegistrationFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m47">testCases.TC002_LoginUserWithCorrectEmailAndPassword#verifyLoginUserWithCorrectEmailAndPasswordFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:33.
+verifyLoginUserWithCorrectEmailAndPasswordFlow started executing...<br/>'Login to your account' is visible<br/>verifyLoginUserWithCorrectEmailAndPasswordFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m48">testCases.TC003_LoginUserIncorrectEmailAndPassword#verifyLoginUserIncorrectEmailAndPasswordFlow</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:34.
+verifyLoginUserIncorrectEmailAndPasswordFlow started executing...<br/>HomePage is displayed<br/>verifyLoginUserIncorrectEmailAndPasswordFlow got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m49">testCases.TC006_ContactUsForm#verifyContactUsForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:37.
+verifyContactUsForm started executing...<br/>Home Page is displayed successfully<br/>Entered name, email, subject and message,Upload file,Click 'Submit' button,Click OK button<br/>verifyContactUsForm got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m50">testCases.TC007_VerifyTestCasesPage#verifyContactUsForm</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:38.
+verifyContactUsForm started executing...<br/>Home Page is displayed successfully<br/>verifyContactUsForm got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m51">testCases.TC010_VerifySubscriptionInHomePage#VerifySubscriptionInHomePage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:42.
+VerifySubscriptionInHomePage started executing...<br/>Home Page is displayed successfully<br/>Scroll down to footer, Verify text 'SUBSCRIPTION'<br/>VerifySubscriptionInHomePage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m52">testCases.TC011_VerifySubscriptionInCartPage#VerifySubscriptionInCartPage</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:43.
+VerifySubscriptionInCartPage started executing...<br/>Home Page is displayed successfully<br/>VerifySubscriptionInCartPage got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m53">testCases.TC013_VerifyProductQuantityInCart#VerifyProductQuantityInCart</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:45.
+VerifyProductQuantityInCart started executing...<br/>Home Page is displayed successfully<br/>VerifyProductQuantityInCart got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m54">testCases.TC019_ViewAndCartBrandProducts#testViewAndCartBrandProducts</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:51.
+testViewAndCartBrandProducts started executing...<br/>product Page is displayed successfully<br/>Verified that Brands are visible on left side bar<br/> Verified that user is navigated to brand page and brand products are displayed<br/>testViewAndCartBrandProducts got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m55">testCases.TC021_AddReviewOnProduct#testAddReviewOnProduct</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:53.
+testAddReviewOnProduct started executing...<br/>Verified user is navigated to ALL PRODUCTS page successfully<br/>Verified 'Write Your Review' is visible<br/>Verify success message 'Thank you for your review.'
+<br/>testAddReviewOnProduct got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m56">testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality#testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:57.
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality started executing...<br/>Verified 'SUBSCRIPTION' is visible<br/>Verified that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen<br/>testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m57">testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality#testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">Test Case:58.
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality started executing...<br/>Verified 'SUBSCRIPTION' is visible<br/>testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality got passed.</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>

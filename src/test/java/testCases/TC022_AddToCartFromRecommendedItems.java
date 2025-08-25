@@ -24,15 +24,15 @@ public class TC022_AddToCartFromRecommendedItems extends BaseClass{
 	
 	@Test
 	public void testAddToCartFromRecommendedItems() throws InterruptedException {
+		
+		try {
 		HomePage homePage=new HomePage(driver);
 		
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
 		logger.info("starting TC022_AddToCartFromRecommendedItems");
-		
-		HomePage home = new HomePage(driver);
-		
+
 		// Step 1-2: Navigate to home page and  Verify that home page is visible successfully
 		logger.info("Step 1: Launching the browser");
 		logger.info("Step 2: Navigating to baseURL: " + baseURL);
@@ -64,6 +64,15 @@ public class TC022_AddToCartFromRecommendedItems extends BaseClass{
          logger.info("7. Verify that product is displayed in cart page");
          assertTrue(isCurrentTitleWithSegment("cart"), "Unable to navigate to Cart page");
          
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testAddToCartFromRecommendedItems: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testAddToCartFromRecommendedItems: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
          logger.debug("application logs end.......");
      	logger.info("**** finished TC022_AddToCartFromRecommendedItems  *****"); 
         

@@ -14,14 +14,11 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import java.time.Duration;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Reporter;
 import org.testng.annotations.Test;
 
@@ -32,6 +29,7 @@ public class TC018_ViewCategoryProducts extends BaseClass {
 	
 	@Test
 	public void testViewCategoryProducts() throws InterruptedException {
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -91,6 +89,15 @@ public class TC018_ViewCategoryProducts extends BaseClass {
         assertTrue(homePage.isMessageJeansOnPage(),"\"'Jeans' is not displayed on page,unable to navigate 'Jeans categories page'.");
         Reporter.log("Verified that category page is displayed and confirm text 'MEN - JEANS PRODUCTS",true);
 
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testViewCategoryProducts: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testViewCategoryProducts: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC018_ViewCategoryProducts  *****"); 
         

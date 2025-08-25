@@ -43,7 +43,7 @@ import pageObjects.SignupPage;
 public class TC024_DownloadInvoiceAfterPurchaseOrder extends BaseClass {
 	@Test
 	public void testDownloadInvoiceAfterPurchaseOrder() throws InterruptedException {
-		
+		try {
 		HomePage homePage=new HomePage(driver);
 		SignupPage signupPage=new SignupPage(driver);
 		CartPage cartPage=new CartPage(driver);
@@ -142,6 +142,15 @@ public class TC024_DownloadInvoiceAfterPurchaseOrder extends BaseClass {
         logger.info("step 21-22: Click 'Delete Account' button, Verify 'ACCOUNT DELETED!' and click 'Continue' button");
         gsAcc.DeleteAccount(driver, signupPage);
         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testDownloadInvoiceAfterPurchaseOrder: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testDownloadInvoiceAfterPurchaseOrder: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC024_DownloadInvoiceAfterPurchaseOrder  *****"); 
         

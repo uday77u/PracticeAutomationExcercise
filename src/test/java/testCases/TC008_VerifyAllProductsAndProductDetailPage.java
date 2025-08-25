@@ -27,7 +27,7 @@ public class TC008_VerifyAllProductsAndProductDetailPage extends BaseClass{
 	
 	@Test(description = "Verify all products and product Detail Page")
     public void VerifyAllProductsAndProductDetailPage() throws InterruptedException {
-		
+		try {
         HomePage home = new HomePage(driver);
         ProductsPage product=new ProductsPage(driver);
         
@@ -77,7 +77,15 @@ public class TC008_VerifyAllProductsAndProductDetailPage extends BaseClass{
         */
          assertTrue(isProductDetailsVisible(), "Product details are missing.");
          
-         
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifyAllProductsAndProductDetailPage: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifyAllProductsAndProductDetailPage: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC008_VerifyAllProductsAndProductDetailPage  *****"); 
         

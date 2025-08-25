@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>FireFox Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/11/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>13/16/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Aug 16 17:42:50 IST 2025</td>
+<td>Started on:</td><td>Mon Aug 25 22:43:34 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>957 seconds (957691 ms)</td>
+<tr><td>Total time:</td><td>1281 seconds (1281183 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,27 +76,77 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC009_SearchProduct.VerifySearchProduct()'><b>VerifySearchProduct</b><br>Test class: testCases.TC009_SearchProduct<br>Test method: SearchProduct<br/>
-<a href="#Output-1176748243" onClick='toggleBox("Output-1176748243", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC001_RegisterUser.verifySignupRegistration()'><b>verifySignupRegistration</b><br>Test class: testCases.TC001_RegisterUser<br>Test method: Verify user registration, login and account deletion<br/>
+<a href="#Output-1433857780" onClick='toggleBox("Output-1433857780", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1176748243" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1176748243">
-Test Case:41.
-VerifySearchProduct started executing...<br/>
+<a href="#Output-1433857780" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1433857780">
+Test Case:31.
+verifySignupRegistration started executing...<br/>
 Home Page is displayed successfully<br/>
-Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully<br/>
-Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible<br/>
+verifySignupRegistration got failed.<br/>
+--Taken screenshot:verifySignupRegistration<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Mismatch in the title expected [Automation Exercise - Signup] but found [Automation Exercise - Signup / Login]
+	at testCases.TC001_RegisterUser.verifySignupRegistration(TC001_RegisterUser.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1433857780", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1433857780'><pre>java.lang.AssertionError: Mismatch in the title expected [Automation Exercise - Signup] but found [Automation Exercise - Signup / Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testCases.TC001_RegisterUser.verifySignupRegistration(TC001_RegisterUser.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>33</td>
+<td>testCases.TC001_RegisterUser@376a0d86</td></tr>
+<tr>
+<td title='testCases.TC009_Improved.VerifySearchProduct()'><b>VerifySearchProduct</b><br>Test class: testCases.TC009_Improved<br>Test method: SearchProduct<br/>
+<a href="#Output-1505653082" onClick='toggleBox("Output-1505653082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1505653082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1505653082">
+Test Case:40.
+VerifySearchProduct started executing...<br/>
 VerifySearchProduct got failed.<br/>
 --Taken screenshot:VerifySearchProduct<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
-	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:94)
+<td><div><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1176748243", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1176748243'><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1505653082", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1505653082'><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
 	at org.testng.Assert.fail(Assert.java:111)
-	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:94)
+	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -125,56 +175,45 @@ VerifySearchProduct got failed.<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>19</td>
-<td>testCases.TC009_SearchProduct@2bdd8394</td></tr>
+<td>testCases.TC009_Improved@3e62d773</td></tr>
 <tr>
-<td title='testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout()'><b>VerifyPlaceOrderRegisterBeforeCheckout</b><br>Test class: testCases.TC015_PlaceOrderRegisterBeforeCheckout<br>Test method: PlaceOrderRegisterBeforeCheckout<br/>
-<a href="#Output-625136416" onClick='toggleBox("Output-625136416", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC018_ViewCategoryProducts.testViewCategoryProducts()'><b>testViewCategoryProducts</b><br>Test class: testCases.TC018_ViewCategoryProducts<br/>
+<a href="#Output-1919510349" onClick='toggleBox("Output-1919510349", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-625136416" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-625136416">
-Test Case:47.
-VerifyPlaceOrderRegisterBeforeCheckout started executing...<br/>
-Clicked on Signup link<br/>
-'New User Signup!'- is visible<br/>
-Entered username<br/>
-Entered Email<br/>
-clicked on Signup<br/>
-Filled account details<br/>
-Clicked on Create Account<br/>
- Click 'Signup / Login' button,Fill all details in Signup and create account<br/>
-Verify 'ACCOUNT CREATED!' and click 'Continue' button, Verify ' Logged in as username' at top<br/>
-VerifyPlaceOrderRegisterBeforeCheckout got failed.<br/>
---Taken screenshot:VerifyPlaceOrderRegisterBeforeCheckout<br/>
+<a href="#Output-1919510349" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1919510349">
+Test Case:50.
+testViewCategoryProducts started executing...<br/>
+draged<br/>
+testViewCategoryProducts got failed.<br/>
+--Taken screenshot:testViewCategoryProducts<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+<td><div><pre>org.openqa.selenium.NoSuchFrameException: Unable to locate frame with index: 6
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [224508e0-fa0e-4eb2-9358-6a1bc3362ecd, actions {actions=[org.openqa.selenium.interactions.Sequence@56d3e4a9]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6660, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 224508e0-fa0e-4eb2-9358-6a1bc3362ecd
+Command: [5fcf479a-f7da-4c68-8841-4c9ee415dad7, switchToFrame {id=6}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4752, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5fcf479a-f7da-4c68-8841-4c9ee415dad7
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
-	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:89)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1107)
+	at testCases.TC018_ViewCategoryProducts.testViewCategoryProducts(TC018_ViewCategoryProducts.java:73)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace625136416", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace625136416'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1919510349", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1919510349'><pre>org.openqa.selenium.NoSuchFrameException: Unable to locate frame with index: 6
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [224508e0-fa0e-4eb2-9358-6a1bc3362ecd, actions {actions=[org.openqa.selenium.interactions.Sequence@56d3e4a9]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6660, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 224508e0-fa0e-4eb2-9358-6a1bc3362ecd
+Command: [5fcf479a-f7da-4c68-8841-4c9ee415dad7, switchToFrame {id=6}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 4752, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 5fcf479a-f7da-4c68-8841-4c9ee415dad7
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -184,214 +223,9 @@ Session ID: 224508e0-fa0e-4eb2-9358-6a1bc3362ecd
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
-	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:89)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>29</td>
-<td>testCases.TC015_PlaceOrderRegisterBeforeCheckout@a8ef162</td></tr>
-<tr>
-<td title='testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout()'><b>testPlaceOrderLoginBeforeCheckout</b><br>Test class: testCases.TC016_PlaceOrderLoginBeforeCheckout<br/>
-<a href="#Output-992081445" onClick='toggleBox("Output-992081445", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-992081445" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-992081445">
-Test Case:48.
-testPlaceOrderLoginBeforeCheckout started executing...<br/>
-testPlaceOrderLoginBeforeCheckout got failed.<br/>
---Taken screenshot:testPlaceOrderLoginBeforeCheckout<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
-	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace992081445", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace992081445'><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>13</td>
-<td>testCases.TC016_PlaceOrderLoginBeforeCheckout@2eea88a1</td></tr>
-<tr>
-<td title='testCases.TC001_RegisterUser.verifySignupRegistration()'><b>verifySignupRegistration</b><br>Test class: testCases.TC001_RegisterUser<br>Test method: Verify user registration, login and account deletion<br/>
-<a href="#Output-599141571" onClick='toggleBox("Output-599141571", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-599141571" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-599141571">
-Test Case:31.
-verifySignupRegistration started executing...<br/>
-Home Page is displayed successfully<br/>
-verifySignupRegistration got failed.<br/>
---Taken screenshot:verifySignupRegistration<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Mismatch in the title expected [Automation Exercise - Signup] but found [Automation Exercise - Signup / Login]
-	at testCases.TC001_RegisterUser.verifySignupRegistration(TC001_RegisterUser.java:82)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace599141571", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace599141571'><pre>java.lang.AssertionError: Mismatch in the title expected [Automation Exercise - Signup] but found [Automation Exercise - Signup / Login]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at testCases.TC001_RegisterUser.verifySignupRegistration(TC001_RegisterUser.java:82)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>10</td>
-<td>testCases.TC001_RegisterUser@6bb4dd34</td></tr>
-<tr>
-<td title='testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage()'><b>VerifyAllProductsAndProductDetailPage</b><br>Test class: testCases.TC008_VerifyAllProductsAndProductDetailPage<br>Test method: Verify all products and product Detail Page<br/>
-<a href="#Output-101264705" onClick='toggleBox("Output-101264705", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-101264705" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-101264705">
-Test Case:39.
-VerifyAllProductsAndProductDetailPage started executing...<br/>
-Home Page is displayed successfully<br/>
-VerifyAllProductsAndProductDetailPage got failed.<br/>
---Taken screenshot:VerifyAllProductsAndProductDetailPage<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-product-id=&apos;2&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a9f9a4d0-e612-4378-a0fb-67a5068d659b, findElement {value=//a[@data-product-id=&apos;2&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11644, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a9f9a4d0-e612-4378-a0fb-67a5068d659b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
-	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:89)
-	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace101264705", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace101264705'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-product-id=&apos;2&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [a9f9a4d0-e612-4378-a0fb-67a5068d659b, findElement {value=//a[@data-product-id=&apos;2&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11644, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: a9f9a4d0-e612-4378-a0fb-67a5068d659b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
-	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:89)
-	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:1107)
+	at testCases.TC018_ViewCategoryProducts.testViewCategoryProducts(TC018_ViewCategoryProducts.java:73)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -420,24 +254,681 @@ Session ID: a9f9a4d0-e612-4378-a0fb-67a5068d659b
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>8</td>
-<td>testCases.TC008_VerifyAllProductsAndProductDetailPage@74287ea3</td></tr>
+<td>testCases.TC018_ViewCategoryProducts@1f760b47</td></tr>
+<tr>
+<td title='testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart()'><b>testRemoveProductsFromCart</b><br>Test class: testCases.TC017_RemoveProductsFromCart<br/>
+<a href="#Output-1426749677" onClick='toggleBox("Output-1426749677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1426749677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1426749677">
+Test Case:49.
+testRemoveProductsFromCart started executing...<br/>
+testRemoveProductsFromCart got failed.<br/>
+--Taken screenshot:testRemoveProductsFromCart<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1, actions {actions=[org.openqa.selenium.interactions.Sequence@7b5ffde0]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9428, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart(TC017_RemoveProductsFromCart.java:47)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1426749677", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1426749677'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1, actions {actions=[org.openqa.selenium.interactions.Sequence@7b5ffde0]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9428, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 6b77a68e-19c9-4b6e-bca5-36d6a2f78dc1
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart(TC017_RemoveProductsFromCart.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>2</td>
+<td>testCases.TC017_RemoveProductsFromCart@21d03963</td></tr>
+<tr>
+<td title='testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout()'><b>VerifyPlaceOrderRegisterBeforeCheckout</b><br>Test class: testCases.TC015_PlaceOrderRegisterBeforeCheckout<br>Test method: PlaceOrderRegisterBeforeCheckout<br/>
+<a href="#Output-252470054" onClick='toggleBox("Output-252470054", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-252470054" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-252470054">
+Test Case:47.
+VerifyPlaceOrderRegisterBeforeCheckout started executing...<br/>
+Clicked on Signup link<br/>
+'New User Signup!'- is visible<br/>
+Entered username<br/>
+Entered Email<br/>
+clicked on Signup<br/>
+VerifyPlaceOrderRegisterBeforeCheckout got failed.<br/>
+--Taken screenshot:VerifyPlaceOrderRegisterBeforeCheckout<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;id_gender1&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [aab2b803-4e02-4d7e-a660-ef2b22887c73, findElement {using=xpath, value=//input[@id=&apos;id_gender1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18204, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: aab2b803-4e02-4d7e-a660-ef2b22887c73
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.SignupPage.clickMr(SignupPage.java:125)
+	at BaseTest.GenericScript.fillAccountDetailsWithRandomData(GenericScript.java:102)
+	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:72)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace252470054", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace252470054'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[@id=&apos;id_gender1&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [aab2b803-4e02-4d7e-a660-ef2b22887c73, findElement {using=xpath, value=//input[@id=&apos;id_gender1&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18204, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: aab2b803-4e02-4d7e-a660-ef2b22887c73
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.click(Unknown Source)
+	at pageObjects.SignupPage.clickMr(SignupPage.java:125)
+	at BaseTest.GenericScript.fillAccountDetailsWithRandomData(GenericScript.java:102)
+	at testCases.TC015_PlaceOrderRegisterBeforeCheckout.VerifyPlaceOrderRegisterBeforeCheckout(TC015_PlaceOrderRegisterBeforeCheckout.java:72)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>6</td>
+<td>testCases.TC015_PlaceOrderRegisterBeforeCheckout@47c81abf</td></tr>
+<tr>
+<td title='testCases.TC009_SearchProduct.VerifySearchProduct()'><b>VerifySearchProduct</b><br>Test class: testCases.TC009_SearchProduct<br>Test method: SearchProduct<br/>
+<a href="#Output-1923206317" onClick='toggleBox("Output-1923206317", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1923206317" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1923206317">
+Test Case:41.
+VerifySearchProduct started executing...<br/>
+Home Page is displayed successfully<br/>
+Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully<br/>
+Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible<br/>
+VerifySearchProduct got failed.<br/>
+--Taken screenshot:VerifySearchProduct<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
+	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1923206317", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1923206317'><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white	searchedkey: shirt expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at testCases.TC009_SearchProduct.VerifySearchProduct(TC009_SearchProduct.java:95)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>17</td>
+<td>testCases.TC009_SearchProduct@4ef74c30</td></tr>
+<tr>
+<td title='testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage()'><b>testVerifyAddressDetailsInCheckoutPage</b><br>Test class: testCases.TC023_VerifyAddressDetailsInCheckoutPage<br/>
+<a href="#Output-687215483" onClick='toggleBox("Output-687215483", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-687215483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-687215483">
+Test Case:55.
+testVerifyAddressDetailsInCheckoutPage started executing...<br/>
+'New User Signup!'- is visible,(Signup Page is opened Successfully)<br/>
+Entered username: DaQKaF<br/>
+Entered Email: NPSpWm@gmailYWQe<br/>
+Filled account details<br/>
+Clicked on Create Account<br/>
+'Acount created'- is visible<br/>
+Successfully 'LoggedInAs: DaQKaF<br/>
+testVerifyAddressDetailsInCheckoutPage got failed.<br/>
+--Taken screenshot:testVerifyAddressDetailsInCheckoutPage<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2de920da-a249-4a5c-8604-a93c534118e8, actions {actions=[org.openqa.selenium.interactions.Sequence@3fe1a2ff]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8232, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2de920da-a249-4a5c-8604-a93c534118e8
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage(TC023_VerifyAddressDetailsInCheckoutPage.java:66)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace687215483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace687215483'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2de920da-a249-4a5c-8604-a93c534118e8, actions {actions=[org.openqa.selenium.interactions.Sequence@3fe1a2ff]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8232, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2de920da-a249-4a5c-8604-a93c534118e8
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
+	at testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage(TC023_VerifyAddressDetailsInCheckoutPage.java:66)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>testCases.TC023_VerifyAddressDetailsInCheckoutPage@4c5ae43b</td></tr>
+<tr>
+<td title='testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage()'><b>VerifyAllProductsAndProductDetailPage</b><br>Test class: testCases.TC008_VerifyAllProductsAndProductDetailPage<br>Test method: Verify all products and product Detail Page<br/>
+<a href="#Output-1728183283" onClick='toggleBox("Output-1728183283", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1728183283" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1728183283">
+Test Case:39.
+VerifyAllProductsAndProductDetailPage started executing...<br/>
+Home Page is displayed successfully<br/>
+VerifyAllProductsAndProductDetailPage got failed.<br/>
+--Taken screenshot:VerifyAllProductsAndProductDetailPage<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-product-id=&apos;2&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [36c8a98e-cefa-4a66-af4a-8b8099ffe175, findElement {using=xpath, value=//a[@data-product-id=&apos;2&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14788, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 36c8a98e-cefa-4a66-af4a-8b8099ffe175
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:97)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1728183283", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1728183283'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //a[@data-product-id=&apos;2&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [36c8a98e-cefa-4a66-af4a-8b8099ffe175, findElement {using=xpath, value=//a[@data-product-id=&apos;2&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14788, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 36c8a98e-cefa-4a66-af4a-8b8099ffe175
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.ProductsPage.FirstProductNameExist(ProductsPage.java:63)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.isProductDetailsVisible(TC008_VerifyAllProductsAndProductDetailPage.java:97)
+	at testCases.TC008_VerifyAllProductsAndProductDetailPage.VerifyAllProductsAndProductDetailPage(TC008_VerifyAllProductsAndProductDetailPage.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>15</td>
+<td>testCases.TC008_VerifyAllProductsAndProductDetailPage@4c2bb6e0</td></tr>
+<tr>
+<td title='testCases.TC012_AddProductsInCart.VerifyAddProductsInCart()'><b>VerifyAddProductsInCart</b><br>Test class: testCases.TC012_AddProductsInCart<br>Test method: AddProductsInCart<br/>
+<a href="#Output-391527298" onClick='toggleBox("Output-391527298", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-391527298" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-391527298">
+Test Case:44.
+VerifyAddProductsInCart started executing...<br/>
+Home Page is displayed successfully<br/>
+VerifyAddProductsInCart got failed.<br/>
+--Taken screenshot:VerifyAddProductsInCart<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 763) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [42ed9ed7-fa41-4ecc-b462-58c61527f148, actions {actions=[org.openqa.selenium.interactions.Sequence@3e6f3ad5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9964, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 42ed9ed7-fa41-4ecc-b462-58c61527f148
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391527298", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391527298'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 763) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [42ed9ed7-fa41-4ecc-b462-58c61527f148, actions {actions=[org.openqa.selenium.interactions.Sequence@3e6f3ad5]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 9964, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 42ed9ed7-fa41-4ecc-b462-58c61527f148
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:57)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>6</td>
+<td>testCases.TC012_AddProductsInCart@4bff7da0</td></tr>
+<tr>
+<td title='testCases.TC004_LogoutUser.verifyLogoutUserFlow()'><b>verifyLogoutUserFlow</b><br>Test class: testCases.TC004_LogoutUser<br>Test method: Verify Logout user<br/>
+<a href="#Output-373844659" onClick='toggleBox("Output-373844659", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-373844659" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-373844659">
+Test Case:35.
+verifyLogoutUserFlow started executing...<br/>
+'Login to your account' is visible<br/>
+Entered correct email address and password, Clicked 'login' button<br/>
+verifyLogoutUserFlow got failed.<br/>
+--Taken screenshot:verifyLogoutUserFlow<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace373844659", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace373844659'><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:656)
+	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>15</td>
+<td>testCases.TC004_LogoutUser@34129c78</td></tr>
+<tr>
+<td title='testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow()'><b>verifyRegisterUserWithExistingEmailFlow</b><br>Test class: testCases.TC005_RegisterUserWithExistingEmail<br>Test method: Verify Register user with Existing Email<br/>
+<a href="#Output-18845028" onClick='toggleBox("Output-18845028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-18845028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-18845028">
+Test Case:36.
+verifyRegisterUserWithExistingEmailFlow started executing...<br/>
+'New User Signup!' is visible<br/>
+Entered name and already registered email address,Clicked 'Signup' button<br/>
+verifyRegisterUserWithExistingEmailFlow got failed.<br/>
+--Taken screenshot:verifyRegisterUserWithExistingEmailFlow<br/>
+</div>
+</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Email Address already exist!&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [109e7809-a0c8-4073-a956-3012edb36e82, findElement {using=xpath, value=//p[text()=&apos;Email Address already exist!&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11920, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 109e7809-a0c8-4073-a956-3012edb36e82
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
+	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace18845028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace18845028'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Email Address already exist!&apos;]
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [109e7809-a0c8-4073-a956-3012edb36e82, findElement {using=xpath, value=//p[text()=&apos;Email Address already exist!&apos;]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11920, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 109e7809-a0c8-4073-a956-3012edb36e82
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.isDisplayed(Unknown Source)
+	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
+	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>11</td>
+<td>testCases.TC005_RegisterUserWithExistingEmail@7d61eb55</td></tr>
 <tr>
 <td title='testCases.TC014_PlaceOrderRegisterWhileCheckout.VerifyPlaceOrderRegisterWhileCheckout()'><b>VerifyPlaceOrderRegisterWhileCheckout</b><br>Test class: testCases.TC014_PlaceOrderRegisterWhileCheckout<br>Test method: PlaceOrderRegisterWhileCheckoute<br/>
-<a href="#Output-305394713" onClick='toggleBox("Output-305394713", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-248741672" onClick='toggleBox("Output-248741672", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-305394713" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-305394713">
+<a href="#Output-248741672" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-248741672">
 Test Case:46.
 VerifyPlaceOrderRegisterWhileCheckout started executing...<br/>
 VerifyPlaceOrderRegisterWhileCheckout got failed.<br/>
 --Taken screenshot:VerifyPlaceOrderRegisterWhileCheckout<br/>
 </div>
 </td>
-<td><div><pre>java.lang.AssertionError: mis match title expected [Automation Exercise - Checkout] but found [Automation Exercise]
+<td><div><pre>java.lang.AssertionError: mis match title expected [Automation Exercise - Checkout] but found []
 	at testCases.TC014_PlaceOrderRegisterWhileCheckout.VerifyPlaceOrderRegisterWhileCheckout(TC014_PlaceOrderRegisterWhileCheckout.java:93)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace305394713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace305394713'><pre>java.lang.AssertionError: mis match title expected [Automation Exercise - Checkout] but found [Automation Exercise]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace248741672", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace248741672'><pre>java.lang.AssertionError: mis match title expected [Automation Exercise - Checkout] but found []
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
@@ -472,74 +963,33 @@ VerifyPlaceOrderRegisterWhileCheckout got failed.<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>7</td>
-<td>testCases.TC014_PlaceOrderRegisterWhileCheckout@41488b16</td></tr>
+<td>testCases.TC014_PlaceOrderRegisterWhileCheckout@536dbea0</td></tr>
 <tr>
-<td title='testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow()'><b>verifyRegisterUserWithExistingEmailFlow</b><br>Test class: testCases.TC005_RegisterUserWithExistingEmail<br>Test method: Verify Register user with Existing Email<br/>
-<a href="#Output-664706197" onClick='toggleBox("Output-664706197", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC020_SearchProductsAndVerifyCartAfterLogin.testSearchProductsAndVerifyCartAfterLogin()'><b>testSearchProductsAndVerifyCartAfterLogin</b><br>Test class: testCases.TC020_SearchProductsAndVerifyCartAfterLogin<br/>
+<a href="#Output-1506865483" onClick='toggleBox("Output-1506865483", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-664706197" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-664706197">
-Test Case:36.
-verifyRegisterUserWithExistingEmailFlow started executing...<br/>
-'New User Signup!' is visible<br/>
-Entered name and already registered email address,Clicked 'Signup' button<br/>
-verifyRegisterUserWithExistingEmailFlow got failed.<br/>
---Taken screenshot:verifyRegisterUserWithExistingEmailFlow<br/>
+<a href="#Output-1506865483" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1506865483">
+Test Case:52.
+testSearchProductsAndVerifyCartAfterLogin started executing...<br/>
+Verified user is navigated to ALL PRODUCTS page successfully<br/>
+Total displayed products: 14<br/>
+testSearchProductsAndVerifyCartAfterLogin got failed.<br/>
+--Taken screenshot:testSearchProductsAndVerifyCartAfterLogin<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Email Address already exist!&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9fcc05aa-555d-4521-bf46-21d6bb97dc9b, findElement {value=//p[text()=&apos;Email Address already exist!&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11840, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 9fcc05aa-555d-4521-bf46-21d6bb97dc9b
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
-	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Mis match in displayed product:little girls mr. panda shirt and searched product:Top expected [true] but found [false],
+	Mis match in displayed product:colour blocked shirt – sky blue and searched product:Top expected [true] but found [false]
+	at testCases.TC020_SearchProductsAndVerifyCartAfterLogin.testSearchProductsAndVerifyCartAfterLogin(TC020_SearchProductsAndVerifyCartAfterLogin.java:82)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace664706197", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace664706197'><pre>org.openqa.selenium.NoSuchElementException: Unable to locate element: //p[text()=&apos;Email Address already exist!&apos;]
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [9fcc05aa-555d-4521-bf46-21d6bb97dc9b, findElement {value=//p[text()=&apos;Email Address already exist!&apos;], using=xpath}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 11840, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 9fcc05aa-555d-4521-bf46-21d6bb97dc9b
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at jdk.proxy2/jdk.proxy2.$Proxy30.isDisplayed(Unknown Source)
-	at pageObjects.HomePage.errorMsgEmailAlreadyExist(HomePage.java:186)
-	at testCases.TC005_RegisterUserWithExistingEmail.verifyRegisterUserWithExistingEmailFlow(TC005_RegisterUserWithExistingEmail.java:61)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1506865483", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1506865483'><pre>java.lang.AssertionError: The following asserts failed:
+	Mis match in displayed product:little girls mr. panda shirt and searched product:Top expected [true] but found [false],
+	Mis match in displayed product:colour blocked shirt – sky blue and searched product:Top expected [true] but found [false]
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at testCases.TC020_SearchProductsAndVerifyCartAfterLogin.testSearchProductsAndVerifyCartAfterLogin(TC020_SearchProductsAndVerifyCartAfterLogin.java:82)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -567,48 +1017,99 @@ Session ID: 9fcc05aa-555d-4521-bf46-21d6bb97dc9b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>5</td>
-<td>testCases.TC005_RegisterUserWithExistingEmail@3214ee6</td></tr>
+<td>8</td>
+<td>testCases.TC020_SearchProductsAndVerifyCartAfterLogin@3cce57c7</td></tr>
 <tr>
-<td title='testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart()'><b>testRemoveProductsFromCart</b><br>Test class: testCases.TC017_RemoveProductsFromCart<br/>
-<a href="#Output-1704660000" onClick='toggleBox("Output-1704660000", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems()'><b>testAddToCartFromRecommendedItems</b><br>Test class: testCases.TC022_AddToCartFromRecommendedItems<br/>
+<a href="#Output-2026945259" onClick='toggleBox("Output-2026945259", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1704660000" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1704660000">
-Test Case:49.
-testRemoveProductsFromCart started executing...<br/>
-testRemoveProductsFromCart got failed.<br/>
---Taken screenshot:testRemoveProductsFromCart<br/>
+<a href="#Output-2026945259" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2026945259">
+Test Case:54.
+testAddToCartFromRecommendedItems started executing...<br/>
+Verify 'RECOMMENDED ITEMS' are visible<br/>
+testAddToCartFromRecommendedItems got failed.<br/>
+--Taken screenshot:testAddToCartFromRecommendedItems<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: Unable to navigate to Cart page expected [true] but found [false]
+	at testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems(TC022_AddToCartFromRecommendedItems.java:65)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2026945259", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2026945259'><pre>java.lang.AssertionError: Unable to navigate to Cart page expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems(TC022_AddToCartFromRecommendedItems.java:65)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>21</td>
+<td>testCases.TC022_AddToCartFromRecommendedItems@33f676f6</td></tr>
+<tr>
+<td title='testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder()'><b>testDownloadInvoiceAfterPurchaseOrder</b><br>Test class: testCases.TC024_DownloadInvoiceAfterPurchaseOrder<br/>
+<a href="#Output-377962715" onClick='toggleBox("Output-377962715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-377962715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-377962715">
+Test Case:56.
+testDownloadInvoiceAfterPurchaseOrder started executing...<br/>
+testDownloadInvoiceAfterPurchaseOrder got failed.<br/>
+--Taken screenshot:testDownloadInvoiceAfterPurchaseOrder<br/>
 </div>
 </td>
 <td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [402d6779-a4d7-4cd2-8b97-2129dcf2300c, actions {actions=[org.openqa.selenium.interactions.Sequence@447f9a09]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8480, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 402d6779-a4d7-4cd2-8b97-2129dcf2300c
+Command: [def48db0-1f01-4bf5-be77-1a471e70e786, actions {actions=[org.openqa.selenium.interactions.Sequence@8dc73c7]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6820, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: def48db0-1f01-4bf5-be77-1a471e70e786
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
 	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
 	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
 	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
-	at testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart(TC017_RemoveProductsFromCart.java:48)
+	at testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder(TC024_DownloadInvoiceAfterPurchaseOrder.java:71)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1704660000", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1704660000'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace377962715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace377962715'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [402d6779-a4d7-4cd2-8b97-2129dcf2300c, actions {actions=[org.openqa.selenium.interactions.Sequence@447f9a09]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8480, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 402d6779-a4d7-4cd2-8b97-2129dcf2300c
+Command: [def48db0-1f01-4bf5-be77-1a471e70e786, actions {actions=[org.openqa.selenium.interactions.Sequence@8dc73c7]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6820, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: def48db0-1f01-4bf5-be77-1a471e70e786
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
@@ -618,12 +1119,12 @@ Session ID: 402d6779-a4d7-4cd2-8b97-2129dcf2300c
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
 	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
 	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
 	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119)
-	at testCases.TC017_RemoveProductsFromCart.testRemoveProductsFromCart(TC017_RemoveProductsFromCart.java:48)
+	at testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder(TC024_DownloadInvoiceAfterPurchaseOrder.java:71)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -652,163 +1153,30 @@ Session ID: 402d6779-a4d7-4cd2-8b97-2129dcf2300c
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>3</td>
-<td>testCases.TC017_RemoveProductsFromCart@7ac296f6</td></tr>
+<td>testCases.TC024_DownloadInvoiceAfterPurchaseOrder@264f218</td></tr>
 <tr>
-<td title='testCases.TC009_Improved.VerifySearchProduct()'><b>VerifySearchProduct</b><br>Test class: testCases.TC009_Improved<br>Test method: SearchProduct<br/>
-<a href="#Output-530286325" onClick='toggleBox("Output-530286325", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout()'><b>testPlaceOrderLoginBeforeCheckout</b><br>Test class: testCases.TC016_PlaceOrderLoginBeforeCheckout<br/>
+<a href="#Output-420925675" onClick='toggleBox("Output-420925675", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-530286325" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-530286325">
-Test Case:40.
-VerifySearchProduct started executing...<br/>
-VerifySearchProduct got failed.<br/>
---Taken screenshot:VerifySearchProduct<br/>
-</div>
-</td>
-<td><div><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
-	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace530286325", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace530286325'><pre>java.lang.AssertionError: Failure occurred: Product not matching search: sleeves printed top - white | expected to contain: shirt expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at testCases.TC009_Improved.VerifySearchProduct(TC009_Improved.java:67)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>16</td>
-<td>testCases.TC009_Improved@7d7758be</td></tr>
-<tr>
-<td title='testCases.TC012_AddProductsInCart.VerifyAddProductsInCart()'><b>VerifyAddProductsInCart</b><br>Test class: testCases.TC012_AddProductsInCart<br>Test method: AddProductsInCart<br/>
-<a href="#Output-1201057368" onClick='toggleBox("Output-1201057368", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1201057368" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1201057368">
-Test Case:44.
-VerifyAddProductsInCart started executing...<br/>
-Home Page is displayed successfully<br/>
-VerifyAddProductsInCart got failed.<br/>
---Taken screenshot:VerifyAddProductsInCart<br/>
-</div>
-</td>
-<td><div><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 763) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [162398a1-5e0a-4391-a3a8-45cb7fec6496, actions {actions=[org.openqa.selenium.interactions.Sequence@61c8139a]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6812, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 162398a1-5e0a-4391-a3a8-45cb7fec6496
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1201057368", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1201057368'><pre>org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 763) is out of bounds of viewport dimensions (1366, 643)
-Build info: version: &apos;4.34.0&apos;, revision: &apos;707dcb4246*&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [162398a1-5e0a-4391-a3a8-45cb7fec6496, actions {actions=[org.openqa.selenium.interactions.Sequence@61c8139a]}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 141.0.3, moz:accessibilityChecks: false, moz:buildID: 20250806102122, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6812, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 162398a1-5e0a-4391-a3a8-45cb7fec6496
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:544)
-	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:630)
-	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
-	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
-	at testCases.TC012_AddProductsInCart.VerifyAddProductsInCart(TC012_AddProductsInCart.java:62)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>8</td>
-<td>testCases.TC012_AddProductsInCart@2f01783a</td></tr>
-<tr>
-<td title='testCases.TC004_LogoutUser.verifyLogoutUserFlow()'><b>verifyLogoutUserFlow</b><br>Test class: testCases.TC004_LogoutUser<br>Test method: Verify Logout user<br/>
-<a href="#Output-2060126788" onClick='toggleBox("Output-2060126788", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2060126788" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2060126788">
-Test Case:35.
-verifyLogoutUserFlow started executing...<br/>
-'Login to your account' is visible<br/>
-Entered correct email address and password, Clicked 'login' button<br/>
-verifyLogoutUserFlow got failed.<br/>
---Taken screenshot:verifyLogoutUserFlow<br/>
+<a href="#Output-420925675" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-420925675">
+Test Case:48.
+testPlaceOrderLoginBeforeCheckout started executing...<br/>
+testPlaceOrderLoginBeforeCheckout got failed.<br/>
+--Taken screenshot:testPlaceOrderLoginBeforeCheckout<br/>
 </div>
 </td>
 <td><div><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
-	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2060126788", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2060126788'><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace420925675", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace420925675'><pre>java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
 	at org.testng.Assert.fail(Assert.java:111)
 	at org.testng.Assert.failNotEquals(Assert.java:1590)
 	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 	at org.testng.Assert.assertEquals(Assert.java:132)
 	at org.testng.Assert.assertEquals(Assert.java:656)
-	at testCases.TC004_LogoutUser.verifyLogoutUserFlow(TC004_LogoutUser.java:63)
+	at testCases.TC016_PlaceOrderLoginBeforeCheckout.testPlaceOrderLoginBeforeCheckout(TC016_PlaceOrderLoginBeforeCheckout.java:75)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -837,7 +1205,7 @@ verifyLogoutUserFlow got failed.<br/>
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>5</td>
-<td>testCases.TC004_LogoutUser@61710c6</td></tr>
+<td>testCases.TC016_PlaceOrderLoginBeforeCheckout@776a6d9b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -848,11 +1216,91 @@ verifyLogoutUserFlow got failed.<br/>
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC001_RegisterUser.VerifyHomePage()'><b>VerifyHomePage</b><br>Test class: testCases.TC001_RegisterUser<br/>
-<a href="#Output-142936165" onClick='toggleBox("Output-142936165", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality.testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality()'><b>testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality</b><br>Test class: testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality<br/>
+<a href="#Output-377050201" onClick='toggleBox("Output-377050201", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-142936165" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-142936165">
+<a href="#Output-377050201" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-377050201">
+Test Case:57.
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality started executing...<br/>
+Verified 'SUBSCRIPTION' is visible<br/>
+Verified that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen<br/>
+testVerifyScrollUpUsingArrowButtonAndScrollDownFunctionality got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality@3576ddc2</td></tr>
+<tr>
+<td title='testCases.TC006_ContactUsForm.verifyContactUsForm()'><b>verifyContactUsForm</b><br>Test class: testCases.TC006_ContactUsForm<br>Test method: Verify Contact us Form<br/>
+<a href="#Output-1571167970" onClick='toggleBox("Output-1571167970", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1571167970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1571167970">
+Test Case:37.
+verifyContactUsForm started executing...<br/>
+Home Page is displayed successfully<br/>
+Entered name, email, subject and message,Upload file,Click 'Submit' button,Click OK button<br/>
+verifyContactUsForm got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>27</td>
+<td>testCases.TC006_ContactUsForm@222a59e6</td></tr>
+<tr>
+<td title='testCases.TC003_LoginUserIncorrectEmailAndPassword.verifyLoginUserIncorrectEmailAndPasswordFlow()'><b>verifyLoginUserIncorrectEmailAndPasswordFlow</b><br>Test class: testCases.TC003_LoginUserIncorrectEmailAndPassword<br>Test method: Verify Login User incorrectEmail and Password<br/>
+<a href="#Output-582544112" onClick='toggleBox("Output-582544112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-582544112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-582544112">
+Test Case:34.
+verifyLoginUserIncorrectEmailAndPasswordFlow started executing...<br/>
+HomePage is displayed<br/>
+verifyLoginUserIncorrectEmailAndPasswordFlow got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>17</td>
+<td>testCases.TC003_LoginUserIncorrectEmailAndPassword@53f3bdbd</td></tr>
+<tr>
+<td title='testCases.TC013_VerifyProductQuantityInCart.VerifyProductQuantityInCart()'><b>VerifyProductQuantityInCart</b><br>Test class: testCases.TC013_VerifyProductQuantityInCart<br>Test method: VerifyProductQuantityInCart<br/>
+<a href="#Output-1652592269" onClick='toggleBox("Output-1652592269", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1652592269" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1652592269">
+Test Case:45.
+VerifyProductQuantityInCart started executing...<br/>
+Home Page is displayed successfully<br/>
+VerifyProductQuantityInCart got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>testCases.TC013_VerifyProductQuantityInCart@3f1d2e23</td></tr>
+<tr>
+<td title='testCases.TC021_AddReviewOnProduct.testAddReviewOnProduct()'><b>testAddReviewOnProduct</b><br>Test class: testCases.TC021_AddReviewOnProduct<br/>
+<a href="#Output-1390023511" onClick='toggleBox("Output-1390023511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1390023511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1390023511">
+Test Case:53.
+testAddReviewOnProduct started executing...<br/>
+Verified user is navigated to ALL PRODUCTS page successfully<br/>
+Verified 'Write Your Review' is visible<br/>
+Verify success message 'Thank you for your review.'
+<br/>
+testAddReviewOnProduct got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>testCases.TC021_AddReviewOnProduct@1cf56a1c</td></tr>
+<tr>
+<td title='testCases.TC001_RegisterUser.VerifyHomePage()'><b>VerifyHomePage</b><br>Test class: testCases.TC001_RegisterUser<br/>
+<a href="#Output-765621171" onClick='toggleBox("Output-765621171", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-765621171" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-765621171">
 Test Case:30.
 VerifyHomePage started executing...<br/>
 Navigating to baseUrl: http://automationexercise.com<br/>
@@ -862,74 +1310,13 @@ VerifyHomePage got passed.<br/>
 </td>
 <td></td>
 <td>0</td>
-<td>testCases.TC001_RegisterUser@6bb4dd34</td></tr>
-<tr>
-<td title='testCases.TC003_LoginUserIncorrectEmailAndPassword.verifyLoginUserIncorrectEmailAndPasswordFlow()'><b>verifyLoginUserIncorrectEmailAndPasswordFlow</b><br>Test class: testCases.TC003_LoginUserIncorrectEmailAndPassword<br>Test method: Verify Login User incorrectEmail and Password<br/>
-<a href="#Output-694096221" onClick='toggleBox("Output-694096221", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-694096221" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-694096221">
-Test Case:34.
-verifyLoginUserIncorrectEmailAndPasswordFlow started executing...<br/>
-HomePage is displayed<br/>
-verifyLoginUserIncorrectEmailAndPasswordFlow got passed.<br/>
-</div>
-</td>
-<td></td>
-<td>8</td>
-<td>testCases.TC003_LoginUserIncorrectEmailAndPassword@4b8729ff</td></tr>
-<tr>
-<td title='testCases.TC007_VerifyTestCasesPage.verifyContactUsForm()'><b>verifyContactUsForm</b><br>Test class: testCases.TC007_VerifyTestCasesPage<br>Test method: Verify Contact us Form<br/>
-<a href="#Output-1580807387" onClick='toggleBox("Output-1580807387", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1580807387" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1580807387">
-Test Case:38.
-verifyContactUsForm started executing...<br/>
-Home Page is displayed successfully<br/>
-verifyContactUsForm got passed.<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>testCases.TC007_VerifyTestCasesPage@4a07d605</td></tr>
-<tr>
-<td title='testCases.TC002_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPasswordFlow()'><b>verifyLoginUserWithCorrectEmailAndPasswordFlow</b><br>Test class: testCases.TC002_LoginUserWithCorrectEmailAndPassword<br>Test method: Verify Login User with correct Email And Password<br/>
-<a href="#Output-558883463" onClick='toggleBox("Output-558883463", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-558883463" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-558883463">
-Test Case:33.
-verifyLoginUserWithCorrectEmailAndPasswordFlow started executing...<br/>
-'Login to your account' is visible<br/>
-verifyLoginUserWithCorrectEmailAndPasswordFlow got passed.<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>testCases.TC002_LoginUserWithCorrectEmailAndPassword@45efd90f</td></tr>
-<tr>
-<td title='testCases.TC010_VerifySubscriptionInHomePage.VerifySubscriptionInHomePage()'><b>VerifySubscriptionInHomePage</b><br>Test class: testCases.TC010_VerifySubscriptionInHomePage<br>Test method: Verify Subscription In Home Page<br/>
-<a href="#Output-553839482" onClick='toggleBox("Output-553839482", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-553839482" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-553839482">
-Test Case:42.
-VerifySubscriptionInHomePage started executing...<br/>
-Home Page is displayed successfully<br/>
-Scroll down to footer, Verify text 'SUBSCRIPTION'<br/>
-VerifySubscriptionInHomePage got passed.<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>testCases.TC010_VerifySubscriptionInHomePage@5f9edf14</td></tr>
+<td>testCases.TC001_RegisterUser@376a0d86</td></tr>
 <tr>
 <td title='testCases.TC001_RegisterUser_improved.verifyUserRegistrationFlow()'><b>verifyUserRegistrationFlow</b><br>Test class: testCases.TC001_RegisterUser_improved<br>Test method: Verify user registration, login and account deletion<br/>
-<a href="#Output-1133497507" onClick='toggleBox("Output-1133497507", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-94686897" onClick='toggleBox("Output-94686897", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1133497507" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1133497507">
+<a href="#Output-94686897" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-94686897">
 Test Case:32.
 verifyUserRegistrationFlow started executing...<br/>
 Navigating to baseURL: http://automationexercise.com<br/>
@@ -946,54 +1333,101 @@ verifyUserRegistrationFlow got passed.<br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>testCases.TC001_RegisterUser_improved@7d9f158f</td></tr>
+<td>31</td>
+<td>testCases.TC001_RegisterUser_improved@62656be4</td></tr>
 <tr>
-<td title='testCases.TC013_VerifyProductQuantityInCart.VerifyProductQuantityInCart()'><b>VerifyProductQuantityInCart</b><br>Test class: testCases.TC013_VerifyProductQuantityInCart<br>Test method: VerifyProductQuantityInCart<br/>
-<a href="#Output-1926152930" onClick='toggleBox("Output-1926152930", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC002_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPasswordFlow()'><b>verifyLoginUserWithCorrectEmailAndPasswordFlow</b><br>Test class: testCases.TC002_LoginUserWithCorrectEmailAndPassword<br>Test method: Verify Login User with correct Email And Password<br/>
+<a href="#Output-2025060646" onClick='toggleBox("Output-2025060646", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1926152930" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1926152930">
-Test Case:45.
-VerifyProductQuantityInCart started executing...<br/>
-Home Page is displayed successfully<br/>
-VerifyProductQuantityInCart got passed.<br/>
+<a href="#Output-2025060646" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2025060646">
+Test Case:33.
+verifyLoginUserWithCorrectEmailAndPasswordFlow started executing...<br/>
+'Login to your account' is visible<br/>
+verifyLoginUserWithCorrectEmailAndPasswordFlow got passed.<br/>
 </div>
 </td>
 <td></td>
-<td>30</td>
-<td>testCases.TC013_VerifyProductQuantityInCart@68878f6d</td></tr>
+<td>28</td>
+<td>testCases.TC002_LoginUserWithCorrectEmailAndPassword@17d919b6</td></tr>
 <tr>
-<td title='testCases.TC006_ContactUsForm.verifyContactUsForm()'><b>verifyContactUsForm</b><br>Test class: testCases.TC006_ContactUsForm<br>Test method: Verify Contact us Form<br/>
-<a href="#Output-823361357" onClick='toggleBox("Output-823361357", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC007_VerifyTestCasesPage.verifyContactUsForm()'><b>verifyContactUsForm</b><br>Test class: testCases.TC007_VerifyTestCasesPage<br>Test method: Verify Contact us Form<br/>
+<a href="#Output-937775871" onClick='toggleBox("Output-937775871", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-823361357" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-823361357">
-Test Case:37.
+<a href="#Output-937775871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-937775871">
+Test Case:38.
 verifyContactUsForm started executing...<br/>
 Home Page is displayed successfully<br/>
-Entered name, email, subject and message,Upload file,Click 'Submit' button,Click OK button<br/>
 verifyContactUsForm got passed.<br/>
 </div>
 </td>
 <td></td>
-<td>19</td>
-<td>testCases.TC006_ContactUsForm@383dc82c</td></tr>
+<td>8</td>
+<td>testCases.TC007_VerifyTestCasesPage@6c7a164b</td></tr>
 <tr>
-<td title='testCases.TC011_VerifySubscriptionInCartPage._VerifySubscriptionInCartPage()'><b>_VerifySubscriptionInCartPage</b><br>Test class: testCases.TC011_VerifySubscriptionInCartPage<br>Test method: _VerifySubscriptionInCartPage<br/>
-<a href="#Output-961570223" onClick='toggleBox("Output-961570223", this, "Show output", "Hide output");'>Show output</a>
+<td title='testCases.TC011_VerifySubscriptionInCartPage.VerifySubscriptionInCartPage()'><b>VerifySubscriptionInCartPage</b><br>Test class: testCases.TC011_VerifySubscriptionInCartPage<br>Test method: _VerifySubscriptionInCartPage<br/>
+<a href="#Output-2002865788" onClick='toggleBox("Output-2002865788", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-961570223" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-961570223">
+<a href="#Output-2002865788" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2002865788">
 Test Case:43.
-_VerifySubscriptionInCartPage started executing...<br/>
+VerifySubscriptionInCartPage started executing...<br/>
 Home Page is displayed successfully<br/>
-_VerifySubscriptionInCartPage got passed.<br/>
+VerifySubscriptionInCartPage got passed.<br/>
 </div>
 </td>
 <td></td>
-<td>7</td>
-<td>testCases.TC011_VerifySubscriptionInCartPage@68746f22</td></tr>
+<td>6</td>
+<td>testCases.TC011_VerifySubscriptionInCartPage@638ef7ed</td></tr>
+<tr>
+<td title='testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality.testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality()'><b>testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality</b><br>Test class: testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality<br/>
+<a href="#Output-2111059241" onClick='toggleBox("Output-2111059241", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2111059241" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2111059241">
+Test Case:58.
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality started executing...<br/>
+Verified 'SUBSCRIPTION' is visible<br/>
+testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality@35b74c5c</td></tr>
+<tr>
+<td title='testCases.TC019_ViewAndCartBrandProducts.testViewAndCartBrandProducts()'><b>testViewAndCartBrandProducts</b><br>Test class: testCases.TC019_ViewAndCartBrandProducts<br/>
+<a href="#Output-1309380693" onClick='toggleBox("Output-1309380693", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1309380693" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1309380693">
+Test Case:51.
+testViewAndCartBrandProducts started executing...<br/>
+product Page is displayed successfully<br/>
+Verified that Brands are visible on left side bar<br/>
+ Verified that user is navigated to brand page and brand products are displayed<br/>
+testViewAndCartBrandProducts got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>13</td>
+<td>testCases.TC019_ViewAndCartBrandProducts@18ece7f4</td></tr>
+<tr>
+<td title='testCases.TC010_VerifySubscriptionInHomePage.VerifySubscriptionInHomePage()'><b>VerifySubscriptionInHomePage</b><br>Test class: testCases.TC010_VerifySubscriptionInHomePage<br>Test method: Verify Subscription In Home Page<br/>
+<a href="#Output-91480972" onClick='toggleBox("Output-91480972", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-91480972" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-91480972">
+Test Case:42.
+VerifySubscriptionInHomePage started executing...<br/>
+Home Page is displayed successfully<br/>
+Scroll down to footer, Verify text 'SUBSCRIPTION'<br/>
+VerifySubscriptionInHomePage got passed.<br/>
+</div>
+</td>
+<td></td>
+<td>11</td>
+<td>testCases.TC010_VerifySubscriptionInHomePage@7283d3eb</td></tr>
 </table><p>
 </body>
 </html>

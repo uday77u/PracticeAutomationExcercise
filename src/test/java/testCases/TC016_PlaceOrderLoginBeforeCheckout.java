@@ -38,6 +38,7 @@ import pageObjects.PaymentPage;
 public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
 	@Test
 	public void testPlaceOrderLoginBeforeCheckout() throws InterruptedException {
+		try {
 		HomePage Home=new HomePage(driver);
 		LoginPage Login=new LoginPage(driver);
 		CartPage Cart=new CartPage(driver);
@@ -49,8 +50,7 @@ public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
 		//logger.info("");
 		logger.debug("logging started");
 	    logger.info("starting TC016_PlaceOrderLoginBeforeCheckout");
-	    
-        HomePage home = new HomePage(driver);
+
 
      // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
@@ -144,7 +144,15 @@ public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
        Reporter.log("click on 'Continue'button after delete Account,and Account is deleted successfully");
         */
        
-       
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testPlaceOrderLoginBeforeCheckout: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testPlaceOrderLoginBeforeCheckout: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
        logger.debug("application logs end.......");
    	logger.info("**** finished TC016_PlaceOrderLoginBeforeCheckout  *****"); 
 	}

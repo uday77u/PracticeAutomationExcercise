@@ -30,7 +30,7 @@ public class TC006_ContactUsForm extends BaseClass{
 
 	 @Test(description = "Verify Contact us Form")
 	    public void verifyContactUsForm() throws InterruptedException {
-		 
+		 try {
 		 	HomePage home = new HomePage(driver);
 	        ContactUsFormPage contactus=new ContactUsFormPage(driver);
 	        
@@ -91,7 +91,14 @@ public class TC006_ContactUsForm extends BaseClass{
 	        contactus.clickHome();
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
 	        
-	        
+			}
+			catch (AssertionError ae) {
+		        logger.error("❌ Assertion failed in verifyContactUsForm: " + ae.getMessage(), ae);
+		        throw ae; // rethrow so TestNG marks test as failed
+		    } catch (Exception e) {
+		        logger.error("❌ Unexpected exception in verifyContactUsForm: " + e.getMessage(), e);
+		        throw e; // rethrow so TestNG marks test as failed
+		    }
 	        
 	        logger.debug("application logs end.......");
 	    	logger.info("**** finished TC006_ContactUsForm  *****"); 

@@ -49,6 +49,7 @@ public void VerifyHomePage()
 @Test(description = "Verify user registration, login and account deletion")
 public void verifySignupRegistration() throws InterruptedException {
 	
+	try {
 	//logger.debug("");
 	//logger.info("");
 	logger.debug("logging started");
@@ -102,6 +103,14 @@ public void verifySignupRegistration() throws InterruptedException {
     logger.info("Steps 17-18:Clicking 'Delete Account' button, Verify that 'ACCOUNT DELETED!' is visible and click 'Continue' button ");
     DeleteAccount(signup);
     
+	}
+	catch (AssertionError ae) {
+        logger.error("❌ Assertion failed in verifySignupRegistration: " + ae.getMessage(), ae);
+        throw ae; // rethrow so TestNG marks test as failed
+    } catch (Exception e) {
+        logger.error("❌ Unexpected exception in verifySignupRegistration: " + e.getMessage(), e);
+        throw e; // rethrow so TestNG marks test as failed
+    }
     logger.debug("application logs end.......");
 	logger.info("**** finished TC009_SearchProduct  *****"); 
 }

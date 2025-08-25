@@ -20,7 +20,8 @@ public class TC007_VerifyTestCasesPage extends BaseClass{
 
 	 @Test(description = "Verify Contact us Form")
 	    public void verifyContactUsForm() throws InterruptedException {
-			//logger.debug("");
+			try {
+		 	//logger.debug("");
 			//logger.info("");
 			logger.debug("logging started");
 		    logger.info("starting TC007_VerifyTestCasesPage");
@@ -41,7 +42,15 @@ public class TC007_VerifyTestCasesPage extends BaseClass{
 	        home.clickTestCases();
 	        logger.info("Step 5: Verify user is navigated to test cases page successfully");
 	        
-	        
+			}
+			catch (AssertionError ae) {
+		        logger.error("❌ Assertion failed in verifyContactUsForm: " + ae.getMessage(), ae);
+		        throw ae; // rethrow so TestNG marks test as failed
+		    } catch (Exception e) {
+		        logger.error("❌ Unexpected exception in verifyContactUsForm: " + e.getMessage(), e);
+		        throw e; // rethrow so TestNG marks test as failed
+		    }
+			
 	        logger.debug("application logs end.......");
 	    	logger.info("**** finished TC007_VerifyTestCasesPage  *****"); 
 	

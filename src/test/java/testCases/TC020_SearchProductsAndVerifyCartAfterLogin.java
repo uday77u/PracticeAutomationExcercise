@@ -26,7 +26,6 @@ import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import BaseTest.BaseClass;
-import pageObjects.CartPage;
 import pageObjects.HomePage;
 import pageObjects.ProductsPage;
 
@@ -34,17 +33,16 @@ public class TC020_SearchProductsAndVerifyCartAfterLogin extends BaseClass {
 
 	@Test
 	public void testSearchProductsAndVerifyCartAfterLogin() {
-		
+		try {
 		HomePage homePage=new HomePage(driver);
 		ProductsPage productsPage=new ProductsPage(driver);
-		CartPage cartPage=new CartPage(driver);
+
 		
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
 	    logger.info("starting TC020_SearchProductsAndVerifyCartAfterLogin");
-	    
-        HomePage home = new HomePage(driver);
+
 
      // Step 1-2: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
@@ -94,7 +92,15 @@ public class TC020_SearchProductsAndVerifyCartAfterLogin extends BaseClass {
        //step 11-12: Again, go to Cart page,Verify that those products are visible in cart after login as well
         //logger.info("11. Again, go to Cart page");
        // logger.info("12. Verify that those products are visible in cart after login as well");
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in testSearchProductsAndVerifyCartAfterLogin: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in testSearchProductsAndVerifyCartAfterLogin: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC020_SearchProductsAndVerifyCartAfterLogin  *****"); 
         

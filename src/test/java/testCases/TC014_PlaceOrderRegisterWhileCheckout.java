@@ -29,7 +29,6 @@ import static org.testng.Assert.assertTrue;
 
 import java.io.IOException;
 import java.time.Duration;
-import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -51,6 +50,7 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
 
 	@Test(description = "PlaceOrderRegisterWhileCheckoute")
     public void VerifyPlaceOrderRegisterWhileCheckout() throws InterruptedException, IOException {
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -170,20 +170,22 @@ public class TC014_PlaceOrderRegisterWhileCheckout extends BaseClass{
 	        logger.info("19. Click 'Delete Account' button");
 	        logger.info("20. Verify 'ACCOUNT DELETED!' and click 'Continue' button");
 	        gs.DeleteAccount(signup);
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in VerifyPlaceOrderRegisterWhileCheckout: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in VerifyPlaceOrderRegisterWhileCheckout: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
        
        logger.debug("application logs end.......");
    	logger.info("**** finished TC014_PlaceOrderRegisterWhileCheckout  *****"); 
        
 }
 
-	 // Utility method to wait for an element to be visible
-    private WebElement waitForVisibility(By locator) {
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
-    }
-    
-    public void dragToWebElement(WebDriver driver, WebElement locator) {
+	 public void dragToWebElement(WebDriver driver, WebElement locator) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("arguments[0].scrollIntoView();", locator);
 	}

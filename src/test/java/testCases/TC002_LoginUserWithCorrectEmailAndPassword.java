@@ -30,7 +30,7 @@ public class TC002_LoginUserWithCorrectEmailAndPassword extends BaseClass {
 
 	@Test(description = "Verify Login User with correct Email And Password")
     public void verifyLoginUserWithCorrectEmailAndPasswordFlow() throws InterruptedException {
-		
+		try {
 		//logger.debug("");
 		//logger.info("");
 		logger.debug("logging started");
@@ -85,7 +85,15 @@ public class TC002_LoginUserWithCorrectEmailAndPassword extends BaseClass {
         logger.info("clocking on the 'Continue' button after Delete");
         Login.clickContinueBtnAfterDelete();
 
-        
+		}
+		catch (AssertionError ae) {
+	        logger.error("❌ Assertion failed in verifyLoginUserWithCorrectEmailAndPasswordFlow: " + ae.getMessage(), ae);
+	        throw ae; // rethrow so TestNG marks test as failed
+	    } catch (Exception e) {
+	        logger.error("❌ Unexpected exception in verifyLoginUserWithCorrectEmailAndPasswordFlow: " + e.getMessage(), e);
+	        throw e; // rethrow so TestNG marks test as failed
+	    }
+		
         logger.debug("application logs end.......");
     	logger.info("**** finished TC002_LoginUserWithCorrectEmailAndPassword  *****"); 
          

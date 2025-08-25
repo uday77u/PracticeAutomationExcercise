@@ -1,41 +1,187 @@
-17:55:01.008 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - 5. Fill all details in Signup and create account
-17:55:17.730 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-17:55:17.731 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-17:55:17.768 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-17:55:17.769 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-17:55:17.831 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /xl/_rels/workbook.xml.rels
-17:55:17.833 [main] DEBUG org.apache.poi.openxml4j.opc.PackageRelationshipCollection - Parsing relationship: /_rels/.rels
-17:55:17.917 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save content types part
-17:55:17.921 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save package relationships
-17:55:17.924 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/app.xml'
-17:55:17.925 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'docProps/core.xml'
-17:55:17.928 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/sharedStrings.xml'
-17:55:17.932 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/styles.xml'
-17:55:17.932 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/theme/theme1.xml'
-17:55:17.933 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/workbook.xml'
-17:55:17.937 [main] DEBUG org.apache.poi.openxml4j.opc.ZipPackage - Save part 'xl/worksheets/sheet1.xml'
-17:55:17.940 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - 6. Verify 'ACCOUNT CREATED!' and click 'Continue' button
-17:55:22.512 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - 7. Verify ' Logged in as username' at top
-17:55:22.656 [main] INFO  testCases.TC015_PlaceOrderRegisterBeforeCheckout - 8. Add products to cart
-17:56:47.547 [main] DEBUG testCases.TC016_PlaceOrderLoginBeforeCheckout - logging started
-17:56:47.547 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - starting TC016_PlaceOrderLoginBeforeCheckout
-17:56:47.549 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - Step 1: Launching the browser
-17:56:47.549 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - Step 2: Navigating to baseURL: http://automationexercise.com
-17:56:50.442 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - Step 3: Verifying that home page is visible successfully
-17:56:50.470 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - 4. Click 'Signup / Login' button
-17:56:53.473 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - 5. Fill email, password and click 'Login' button
-17:57:00.595 [main] INFO  testCases.TC016_PlaceOrderLoginBeforeCheckout - 6. Verify 'Logged in as username' at top
-17:57:41.205 [main] DEBUG testCases.TC017_RemoveProductsFromCart - logging started
-17:57:41.205 [main] INFO  testCases.TC017_RemoveProductsFromCart - starting TC017_RemoveProductsFromCart
-17:57:41.209 [main] INFO  testCases.TC017_RemoveProductsFromCart - Step 1: Launching the browser
-17:57:41.209 [main] INFO  testCases.TC017_RemoveProductsFromCart - Step 2: Navigating to baseURL: http://automationexercise.com
-17:57:44.313 [main] INFO  testCases.TC017_RemoveProductsFromCart - Step 3: Verifying that home page is visible successfully
-17:57:44.341 [main] INFO  testCases.TC017_RemoveProductsFromCart - 4. Add products to cart
-17:58:19.209 [main] DEBUG testCases.TC018_ViewCategoryProducts - logging started
-17:58:19.210 [main] INFO  testCases.TC018_ViewCategoryProducts - starting TC018_ViewCategoryProducts
-17:58:19.213 [main] INFO  testCases.TC018_ViewCategoryProducts - Step 1: Launching the browser
-17:58:19.213 [main] INFO  testCases.TC018_ViewCategoryProducts - Step 2: Navigating to baseURL: http://automationexercise.com
-17:58:21.589 [main] INFO  testCases.TC018_ViewCategoryProducts - Verifying that home page is visible successfully
-17:58:21.601 [main] INFO  testCases.TC018_ViewCategoryProducts - 3. Verify that categories are visible on left side bar
-17:58:25.073 [main] INFO  testCases.TC018_ViewCategoryProducts - 4. Click on 'Women' category
-17:58:29.122 [main] INFO  testCases.TC018_ViewCategoryProducts - 5. Click on any category link under 'Women' category, for example: Dress
+23:01:19.274 [main] DEBUG testCases.TC021_AddReviewOnProduct - application logs end.......
+23:01:19.281 [main] INFO  testCases.TC021_AddReviewOnProduct - **** finished TC021_AddReviewOnProduct  *****
+23:02:13.881 [main] DEBUG testCases.TC022_AddToCartFromRecommendedItems - logging started
+23:02:13.881 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - starting TC022_AddToCartFromRecommendedItems
+23:02:13.881 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - Step 1: Launching the browser
+23:02:13.881 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - Step 2: Navigating to baseURL: http://automationexercise.com
+23:02:18.172 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - Verifying that home page is visible successfully
+23:02:18.178 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - 3. Scroll to bottom of page
+23:02:21.252 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - 4. Verify 'RECOMMENDED ITEMS' are visible
+23:02:24.312 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - 5. Click on 'Add To Cart' on Recommended product
+23:02:27.358 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - 6. Click on 'View Cart' button
+23:02:35.328 [main] INFO  testCases.TC022_AddToCartFromRecommendedItems - 7. Verify that product is displayed in cart page
+23:02:35.335 [main] ERROR testCases.TC022_AddToCartFromRecommendedItems - ❌ Assertion failed in testAddToCartFromRecommendedItems: Unable to navigate to Cart page expected [true] but found [false]
+java.lang.AssertionError: Unable to navigate to Cart page expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.failNotEquals(Assert.java:1590) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.Assert.assertTrue(Assert.java:57) ~[testng-7.11.0.jar:7.11.0]
+	at testCases.TC022_AddToCartFromRecommendedItems.testAddToCartFromRecommendedItems(TC022_AddToCartFromRecommendedItems.java:65) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+23:02:57.464 [main] DEBUG testCases.TC023_VerifyAddressDetailsInCheckoutPage - logging started
+23:02:57.464 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - starting TC023_VerifyAddressDetailsInCheckoutPage
+23:02:57.464 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - Step 1: Launching the browser
+23:02:57.464 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - Step 2: Navigating to baseURL: http://automationexercise.com
+23:02:59.636 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - Step 3:Verifying that home page is visible successfully
+23:02:59.646 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - step 4-7: Click 'Signup / Login' button, Fill all details in Signup and create account
+23:03:20.628 [main] INFO  testCases.TC023_VerifyAddressDetailsInCheckoutPage - 8. Add products to cart
+23:03:20.673 [main] ERROR testCases.TC023_VerifyAddressDetailsInCheckoutPage - ❌ Unexpected exception in testVerifyAddressDetailsInCheckoutPage: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2de920da-a249-4a5c-8604-a93c534118e8, actions {actions=[org.openqa.selenium.interactions.Sequence@3fe1a2ff]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8232, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2de920da-a249-4a5c-8604-a93c534118e8
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [2de920da-a249-4a5c-8604-a93c534118e8, actions {actions=[org.openqa.selenium.interactions.Sequence@3fe1a2ff]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 8232, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 2de920da-a249-4a5c-8604-a93c534118e8
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616) ~[selenium-api-4.35.0.jar:?]
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581) ~[selenium-api-4.35.0.jar:?]
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119) ~[test-classes/:?]
+	at testCases.TC023_VerifyAddressDetailsInCheckoutPage.testVerifyAddressDetailsInCheckoutPage(TC023_VerifyAddressDetailsInCheckoutPage.java:66) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+23:03:39.706 [main] DEBUG testCases.TC024_DownloadInvoiceAfterPurchaseOrder - logging started
+23:03:39.706 [main] INFO  testCases.TC024_DownloadInvoiceAfterPurchaseOrder - starting TC024_DownloadInvoiceAfterPurchaseOrder
+23:03:39.707 [main] INFO  testCases.TC024_DownloadInvoiceAfterPurchaseOrder - Step 1: Launching the browser
+23:03:39.707 [main] INFO  testCases.TC024_DownloadInvoiceAfterPurchaseOrder - Step 2: Navigating to baseURL: http://automationexercise.com
+23:03:42.989 [main] INFO  testCases.TC024_DownloadInvoiceAfterPurchaseOrder - Step 3: Verifying that home page is visible successfully
+23:03:42.994 [main] INFO  testCases.TC024_DownloadInvoiceAfterPurchaseOrder - 4. Add products to cart
+23:03:43.057 [main] ERROR testCases.TC024_DownloadInvoiceAfterPurchaseOrder - ❌ Unexpected exception in testDownloadInvoiceAfterPurchaseOrder: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [def48db0-1f01-4bf5-be77-1a471e70e786, actions {actions=[org.openqa.selenium.interactions.Sequence@8dc73c7]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6820, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: def48db0-1f01-4bf5-be77-1a471e70e786
+org.openqa.selenium.interactions.MoveTargetOutOfBoundsException: Move target (540, 658) is out of bounds of viewport dimensions (1366, 643)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Command: [def48db0-1f01-4bf5-be77-1a471e70e786, actions {actions=[org.openqa.selenium.interactions.Sequence@8dc73c7]}]
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 142.0, moz:accessibilityChecks: false, moz:buildID: 20250811145442, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 6820, moz:profile: C:\Users\UDAYAS~1\AppData\L..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: def48db0-1f01-4bf5-be77-1a471e70e786
+	at jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?]
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643) ~[selenium-remote-driver-4.35.0.jar:?]
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616) ~[selenium-api-4.35.0.jar:?]
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581) ~[selenium-api-4.35.0.jar:?]
+	at pageObjects.HomePage.mouseHoverToProduct1(HomePage.java:119) ~[test-classes/:?]
+	at testCases.TC024_DownloadInvoiceAfterPurchaseOrder.testDownloadInvoiceAfterPurchaseOrder(TC024_DownloadInvoiceAfterPurchaseOrder.java:71) ~[test-classes/:?]
+	at jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154) ~[testng-7.11.0.jar:7.11.0]
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134) ~[testng-7.11.0.jar:7.11.0]
+	at java.util.ArrayList.forEach(ArrayList.java:1596) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:741) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestRunner.run(TestRunner.java:616) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52) [testng-7.11.0.jar:7.11.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1112) [testng-7.11.0.jar:7.11.0]
+	at org.testng.TestNG.run(TestNG.java:1079) [testng-7.11.0.jar:7.11.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91) [testng-remote.jar:?]
+23:04:08.746 [main] DEBUG testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - logging started
+23:04:08.746 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - starting TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality
+23:04:08.746 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - Step 1: Launching the browser
+23:04:08.746 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - Step 2: Navigating to baseURL: http://automationexercise.com
+23:04:11.566 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - Step 3: Verifying that home page is visible successfully
+23:04:11.574 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - 4. Scroll down page to bottom
+23:04:14.785 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - 5. Verify 'SUBSCRIPTION' is visible
+23:04:17.859 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - 6. Click on arrow at bottom right side to move upward
+23:04:18.093 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - 7. Verify that page is scrolled up and 'Full-Fledged practice website for Automation Engineers' text is visible on screen
+23:04:27.386 [main] DEBUG testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - application logs end.......
+23:04:27.386 [main] INFO  testCases.TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality - **** finished TC025_VerifyScrollUpUsingArrowButtonAndScrollDownFunctionality  *****
+23:04:47.400 [main] DEBUG testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - application logs are started
+23:04:47.400 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - **** starting TC026 testVerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality***** 
+23:04:47.402 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - Step 1: Launching the browser
+23:04:47.402 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - Step 2: Navigating to baseURL: http://automationexercise.com
+23:04:49.865 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - Step 3: Verifying that home page is visible successfully
+23:04:49.997 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - Scroll down page to bottom
+23:04:50.138 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - 
+23:04:50.493 [main] DEBUG testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - application logs end.......
+23:04:50.493 [main] INFO  testCases.TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality - **** finished TC026_VerifyScrollUpWithoutArrowButtonAndScrollDownFunctionality  *****
