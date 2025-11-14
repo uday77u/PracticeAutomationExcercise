@@ -42,7 +42,7 @@ public class TC008_VerifyAllProductsAndProductDetailPage extends BaseClass{
         driver.get(baseURL);
         
         logger.info("Step 3: Verifying that home page is visible successfully");
-        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
+        assertEquals(driver.getCurrentUrl(), "https://automationexercise.com/", "Home page URL is mis-match");
         Reporter.log("Home Page is displayed successfully", false);
         
        //step 4-5: Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully

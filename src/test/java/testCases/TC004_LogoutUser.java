@@ -48,7 +48,7 @@ public class TC004_LogoutUser extends BaseClass {
         logger.info("Step 5. Verify 'Login to your account' is visible");
         assertTrue(home.msgLoginToAccountVisible(), "'Login to your account' is not visible");
         Reporter.log("'Login to your account' is visible", false);
-
+        
         
         // Step 6-7: Enter correct email address and password, Click 'login' button,
         logger.info("Step 6. Enter correct email address and password ");
@@ -58,11 +58,11 @@ public class TC004_LogoutUser extends BaseClass {
         logger.info("Step 7. Click 'login' button");
         home.clickLogin();
         Reporter.log("Entered correct email address and password, Clicked 'login' button", false);
+        Thread.sleep(5000);
         
-        logger.info("Step ");
+        logger.info("Navigating to the user home Page");
         assertEquals(driver.getTitle(), "Automation Exercise","Login page title is mis-match");
         Reporter.log("Login page is displayed");
-        Thread.sleep(3000);
         
         //step 8: Verify that 'Logged in as username' is visible
         logger.info("Step 8. Verify that 'Logged in as user name' is visible");
