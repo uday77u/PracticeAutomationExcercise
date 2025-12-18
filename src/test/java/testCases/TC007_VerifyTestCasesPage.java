@@ -9,6 +9,7 @@
 package testCases;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;
@@ -30,8 +31,8 @@ public class TC007_VerifyTestCasesPage extends BaseClass{
 
 	     // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
 	        logger.info("Step 1: Launching the browser");
-	        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-	        driver.get(baseURL);
+	        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+	        driver.get(BASE_URL);
 	        
 	        logger.info("Step 3: Verifying that home page is visible successfully");
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
@@ -41,8 +42,10 @@ public class TC007_VerifyTestCasesPage extends BaseClass{
 	        logger.info("Step 4: Click on 'Test Cases' button");
 	        home.clickTestCases();
 	        logger.info("Step 5: Verify user is navigated to test cases page successfully");
+	        assertTrue(isCurrentTitleWithSegment(TESTCASE_TITLE), "Title mis-match.Actual Title: "+driver.getTitle());
 	        
 			}
+			
 			catch (AssertionError ae) {
 		        logger.error("❌ Assertion failed in verifyContactUsForm: " + ae.getMessage(), ae);
 		        throw ae; // rethrow so TestNG marks test as failed

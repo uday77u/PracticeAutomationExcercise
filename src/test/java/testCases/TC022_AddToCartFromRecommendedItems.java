@@ -35,15 +35,15 @@ public class TC022_AddToCartFromRecommendedItems extends BaseClass{
 
 		// Step 1-2: Navigate to home page and  Verify that home page is visible successfully
 		logger.info("Step 1: Launching the browser");
-		logger.info("Step 2: Navigating to baseURL: " + baseURL);
-		driver.get(baseURL);
+		logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+		driver.get(BASE_URL);
         
         logger.info("Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
 
         //step 3-4: Scroll to bottom of page, Verify 'RECOMMENDED ITEMS' are visible
         logger.info("3. Scroll to bottom of page");
-        dragToViewWebElement(driver,homePage.LocatorMsgRecommendedItems() );
+        scrollToViewWebElement(driver,homePage.LocatorMsgRecommendedItems() );//
         Thread.sleep(3000);
         
         logger.info("4. Verify 'RECOMMENDED ITEMS' are visible");

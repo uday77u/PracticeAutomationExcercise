@@ -39,8 +39,8 @@ public class TC018_ViewCategoryProducts extends BaseClass {
 
      // Step 1-2: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
-        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-        driver.get(baseURL);
+        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+        driver.get(BASE_URL);
         
         logger.info("Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");

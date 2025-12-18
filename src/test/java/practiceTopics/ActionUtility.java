@@ -11,7 +11,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ActionUtility {
-
+	public static WebDriver driver;
+	
 	public void DropDownByVisibleText(WebDriver driver, WebElement webelement, String text) {
 		Select sel=new Select(webelement);
 		sel.selectByContainsVisibleText(text);
@@ -27,6 +28,7 @@ public class ActionUtility {
 }
 	
 	public void mouseClick(WebDriver driver, WebElement webelement) {
+		this.driver=driver;
 		Actions action=new Actions(driver);
 		action.click(webelement).perform();;
 	}
@@ -41,6 +43,7 @@ public class ActionUtility {
 	}
 	
 	public void mouseHoldAndDragOffsetRelease(WebDriver driver, WebElement webelement,int x, int y) {
+		this.driver=driver;
 		Actions action=new Actions(driver);
 		action.clickAndHold(webelement).moveByOffset(x, y).release(webelement).perform();
 	}

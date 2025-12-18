@@ -16,9 +16,7 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.testng.Reporter;
 import org.testng.annotations.Test;
-
 import BaseTest.BaseClass;
 import pageObjects.HomePage;
 import pageObjects.ProductsPage;
@@ -38,24 +36,24 @@ public class TC008_VerifyAllProductsAndProductDetailPage extends BaseClass{
 	    
      // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
-        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-        driver.get(baseURL);
+        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+        driver.get(BASE_URL);
         
         logger.info("Step 3: Verifying that home page is visible successfully");
         assertEquals(driver.getCurrentUrl(), "https://automationexercise.com/", "Home page URL is mis-match");
-        Reporter.log("Home Page is displayed successfully", false);
+        logger.info("Home Page is displayed successfully");
         
        //step 4-5: Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully
         logger.info("Step 4: Click on 'Products' button");
         home.clickProducts();
         
         logger.info("Step 5: Verify user is navigated to ALL PRODUCTS page successfully");
-        assertEquals(driver.getTitle(), "Automation Exercise - All Products","Product page title mismatch");
+        assertTrue(isCurrentTitleWithSegment(PRODUCTS_TITLE),"Product page title mismatch");
  
         
         //step 6: The products list is visible
         logger.info("Step 6: The products list is visible");
-        assertEquals(product.msgAllProducts(), true,"Products list is not visible");
+        assertTrue(product.msgAllProducts(),"Products list is not visible");
 
         
         //step 7-8: Click on 'View Product' of first product, User is landed to product detail page

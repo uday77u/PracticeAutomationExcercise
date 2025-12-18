@@ -22,7 +22,7 @@ public class GeneralScriptsForAccountCreation extends BaseClass {
 	 public void VerifyHomePage()
 	 {
 	 	
-	 	Reporter.log("Navigating to baseUrl: " + baseURL, false);
+	 	Reporter.log("Navigating to baseUrl: " + BASE_URL, false);
 	 	assertEquals(driver.getTitle(),"Automation Exercise","Mismatch in the title");
 	 	Reporter.log("HomePage is displayed successfully", false);
 
@@ -34,7 +34,7 @@ public class GeneralScriptsForAccountCreation extends BaseClass {
 		    SignupPage signup = new SignupPage(driver);
 		    
 		  
-		    home.clickSignup();
+		    home.clickSignupOrLoginLink();
 		    //Reporter.log("Clicked on Signup link", true);
 
 		    assertTrue(home.msgSignupVisible(),"'New User Signup!'- is not visible");
@@ -73,7 +73,7 @@ public class GeneralScriptsForAccountCreation extends BaseClass {
 	 public void fillAccountDetails(SignupPage signup) throws InterruptedException {
 		   Thread.sleep(3000);
 	     signup.clickMr();
-		 signup.setPassword(password);
+		 signup.setPassword(PASSWORD);
 		 signup.setDay("23");
 		 Thread.sleep(3000);
 		 signup.setMonth("December");

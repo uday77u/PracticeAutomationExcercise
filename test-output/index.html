@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Master_Suite" class="navigator-link">
+              <span class="suite-name border-failed">Master-Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Udayashankar\AppData\Local\Temp\testng-eclipse-2135527715\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Master_Suite" class="navigator-link ">
+                    <span>C:\Users\Udayashankar\eclipse-workspace\PracticeAutomationExcercise\master.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Master_Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Master_Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Master_Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Master_Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Master_Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Master_Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,21 +92,128 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">17 methods, 3 failed,  13 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods failed suite-Master_Suite"> (hide)</a> <!-- hide-methods failed suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods failed suite-Master_Suite"> (show)</a> <!-- show-methods failed suite-Master_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Master_Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider" class="method navigator-link" hash-for-method="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider">verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002a_LoginUserWithCorrectEmailAndPassword" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPassword">verifyLoginUserWithCorrectEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Master_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods skipped suite-Master_Suite"> (hide)</a> <!-- hide-methods skipped suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods skipped suite-Master_Suite"> (show)</a> <!-- show-methods skipped suite-Master_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Master_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC008_VerifyAllProductsAndProductDetailPage" class="method navigator-link" hash-for-method="VerifyAllProductsAndProductDetailPage">VerifyAllProductsAndProductDetailPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC009_SearchProduct" class="method navigator-link" hash-for-method="VerifySearchProduct">VerifySearchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC010_VerifySubscriptionInHomePage" class="method navigator-link" hash-for-method="VerifySubscriptionInHomePage">VerifySubscriptionInHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC006_ContactUsForm" class="method navigator-link" hash-for-method="verifyContactUsForm">verifyContactUsForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC007_VerifyTestCasesPage" class="method navigator-link" hash-for-method="verifyContactUsForm">verifyContactUsForm</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC003_LoginUserIncorrectEmailAndPassword" class="method navigator-link" hash-for-method="verifyLoginUserIncorrectEmailAndPasswordFlow">verifyLoginUserIncorrectEmailAndPasswordFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC004_LogoutUser" class="method navigator-link" hash-for-method="verifyLogoutUserFlow">verifyLogoutUserFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC005_RegisterUserWithExistingEmail" class="method navigator-link" hash-for-method="verifyRegisterUserWithExistingEmailFlow">verifyRegisterUserWithExistingEmailFlow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC001b_RegisterUser" class="method navigator-link" hash-for-method="verifySignupRegistration">verifySignupRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Master_Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Retried methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods skipped suite-Master_Suite"> (hide)</a> <!-- hide-methods skipped suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods skipped suite-Master_Suite"> (show)</a> <!-- show-methods skipped suite-Master_Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Master_Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002a_LoginUserWithCorrectEmailAndPassword" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPassword">verifyLoginUserWithCorrectEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002a_LoginUserWithCorrectEmailAndPassword" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPassword">verifyLoginUserWithCorrectEmailAndPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete" class="method navigator-link" hash-for-method="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Master_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="hide-methods passed suite-Master_Suite"> (hide)</a> <!-- hide-methods passed suite-Master_Suite -->
+                      <a href="#" panel-name="suite-Master_Suite" class="show-methods passed suite-Master_Suite"> (show)</a> <!-- show-methods passed suite-Master_Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Master_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="practiceTopics.TC013_ClickEvents" class="method navigator-link" hash-for-method="ClickEvents">ClickEvents</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Master_Suite" title="testCases.TC001a_RegisterUserWithDelete" class="method navigator-link" hash-for-method="verifySignupRegistrationAndDeletion">verifySignupRegistrationAndDeletion</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                    </div> <!-- method-list-content passed suite-Master_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,121 +224,1053 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Master_Suite" class="panel Master_Suite">
+          <div class="suite-Master_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">practiceTopics.TC013_ClickEvents</span>
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ClickEvents">
-                  </a> <!-- ClickEvents -->
-                  <span class="method-name">ClickEvents</span>
+                  <a name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider">
+                  </a> <!-- verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider -->
+                  <span class="method-name">verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider</span>
+                  <div class="stack-trace">org.testng.internal.reflect.MethodMatcherException: 
+[public void testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.lang.String) FAIL,(java.lang.String) ]
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 8 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login User with incorrect email and password (DDT))                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPassword">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login User with correct Email And Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-failed -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC001b_RegisterUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignupRegistration">
+                  </a> <!-- verifySignupRegistration -->
+                  <span class="method-name">verifySignupRegistration</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC005_RegisterUserWithExistingEmail</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyRegisterUserWithExistingEmailFlow">
+                  </a> <!-- verifyRegisterUserWithExistingEmailFlow -->
+                  <span class="method-name">verifyRegisterUserWithExistingEmailFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Register user with Existing Email)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC007_VerifyTestCasesPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactUsForm">
+                  </a> <!-- verifyContactUsForm -->
+                  <span class="method-name">verifyContactUsForm</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Contact us Form)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC003_LoginUserIncorrectEmailAndPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserIncorrectEmailAndPasswordFlow">
+                  </a> <!-- verifyLoginUserIncorrectEmailAndPasswordFlow -->
+                  <span class="method-name">verifyLoginUserIncorrectEmailAndPasswordFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login User incorrectEmail and Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC004_LogoutUser</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLogoutUserFlow">
+                  </a> <!-- verifyLogoutUserFlow -->
+                  <span class="method-name">verifyLogoutUserFlow</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Logout user)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                  <div class="stack-trace">java.lang.AssertionError: Home page title mismatch expected [Automation Exercise] but found [automationexercise.com]
+	at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:29)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:51)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC009_SearchProduct</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySearchProduct">
+                  </a> <!-- VerifySearchProduct -->
+                  <span class="method-name">VerifySearchProduct</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(SearchProduct)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC010_VerifySubscriptionInHomePage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifySubscriptionInHomePage">
+                  </a> <!-- VerifySubscriptionInHomePage -->
+                  <span class="method-name">VerifySubscriptionInHomePage</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Subscription In Home Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPassword">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login User with correct Email And Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLoginUserWithCorrectEmailAndPassword">
+                  </a> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+                  <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                  <div class="stack-trace">java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+	at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 16 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Login User with correct Email And Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC008_VerifyAllProductsAndProductDetailPage</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="VerifyAllProductsAndProductDetailPage">
+                  </a> <!-- VerifyAllProductsAndProductDetailPage -->
+                  <span class="method-name">VerifyAllProductsAndProductDetailPage</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify all products and product Detail Page)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testCases.TC006_ContactUsForm</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyContactUsForm">
+                  </a> <!-- verifyContactUsForm -->
+                  <span class="method-name">verifyContactUsForm</span>
+                  <div class="stack-trace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: &apos;DESKTOP-9T08QN7&apos;, ip: &apos;192.168.1.9&apos;
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:178)
+	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:109)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:88)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:83)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:72)
+	at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+	at BaseTest.BaseClass.setup(BaseClass.java:39)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 15 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Verify Contact us Form)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-skipped -->
+          <div class="suite-Master_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testCases.TC001a_RegisterUserWithDelete</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySignupRegistrationAndDeletion">
+                  </a> <!-- verifySignupRegistrationAndDeletion -->
+                  <span class="method-name">verifySignupRegistrationAndDeletion</span>
+                  <em>
+(Verify user registration, login and account deletion)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Master_Suite-class-passed -->
+        </div> <!-- panel Master_Suite -->
+        <div panel-name="test-xml-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Udayashankar\AppData\Local\Temp\testng-eclipse-2135527715\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Udayashankar\eclipse-workspace\PracticeAutomationExcercise\master.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite parallel=&quot;classes&quot; name=&quot;Master-Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
+    &lt;listener class-name=&quot;utilities.RetryListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; parallel=&quot;classes&quot; name=&quot;Chrome Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;practiceTopics.TC013_ClickEvents&quot;/&gt;
+      &lt;class name=&quot;testCases.TC001a_RegisterUserWithDelete&quot;/&gt;
+      &lt;class name=&quot;testCases.TC001b_RegisterUser&quot;/&gt;
+      &lt;class name=&quot;testCases.TC002a_LoginUserWithCorrectEmailAndPassword&quot;/&gt;
+      &lt;class name=&quot;testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete&quot;/&gt;
+      &lt;class name=&quot;testCases.TC003_LoginUserIncorrectEmailAndPassword&quot;/&gt;
+      &lt;class name=&quot;testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider&quot;/&gt;
+      &lt;class name=&quot;testCases.TC004_LogoutUser&quot;/&gt;
+      &lt;class name=&quot;testCases.TC005_RegisterUserWithExistingEmail&quot;/&gt;
+      &lt;class name=&quot;testCases.TC006_ContactUsForm&quot;/&gt;
+      &lt;class name=&quot;testCases.TC007_VerifyTestCasesPage&quot;/&gt;
+      &lt;class name=&quot;testCases.TC008_VerifyAllProductsAndProductDetailPage&quot;/&gt;
+      &lt;class name=&quot;testCases.TC009_SearchProduct&quot;/&gt;
+      &lt;class name=&quot;testCases.TC010_VerifySubscriptionInHomePage&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Chrome Test --&gt;
+&lt;/suite&gt; &lt;!-- Master-Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Master-Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Chrome Test (13 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Master-Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Master-Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Master_Suite');
+function tableData_Master_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(17);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ClickEvents')
-data.setCell(0, 2, 'practiceTopics.TC013_ClickEvents')
-data.setCell(0, 3, 5428);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(0, 1, 'verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider')
+data.setCell(0, 2, 'testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider')
+data.setCell(0, 3, 123574);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifySignupRegistrationAndDeletion')
+data.setCell(1, 2, 'testCases.TC001a_RegisterUserWithDelete')
+data.setCell(1, 3, 117057);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyLoginUserWithCorrectEmailAndPasswordAndDeletion')
+data.setCell(2, 2, 'testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete')
+data.setCell(2, 3, 88336);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyLoginUserWithCorrectEmailAndPassword')
+data.setCell(3, 2, 'testCases.TC002a_LoginUserWithCorrectEmailAndPassword')
+data.setCell(3, 3, 88108);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyLoginUserWithCorrectEmailAndPasswordAndDeletion')
+data.setCell(4, 2, 'testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete')
+data.setCell(4, 3, 25314);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyLoginUserWithCorrectEmailAndPassword')
+data.setCell(5, 2, 'testCases.TC002a_LoginUserWithCorrectEmailAndPassword')
+data.setCell(5, 3, 24668);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyLoginUserWithCorrectEmailAndPassword')
+data.setCell(6, 2, 'testCases.TC002a_LoginUserWithCorrectEmailAndPassword')
+data.setCell(6, 3, 22185);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifyLoginUserWithCorrectEmailAndPasswordAndDeletion')
+data.setCell(7, 2, 'testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete')
+data.setCell(7, 3, 12968);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyContactUsForm')
+data.setCell(8, 2, 'testCases.TC007_VerifyTestCasesPage')
+data.setCell(8, 3, 1);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'VerifySearchProduct')
+data.setCell(9, 2, 'testCases.TC009_SearchProduct')
+data.setCell(9, 3, 1);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyContactUsForm')
+data.setCell(10, 2, 'testCases.TC006_ContactUsForm')
+data.setCell(10, 3, 0);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'VerifySubscriptionInHomePage')
+data.setCell(11, 2, 'testCases.TC010_VerifySubscriptionInHomePage')
+data.setCell(11, 3, 0);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'VerifyAllProductsAndProductDetailPage')
+data.setCell(12, 2, 'testCases.TC008_VerifyAllProductsAndProductDetailPage')
+data.setCell(12, 3, 0);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifyLogoutUserFlow')
+data.setCell(13, 2, 'testCases.TC004_LogoutUser')
+data.setCell(13, 3, 0);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyLoginUserIncorrectEmailAndPasswordFlow')
+data.setCell(14, 2, 'testCases.TC003_LoginUserIncorrectEmailAndPassword')
+data.setCell(14, 3, 0);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyRegisterUserWithExistingEmailFlow')
+data.setCell(15, 2, 'testCases.TC005_RegisterUserWithExistingEmail')
+data.setCell(15, 3, 0);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifySignupRegistration')
+data.setCell(16, 2, 'testCases.TC001b_RegisterUser')
+data.setCell(16, 3, 0);
+window.suiteTableData['Master_Suite']= { tableData: data, tableDiv: 'times-div-Master_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 8 minutes</span>
+              <div id="times-div-Master_Suite">
+              </div> <!-- times-div-Master_Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Master-Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Master_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">practiceTopics.TC013_ClickEvents</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCases.TC009_SearchProduct</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setup</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">ClickEvents</span>
-                <span class="method-start">66395 ms</span>
-              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC007_VerifyTestCasesPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC006_ContactUsForm</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC008_VerifyAllProductsAndProductDetailPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC010_VerifySubscriptionInHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">1 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC006_ContactUsForm</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">71875 ms</span>
+                <span class="method-start">277012 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC008_VerifyAllProductsAndProductDetailPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">277016 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC007_VerifyTestCasesPage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">277025 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC003_LoginUserIncorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">277030 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC010_VerifySubscriptionInHomePage</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">277037 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC004_LogoutUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">277058 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC009_SearchProduct</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">277059 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC005_RegisterUserWithExistingEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">277065 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001b_RegisterUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">277068 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC004_LogoutUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">399516 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001a_RegisterUserWithDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">399521 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC003_LoginUserIncorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">399546 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">399549 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001b_RegisterUser</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">399675 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">399677 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC005_RegisterUserWithExistingEmail</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">399680 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                <span class="method-start">440500 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                <span class="method-start">440730 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001a_RegisterUserWithDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifySignupRegistrationAndDeletion</span>
+                <span class="method-start">461416 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">528855 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">528865 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">552168 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">559527 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC001a_RegisterUserWithDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">578477 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                <span class="method-start">599505 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                <span class="method-start">609494 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">612476 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">629152 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">634165 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">636823 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPasswordAndDeletion</span>
+                <span class="method-start">660984 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyLoginUserWithCorrectEmailAndPassword</span>
+                <span class="method-start">662359 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">686986 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testCases.TC002a_LoginUserWithCorrectEmailAndPassword</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">696477 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

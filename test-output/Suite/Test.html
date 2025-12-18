@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sun Oct 19 02:27:30 IST 2025</td>
+<td>Started on:</td><td>Sat Nov 29 01:56:04 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>169 seconds (169862 ms)</td>
+<tr><td>Total time:</td><td>271 seconds (271302 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,50 +77,75 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='practiceTopics.TC004_Sliders.Sliders()'><b>Sliders</b><br>Test class: practiceTopics.TC004_Sliders<br/>
-<a href="#Output-2128859746" onClick='toggleBox("Output-2128859746", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2088098699" onClick='toggleBox("Output-2088098699", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2128859746" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2128859746">
+<a href="#Output-2088098699" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2088098699">
 TC004_Sliders<br/>
+SlidersPage is opened<br/>
 </div>
 </td>
-<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (226, 744)
-  (Session info: chrome=141.0.7390.107)
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dc4d2c565d231edf121cd691c363543c, clickElement {id=f.685F551D294002B6E122154F889CE4F9.d.2920B079D35FA6C68DBB0E9E6293C6E1.e.27}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49574/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dc4d2c565d231edf121cd691c363543c)] -&gt; xpath: //a[text()=&apos;Sliders&apos;]]
-Session ID: dc4d2c565d231edf121cd691c363543c
-	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+Command: [aeaacbfcf6ef6714c0206e74bce31e05, actions {actions=[org.openqa.selenium.interactions.Sequence@6a0cbc6f]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59874}, goog:processID: 15012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59874/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeaacbfcf6ef6714c0206e74bce31e05
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:733)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at practiceTopics.ActionUtility.WaitForClickableOfWebElementAndClick(ActionUtility.java:22)
-	at practiceTopics.HomePage.clickSlidersLink(HomePage.java:64)
-	at practiceTopics.TC004_Sliders.Sliders(TC004_Sliders.java:14)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at practiceTopics.ActionUtility.mouseHoldAndDragOffsetRelease(ActionUtility.java:45)
+	at practiceTopics.SlidersPage.holdAndDragSlider(SlidersPage.java:18)
+	at practiceTopics.TC004_Sliders.Sliders(TC004_Sliders.java:17)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2128859746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2128859746'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (226, 744)
-  (Session info: chrome=141.0.7390.107)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+		at org.openqa.selenium.json.Json.toJson(Json.java:131)
+		... 39 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#slideMe&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [dc4d2c565d231edf121cd691c363543c, clickElement {id=f.685F551D294002B6E122154F889CE4F9.d.2920B079D35FA6C68DBB0E9E6293C6E1.e.27}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 141.0.7390.107, chrome: {chromedriverVersion: 141.0.7390.78 (2b53b0e231fc..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49574}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49574/devtoo..., se:cdpVersion: 141.0.7390.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (dc4d2c565d231edf121cd691c363543c)] -&gt; xpath: //a[text()=&apos;Sliders&apos;]]
-Session ID: dc4d2c565d231edf121cd691c363543c
-	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+Command: [aeaacbfcf6ef6714c0206e74bce31e05, findElement {using=id, value=slideMe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59874}, goog:processID: 15012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59874/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeaacbfcf6ef6714c0206e74bce31e05
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -128,15 +153,61 @@ Session ID: dc4d2c565d231edf121cd691c363543c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
-	at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
-	at practiceTopics.ActionUtility.WaitForClickableOfWebElementAndClick(ActionUtility.java:22)
-	at practiceTopics.HomePage.clickSlidersLink(HomePage.java:64)
-	at practiceTopics.TC004_Sliders.Sliders(TC004_Sliders.java:14)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:83)
+	... 62 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2088098699", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2088098699'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aeaacbfcf6ef6714c0206e74bce31e05, actions {actions=[org.openqa.selenium.interactions.Sequence@6a0cbc6f]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59874}, goog:processID: 15012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59874/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeaacbfcf6ef6714c0206e74bce31e05
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:520)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:182)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:204)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:204)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:222)
+	at java.base/java.util.Map.forEach(Map.java:733)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:217)
+	at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:409)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:400)
+	at org.openqa.selenium.json.Json.toJson(Json.java:133)
+	at org.openqa.selenium.json.Json.toJson(Json.java:119)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:236)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:109)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:203)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:643)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:616)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:581)
+	at practiceTopics.ActionUtility.mouseHoldAndDragOffsetRelease(ActionUtility.java:45)
+	at practiceTopics.SlidersPage.holdAndDragSlider(SlidersPage.java:18)
+	at practiceTopics.TC004_Sliders.Sliders(TC004_Sliders.java:17)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -163,8 +234,52 @@ Session ID: dc4d2c565d231edf121cd691c363543c
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:431)
+		at org.openqa.selenium.json.Json.toJson(Json.java:131)
+		... 39 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:516)
+	... 60 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#slideMe&quot;}
+  (Session info: chrome=142.0.7444.176)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [aeaacbfcf6ef6714c0206e74bce31e05, findElement {using=id, value=slideMe}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 142.0.7444.176, chrome: {chromedriverVersion: 142.0.7444.175 (302067f14a4..., userDataDir: C:\Users\UDAYAS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59874}, goog:processID: 15012, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59874/devtoo..., se:cdpVersion: 142.0.7444.176, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: aeaacbfcf6ef6714c0206e74bce31e05
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:557)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:380)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy12.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:262)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:211)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:74)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:83)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	... 62 more
 </pre></div></td>
-<td>4</td>
+<td>14</td>
 <td>practiceTopics.TC004_Sliders@73eb439a</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -176,23 +291,11 @@ Session ID: dc4d2c565d231edf121cd691c363543c
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='practiceTopics.TC001_javaScriptDelays.waitForLiftOffText()'><b>waitForLiftOffText</b><br>Test class: practiceTopics.TC001_javaScriptDelays<br/>
-<a href="#Output-1896558831" onClick='toggleBox("Output-1896558831", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1896558831" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1896558831">
-TC001_javaScriptDelays<br/>
-</div>
-</td>
-<td></td>
-<td>18</td>
-<td>practiceTopics.TC001_javaScriptDelays@4a83a74a</td></tr>
-<tr>
 <td title='practiceTopics.TC002_FormFields.FormFields()'><b>FormFields</b><br>Test class: practiceTopics.TC002_FormFields<br/>
-<a href="#Output-1598047636" onClick='toggleBox("Output-1598047636", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1738561265" onClick='toggleBox("Output-1738561265", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1598047636" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1598047636">
+<a href="#Output-1738561265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1738561265">
 TC002_FormFields<br/>
 clicked on Form field link<br/>
 Entered the name<br/>
@@ -206,14 +309,14 @@ clicked Submit Button<br/>
 </div>
 </td>
 <td></td>
-<td>17</td>
+<td>10</td>
 <td>practiceTopics.TC002_FormFields@23e84203</td></tr>
 <tr>
 <td title='practiceTopics.TC003_Popups.popups()'><b>popups</b><br>Test class: practiceTopics.TC003_Popups<br/>
-<a href="#Output-1927776715" onClick='toggleBox("Output-1927776715", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1726519676" onClick='toggleBox("Output-1726519676", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1927776715" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1927776715">
+<a href="#Output-1726519676" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1726519676">
 TC003_Popups<br/>
 clicked PopupLink<br/>
 clicked Alert Popup<br/>
@@ -232,6 +335,18 @@ Tooltip message:- <br/>
 <td></td>
 <td>19</td>
 <td>practiceTopics.TC003_Popups@19932c16</td></tr>
+<tr>
+<td title='practiceTopics.TC001_javaScriptDelays.waitForLiftOffText()'><b>waitForLiftOffText</b><br>Test class: practiceTopics.TC001_javaScriptDelays<br/>
+<a href="#Output-1800605369" onClick='toggleBox("Output-1800605369", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1800605369" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1800605369">
+TC001_javaScriptDelays<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>practiceTopics.TC001_javaScriptDelays@4a83a74a</td></tr>
 </table><p>
 </body>
 </html>

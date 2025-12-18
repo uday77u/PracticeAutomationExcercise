@@ -52,7 +52,18 @@ public class HomePage extends BasePage {
 	
 	@FindBy(xpath = "//a[text()='Spinners']")
 	private WebElement SpinnersLink;
+
+	@FindBy(xpath = "//a[text()='Iframes']")
+	private WebElement IframesLink;
 	
+	@FindBy(xpath = "//a[text()='Broken Images']")
+	private WebElement BrokenImagesLink;
+
+	@FindBy(xpath = "//a[text()='Broken Links']")
+	private WebElement BrokenLinksLink;
+	
+	@FindBy(xpath = "//a[text()='Accordions']")
+	private WebElement AccordionsLink;
 	
 //Methods
 
@@ -86,11 +97,12 @@ public class HomePage extends BasePage {
 		try {
 			//ScrollToViewWebElement(driver, SlidersLink);
 			//SlidersLink.click();
-			((JavascriptExecutor) driver).executeScript(
-				    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", SlidersLink);
+			
 			mouseClick(driver, SlidersLink);
 
 			} catch (Exception e) {
+				((JavascriptExecutor) driver).executeScript(
+					    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", SlidersLink);	
 			WaitForClickableOfWebElementAndClick(driver, SlidersLink);
 		}
 		}
@@ -208,4 +220,49 @@ public class HomePage extends BasePage {
 
 	}
 
+	public void clickIframesLink() {
+		try {
+			IframesLink.click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript(
+				    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", IframesLink);
+			WaitForClickableOfWebElementAndClick(driver, IframesLink);
+		}
+
+	}
+	
+	public void clickBrokenImagesLink() {
+		try {
+			BrokenImagesLink.click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript(
+				    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", BrokenImagesLink);
+			WaitForClickableOfWebElementAndClick(driver, BrokenImagesLink);
+		}
+
+	}
+	
+	public void clickBrokenLinksLink() {
+		try {
+			BrokenImagesLink.click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript(
+				    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", BrokenLinksLink);
+			WaitForClickableOfWebElementAndClick(driver, BrokenLinksLink);
+		}
+
+	}
+	
+	public void clickAccordionsLink() {
+		try {
+			BrokenImagesLink.click();
+		} catch (Exception e) {
+			((JavascriptExecutor) driver).executeScript(
+				    "arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", AccordionsLink);
+			WaitForClickableOfWebElementAndClick(driver, AccordionsLink);
+		}
+
+	}
+	
+	
 }

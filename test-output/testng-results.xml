@@ -1,25 +1,1569 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="4" ignored="0" total="17" passed="1" failed="3" skipped="9">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-14T18:15:21 IST" name="Default suite" finished-at="2025-11-14T18:16:35 IST" duration-ms="74198">
+  <suite started-at="2025-12-19T01:19:58 IST" name="Master-Suite" finished-at="2025-12-19T01:32:04 IST" duration-ms="725340">
     <groups>
     </groups>
-    <test started-at="2025-11-14T18:15:21 IST" name="Default test" finished-at="2025-11-14T18:16:35 IST" duration-ms="74198">
-      <class name="practiceTopics.TC013_ClickEvents">
-        <test-method is-config="true" signature="setup()[pri:0, instance:practiceTopics.TC013_ClickEvents@4b29d1d2]" started-at="2025-11-14T18:15:21 IST" name="setup" finished-at="2025-11-14T18:16:27 IST" duration-ms="66389" status="PASS">
+    <test started-at="2025-12-19T01:19:58 IST" name="Chrome Test" finished-at="2025-12-19T01:32:04 IST" duration-ms="725340">
+      <class name="testCases.TC001b_RegisterUser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001b_RegisterUser@7a5ceedd]" started-at="2025-12-19T01:24:49 IST" name="setup" finished-at="2025-12-19T01:26:52 IST" duration-ms="122593" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="ClickEvents()[pri:0, instance:practiceTopics.TC013_ClickEvents@4b29d1d2]" started-at="2025-11-14T18:16:27 IST" name="ClickEvents" finished-at="2025-11-14T18:16:33 IST" duration-ms="5428" status="PASS">
+        <test-method signature="verifySignupRegistration()[pri:0, instance:testCases.TC001b_RegisterUser@7a5ceedd]" started-at="2025-12-19T01:26:52 IST" name="verifySignupRegistration" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ClickEvents -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:practiceTopics.TC013_ClickEvents@4b29d1d2]" started-at="2025-11-14T18:16:33 IST" name="tearDown" finished-at="2025-11-14T18:16:35 IST" duration-ms="2220" status="PASS">
+        </test-method> <!-- verifySignupRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001b_RegisterUser@7a5ceedd]" started-at="2025-12-19T01:26:52 IST" name="tearDown" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- practiceTopics.TC013_ClickEvents -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- testCases.TC001b_RegisterUser -->
+      <class name="testCases.TC009_SearchProduct">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC009_SearchProduct@7bd7d6d6]" started-at="2025-12-19T01:20:12 IST" name="setup" finished-at="2025-12-19T01:24:49 IST" duration-ms="276603" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifySearchProduct()[pri:0, instance:testCases.TC009_SearchProduct@7bd7d6d6]" started-at="2025-12-19T01:24:49 IST" name="VerifySearchProduct" description="SearchProduct" finished-at="2025-12-19T01:24:49 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchProduct -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC009_SearchProduct@7bd7d6d6]" started-at="2025-12-19T01:24:49 IST" name="tearDown" finished-at="2025-12-19T01:24:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC009_SearchProduct -->
+      <class name="testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider">
+        <test-method signature="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider@710636b0]" started-at="2025-12-19T01:24:49 IST" name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider" description="Verify Login User with incorrect email and password (DDT)" data-provider="InvalidLoginData" finished-at="2025-12-19T01:26:53 IST" duration-ms="123574" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.lang.String) FAIL,(java.lang.String) ]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
+Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.lang.String) FAIL,(java.lang.String) ]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider -->
+      </class> <!-- testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider -->
+      <class name="testCases.TC005_RegisterUserWithExistingEmail">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC005_RegisterUserWithExistingEmail@2ab4bc72]" started-at="2025-12-19T01:24:49 IST" name="setup" finished-at="2025-12-19T01:26:52 IST" duration-ms="122539" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyRegisterUserWithExistingEmailFlow()[pri:0, instance:testCases.TC005_RegisterUserWithExistingEmail@2ab4bc72]" started-at="2025-12-19T01:26:52 IST" name="verifyRegisterUserWithExistingEmailFlow" description="Verify Register user with Existing Email" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRegisterUserWithExistingEmailFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC005_RegisterUserWithExistingEmail@2ab4bc72]" started-at="2025-12-19T01:26:52 IST" name="tearDown" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC005_RegisterUserWithExistingEmail -->
+      <class name="testCases.TC007_VerifyTestCasesPage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC007_VerifyTestCasesPage@eadd4fb]" started-at="2025-12-19T01:20:12 IST" name="setup" finished-at="2025-12-19T01:24:49 IST" duration-ms="276602" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyContactUsForm()[pri:0, instance:testCases.TC007_VerifyTestCasesPage@eadd4fb]" started-at="2025-12-19T01:24:49 IST" name="verifyContactUsForm" description="Verify Contact us Form" finished-at="2025-12-19T01:24:49 IST" duration-ms="1" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactUsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC007_VerifyTestCasesPage@eadd4fb]" started-at="2025-12-19T01:24:49 IST" name="tearDown" finished-at="2025-12-19T01:24:49 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC007_VerifyTestCasesPage -->
+      <class name="testCases.TC004_LogoutUser">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC004_LogoutUser@3de8f619]" started-at="2025-12-19T01:24:49 IST" name="setup" finished-at="2025-12-19T01:26:52 IST" duration-ms="122433" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLogoutUserFlow()[pri:0, instance:testCases.TC004_LogoutUser@3de8f619]" started-at="2025-12-19T01:26:52 IST" name="verifyLogoutUserFlow" description="Verify Logout user" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogoutUserFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC004_LogoutUser@3de8f619]" started-at="2025-12-19T01:26:52 IST" name="tearDown" finished-at="2025-12-19T01:26:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC004_LogoutUser -->
+      <class name="testCases.TC003_LoginUserIncorrectEmailAndPassword">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC003_LoginUserIncorrectEmailAndPassword@6cb107fd]" started-at="2025-12-19T01:24:49 IST" name="setup" finished-at="2025-12-19T01:26:52 IST" duration-ms="122505" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginUserIncorrectEmailAndPasswordFlow()[pri:0, instance:testCases.TC003_LoginUserIncorrectEmailAndPassword@6cb107fd]" started-at="2025-12-19T01:26:52 IST" name="verifyLoginUserIncorrectEmailAndPasswordFlow" description="Verify Login User incorrectEmail and Password" finished-at="2025-12-19T01:26:52 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from disconnected: unable to connect to renderer 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserIncorrectEmailAndPasswordFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC003_LoginUserIncorrectEmailAndPassword@6cb107fd]" started-at="2025-12-19T01:26:52 IST" name="tearDown" finished-at="2025-12-19T01:26:52 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC003_LoginUserIncorrectEmailAndPassword -->
+      <class name="testCases.TC008_VerifyAllProductsAndProductDetailPage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC008_VerifyAllProductsAndProductDetailPage@740fb309]" started-at="2025-12-19T01:20:12 IST" name="setup" finished-at="2025-12-19T01:24:49 IST" duration-ms="276604" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifyAllProductsAndProductDetailPage()[pri:0, instance:testCases.TC008_VerifyAllProductsAndProductDetailPage@740fb309]" started-at="2025-12-19T01:24:49 IST" name="VerifyAllProductsAndProductDetailPage" description="Verify all products and product Detail Page" finished-at="2025-12-19T01:24:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyAllProductsAndProductDetailPage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC008_VerifyAllProductsAndProductDetailPage@740fb309]" started-at="2025-12-19T01:24:49 IST" name="tearDown" finished-at="2025-12-19T01:24:49 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC008_VerifyAllProductsAndProductDetailPage -->
+      <class name="testCases.TC002a_LoginUserWithCorrectEmailAndPassword">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:26:52 IST" name="setup" finished-at="2025-12-19T01:27:33 IST" duration-ms="41181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="verifyLoginUserWithCorrectEmailAndPassword()[pri:1, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:27:33 IST" name="verifyLoginUserWithCorrectEmailAndPassword" description="Verify Login User with correct Email And Password" finished-at="2025-12-19T01:29:01 IST" duration-ms="88108" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:29:01 IST" name="tearDown" finished-at="2025-12-19T01:29:32 IST" duration-ms="30661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:29:32 IST" name="setup" finished-at="2025-12-19T01:30:22 IST" duration-ms="49966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="verifyLoginUserWithCorrectEmailAndPassword()[pri:1, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:30:22 IST" name="verifyLoginUserWithCorrectEmailAndPassword" description="Verify Login User with correct Email And Password" finished-at="2025-12-19T01:30:46 IST" duration-ms="24668" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:30:46 IST" name="tearDown" finished-at="2025-12-19T01:30:49 IST" duration-ms="2657" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:30:49 IST" name="setup" finished-at="2025-12-19T01:31:14 IST" duration-ms="25536" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginUserWithCorrectEmailAndPassword()[pri:1, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:31:14 IST" name="verifyLoginUserWithCorrectEmailAndPassword" description="Verify Login User with correct Email And Password" finished-at="2025-12-19T01:31:37 IST" duration-ms="22185" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page title is mis-match,Current Page: Automation Exercise - Signup / Login expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002a_LoginUserWithCorrectEmailAndPassword.verifyLoginUserWithCorrectEmailAndPassword(TC002a_LoginUserWithCorrectEmailAndPassword.java:69)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002a_LoginUserWithCorrectEmailAndPassword@4201c465]" started-at="2025-12-19T01:31:48 IST" name="tearDown" finished-at="2025-12-19T01:32:04 IST" duration-ms="15242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002a_LoginUserWithCorrectEmailAndPassword -->
+      <class name="testCases.TC006_ContactUsForm">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC006_ContactUsForm@4e5ed836]" started-at="2025-12-19T01:20:12 IST" name="setup" finished-at="2025-12-19T01:24:49 IST" duration-ms="276604" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyContactUsForm()[pri:0, instance:testCases.TC006_ContactUsForm@4e5ed836]" started-at="2025-12-19T01:24:49 IST" name="verifyContactUsForm" description="Verify Contact us Form" finished-at="2025-12-19T01:24:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactUsForm -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC006_ContactUsForm@4e5ed836]" started-at="2025-12-19T01:24:49 IST" name="tearDown" finished-at="2025-12-19T01:24:49 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC006_ContactUsForm -->
+      <class name="testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:26:52 IST" name="setup" finished-at="2025-12-19T01:27:33 IST" duration-ms="40823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion()[pri:2, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:27:33 IST" name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion" finished-at="2025-12-19T01:29:01 IST" duration-ms="88336" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:29:01 IST" name="tearDown" finished-at="2025-12-19T01:29:24 IST" duration-ms="23304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:29:24 IST" name="setup" finished-at="2025-12-19T01:30:12 IST" duration-ms="47336" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method retried="true" signature="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion()[pri:2, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:30:12 IST" name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion" finished-at="2025-12-19T01:30:24 IST" duration-ms="12968" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Home page title mismatch expected [Automation Exercise] but found [automationexercise.com]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Home page title mismatch expected [Automation Exercise] but found [automationexercise.com]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:29)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:30:24 IST" name="tearDown" finished-at="2025-12-19T01:30:41 IST" duration-ms="16675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:30:41 IST" name="setup" finished-at="2025-12-19T01:31:13 IST" duration-ms="31831" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion()[pri:2, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:31:13 IST" name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion" finished-at="2025-12-19T01:31:38 IST" duration-ms="25314" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login page title is mis-match expected [Automation Exercise] but found [Automation Exercise - Signup / Login]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.verifyLoginUserWithCorrectEmailAndPasswordAndDeletion(TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete.java:51)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginUserWithCorrectEmailAndPasswordAndDeletion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete@5b799640]" started-at="2025-12-19T01:31:39 IST" name="tearDown" finished-at="2025-12-19T01:31:49 IST" duration-ms="9999" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete -->
+      <class name="testCases.TC001a_RegisterUserWithDelete">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC001a_RegisterUserWithDelete@221a3fa4]" started-at="2025-12-19T01:26:52 IST" name="setup" finished-at="2025-12-19T01:27:53 IST" duration-ms="61894" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifySignupRegistrationAndDeletion()[pri:0, instance:testCases.TC001a_RegisterUserWithDelete@221a3fa4]" started-at="2025-12-19T01:27:53 IST" name="verifySignupRegistrationAndDeletion" description="Verify user registration, login and account deletion" finished-at="2025-12-19T01:29:50 IST" duration-ms="117057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySignupRegistrationAndDeletion -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC001a_RegisterUserWithDelete@221a3fa4]" started-at="2025-12-19T01:29:50 IST" name="tearDown" finished-at="2025-12-19T01:30:12 IST" duration-ms="21500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC001a_RegisterUserWithDelete -->
+      <class name="testCases.TC010_VerifySubscriptionInHomePage">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC010_VerifySubscriptionInHomePage@43f02ef2]" started-at="2025-12-19T01:20:12 IST" name="setup" finished-at="2025-12-19T01:24:49 IST" duration-ms="276605" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="VerifySubscriptionInHomePage()[pri:0, instance:testCases.TC010_VerifySubscriptionInHomePage@43f02ef2]" started-at="2025-12-19T01:24:49 IST" name="VerifySubscriptionInHomePage" description="Verify Subscription In Home Page" finished-at="2025-12-19T01:24:49 IST" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: session not created
+from chrome not reachable 
+Host info: host: 'DESKTOP-9T08QN7', ip: '192.168.1.9'
+Build info: version: '4.39.0', revision: '126f156aee'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [null, newSession {capabilities=[Capabilities {browserName: chrome, goog:chromeOptions: {args: [--headless, --disable-gpu, --no-sandbox, --remote-allow-origins=*, --window-size=1920,1080], extensions: []}}]}]
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:114)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:75)
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:61)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:187)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:561)
+at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:178)
+at org.openqa.selenium.chromium.ChromiumDriver.<init>(ChromiumDriver.java:109)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:88)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:83)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:72)
+at BaseTest.BrowserFactory.initBrowser(BrowserFactory.java:32)
+at BaseTest.BaseClass.setup(BaseClass.java:39)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:836)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:601)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySubscriptionInHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC010_VerifySubscriptionInHomePage@43f02ef2]" started-at="2025-12-19T01:24:49 IST" name="tearDown" finished-at="2025-12-19T01:24:49 IST" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC010_VerifySubscriptionInHomePage -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- Master-Suite -->
 </testng-results>

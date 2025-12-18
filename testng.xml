@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test thread-count="5" name="Test">
+<suite name="SuiteTestNG">
+	<listeners>
+		<listener class-name="utilities.ExtentReportManager"></listener>
+	</listeners>
+  <test thread-count="5" name="TestNG Default:chromeBrowser">
     <classes>
       <class name="practiceTopics.TC001_javaScriptDelays"/>
       <class name="practiceTopics.TC002_FormFields"/>
@@ -10,3 +13,4 @@
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+

@@ -4,16 +4,14 @@ import java.util.List;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
-import org.openqa.selenium.Point;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.FindBys;
+import utilities.WebDriverUtility;
 
 public class HomePage extends BasePage {
-
+WebDriverUtility webDriverUtility=new WebDriverUtility(driver);
 public HomePage(WebDriver driver) {
 		super(driver);
 	}
@@ -22,7 +20,7 @@ public HomePage(WebDriver driver) {
 //-------------------------Locators--------------------------------------------------------------------
 
 @FindBy(xpath=("//a[normalize-space()='Signup / Login']"))
-private WebElement LnkSignup;
+private WebElement LnkSignupOrLogin;
 
 @FindBy(xpath="//input[@placeholder='Name']")
 private WebElement Name;
@@ -61,8 +59,8 @@ private WebElement errorMsgEmailAlready;
 private WebElement contactUs;
 
 
-@FindBy(xpath="//a[normalize-space()='Test Cases']") @CacheLookup private WebElement testCases;
-@FindBy(xpath="//a[@href='/products']") @CacheLookup private WebElement Products;
+@FindBy(xpath="//a[normalize-space()='Test Cases']")  private WebElement testCases;
+@FindBy(xpath="//a[@href='/products']")  private WebElement Products;
 
 @FindBy(id = "footer") private WebElement HomePageFooter;
 @FindBy(xpath="//h2[text()='Subscription']") private WebElement Subscription;
@@ -73,7 +71,7 @@ private WebElement contactUs;
 @FindBy(xpath  = "//a[@href='/product_details/4']") private WebElement btnViewProduct4;
 
 
-@FindBy(xpath="//div[3]//div[1]//div[1]//div[2]//div[1]//a[1]") private WebElement addToCartTshirt;
+@FindBy(xpath="(//a[contains(text(),'Add to cart')])[1]") private WebElement addToCartTshirt;
 @FindBy(xpath="//div[5]//div[1]//div[1]//div[2]//div[1]//a[1]") private WebElement addToCartDress;
 @FindBy(xpath  = "//button[text()='Continue Shopping']")
 private WebElement btnContinueShopping;
@@ -146,8 +144,9 @@ public WebElement LocatorMsgRecommendedItems() {
 
 
 //---------------------------------------------Methods for Locators------------------------------------
-public void clickSignup() {
-	LnkSignup.click();
+public void clickSignupOrLoginLink() {
+	webDriverUtility.waitForWebElementToBeClickable(LnkSignupOrLogin);
+	LnkSignupOrLogin.click();
 }
 public void setUserName(String user) {
 	Name.sendKeys(user);
@@ -183,6 +182,7 @@ public boolean errorMsgExist(){
 	return errorMsgIncorrectEmailPassword.isDisplayed();
 }
 public boolean errorMsgEmailAlreadyExist(){
+	webDriverUtility.waitForVisibilityOfWebelement(errorMsgEmailAlready);
 	return errorMsgEmailAlready.isDisplayed();
 }
 
@@ -257,7 +257,7 @@ public void clickBtnContinueShopping() {
 		//btnContinueShopping.sendKeys(Keys.RETURN);
 		
 		//Sol6  
-		//WebDriverWait mywait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		//WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		//mywait.until(ExpectedConditions.elementToBeClickable(btnContinueShopping)).click();
 }
 
@@ -277,7 +277,6 @@ public void clickbtnAddToCartProduct1() {
 
 public void clickbtnAddToCartProduct2() {
 	 //btnAddToCartProduct2.click();
-	
 	 JavascriptExecutor js=(JavascriptExecutor)driver;
 	 js.executeScript("arguments[0].click();", btnAddToCartProduct2);
 }
@@ -308,9 +307,11 @@ public void clickBtnJeansSubMenCategories() {
 }
 
 public boolean isMessageJeansOnPage() {
+	webDriverUtility.waitForVisibilityOfWebelement(messageJeansOnPage);
 	return messageJeansOnPage.isDisplayed();
 }
 public WebElement LocatorMessageDressOnPage() {
+	webDriverUtility.waitForVisibilityOfWebelement(messageJeansOnPage);
 	return messageDressOnPage;
 }
 
@@ -340,7 +341,7 @@ public void clickAddToCartRecommendedProduct4() {
 	//AddToCartRecommendedProduct4.click();
 	//sol4
 	JavascriptExecutor js=(JavascriptExecutor)driver;
-	js.executeScript("arguments[0].click();", btnContinueShopping);
+	js.executeScript("arguments[0].click();", AddToCartRecommendedProduct4);
 }
 public void clickScrollUpArrow() {
 	//scrollUpArrow.click();

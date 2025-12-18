@@ -39,8 +39,8 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
 
 		// Step 1-2: Navigate to home page and  Verify that home page is visible successfully
 		logger.info("Step 1: Launching the browser");
-		logger.info("Step 2: Navigating to baseURL: " + baseURL);
-		driver.get(baseURL);
+		logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+		driver.get(BASE_URL);
 		        
 		logger.info("Verifying that home page is visible successfully");
 		assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
@@ -53,7 +53,7 @@ public class TC019_ViewAndCartBrandProducts extends BaseClass{
         assertTrue(isCurrentTitleWithSegment("Products"), "Product page is not displayed");
         Reporter.log("product Page is displayed successfully",true);
         waitForVisibilityOfWebelement(productPage.LocatorTxtBrand());
-        dragToViewWebElement(driver, productPage.LocatorTxtBrand());
+        scrollToViewWebElement(driver,productPage.LocatorTxtBrand());//
         Point point = productPage.LocatorTxtBrand().getLocation();
         assertTrue(point.getX()<200,"Brand is not located in the left side of the panel.Band location x:"+point.getX());
         Reporter.log("Verified that Brands are visible on left side bar",true);

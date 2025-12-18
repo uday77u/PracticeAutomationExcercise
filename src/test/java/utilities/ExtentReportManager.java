@@ -10,35 +10,41 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
-
-
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
-
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
+import BaseTest.BaseClass;
+
 public class ExtentReportManager implements ITestListener {
 	public ExtentSparkReporter sparkReporter;
 	public ExtentReports extent;
 	public ExtentTest test;
+	public Logger logger;
 
 	String repName;
+	String timeStamp;
+	int i=0;
 
 	public void onStart(ITestContext testContext) {
+		logger=LogManager.getLogger(getClass());
 		
 		/*SimpleDateFormat df=new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss");
 		Date dt=new Date();
 		String currentdatetimestamp=df.format(dt);
 		*/
 		
-		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
+		timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());// time stamp
 		repName = "Test-Report-" + timeStamp + ".html";
+		
+		logger.info("\n\t\t******* Test Case execution started "+timeStamp+"******");
 		sparkReporter = new ExtentSparkReporter(".\\reports\\" + repName);// specify location of the report
 
 		sparkReporter.config().setDocumentTitle("AutomationExcercise"
@@ -55,6 +61,9 @@ public class ExtentReportManager implements ITestListener {
 		extent.setSystemInfo("Environemnt", "QA");
 		
 		String os = testContext.getCurrentXmlTest().getParameter("os");
+		if (os == null) {
+		    os = System.getProperty("os.name");
+		}
 		extent.setSystemInfo("Operating System", os);
 		
 		String browser = testContext.getCurrentXmlTest().getParameter("browser");
@@ -63,35 +72,148 @@ public class ExtentReportManager implements ITestListener {
 		List<String> includedGroups = testContext.getCurrentXmlTest().getIncludedGroups();
 		if(!includedGroups.isEmpty()) {
 		extent.setSystemInfo("Groups", includedGroups.toString());
+		
+		
+		
 		}
+	}
+	
+	
+	@Override
+	public void onTestStart(ITestResult result) {
+		i++;
+		System.out.println("Test Case "+i+": "+result.getTestClass().getName());
+		//test = extent.createTest(result.getMethod().getMethodName());
+		test = extent.createTest(result.getTestClass().getName());
 	}
 
 	public void onTestSuccess(ITestResult result) {
-	
-		test = extent.createTest(result.getTestClass().getName());
+		System.out.println(" -->"+result.getMethod().getMethodName()+" got passed.");
+		
+		//test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups()); // to display groups in report
 		test.log(Status.PASS,result.getName()+" got successfully executed");
 		
 	}
-
+/*
 	public void onTestFailure(ITestResult result) {
+		System.out.println((" -->"+result.getMethod().getMethodName()+" got failed."));
+		
 		test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		
 		test.log(Status.FAIL,result.getName()+" got failed");
 		test.log(Status.INFO, result.getThrowable().getMessage());
-		
+		/*
 		try {
-			String imgPath = new BaseTest.BaseClass().getScreenshot(result.getName());
-			test.addScreenCaptureFromPath(imgPath);
+			String screenshotPath = new BaseTest.BaseClass().getScreenshot(result.getName());
+
+			if (screenshotPath != null && !screenshotPath.isEmpty()) {
+			    test.addScreenCaptureFromPath(screenshotPath);
+			} else {
+			    test.warning("Screenshot not captured (driver was closed before failure).");
+			}
+
 			
 		} catch (IOException e1) {
 			e1.printStackTrace();
 		}
-	}
+		*/
+		
+		/*
+		 Object path = result.getAttribute("screenshotPath");
 
+		    if (path != null) {
+		        test.addScreenCaptureFromPath(path.toString());
+		    } else {
+		        test.warning("Screenshot not available");
+		    }
+
+		***
+		  Object testClass = result.getInstance();
+	        if (!(testClass instanceof BaseClass)) return;
+
+	        BaseClass base = (BaseClass) testClass;
+
+	        try {
+	            String path = base.getScreenshot(result.getName());
+	            result.setAttribute("screenshotPath", path);
+	            test.addScreenCaptureFromPath(path);
+	        } catch (IOException e) {
+	            System.out.println("Screenshot capture failed: " + e.getMessage());
+	        }
+	}
+*/
+	
+	
+	@Override
+	public void onTestFailure(ITestResult result) {
+
+	    System.out.println(" -->" + result.getMethod().getMethodName() + " got failed.");
+
+	    test = extent.createTest(result.getTestClass().getName());
+	    test.assignCategory(result.getMethod().getGroups());
+
+	    test.log(Status.FAIL, result.getName() + " got failed");
+	    test.log(Status.FAIL, result.getThrowable());
+
+	    Object testClass = result.getInstance();
+
+	    if (!(testClass instanceof BaseClass)) {
+	        test.warning("Test class does not extend BaseClass");
+	        return;
+	    }
+
+	    BaseClass base = (BaseClass) testClass;
+
+	    try {
+	        String screenshotPath = base.getScreenshot(result.getName());
+
+	        if (screenshotPath != null) {
+	            test.addScreenCaptureFromPath(screenshotPath);
+	        } else {
+	            test.warning("Screenshot not captured (driver unavailable)");
+	        }
+
+	    } catch (IOException e) {
+	        test.warning("Screenshot capture failed: " + e.getMessage());
+	    }
+	}
+	
+	/*
+	@Override
+    public void onTestFailure(ITestResult result) {
+
+	    System.out.println(" -->" + result.getMethod().getMethodName() + " got failed.");
+	    test.assignCategory(result.getMethod().getGroups());
+
+	    test.log(Status.FAIL, result.getName() + " got failed");
+	    test.log(Status.FAIL, result.getThrowable());
+	    
+        Object testInstance = result.getInstance();
+
+        if (testInstance instanceof BaseClass) {
+            BaseClass base = (BaseClass) testInstance;
+
+            try {
+                if (base.driver != null) {
+                    String screenshotPath =
+                            base.getScreenshot(result.getName());
+
+                    result.setAttribute("screenshotPath", screenshotPath);
+                } else {
+                    base.logger.error("Driver is null. Screenshot skipped.");
+                }
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }*/
+	
 	public void onTestSkipped(ITestResult result) {
-		test = extent.createTest(result.getTestClass().getName());
+		System.out.println(" -->"+result.getMethod().getMethodName()+" got skipped.");
+		
+		//test = extent.createTest(result.getTestClass().getName());
 		test.assignCategory(result.getMethod().getGroups());
 		test.log(Status.SKIP, result.getName()+" got skipped");
 		test.log(Status.INFO, result.getThrowable().getMessage());
@@ -99,7 +221,9 @@ public class ExtentReportManager implements ITestListener {
 
 	public void onFinish(ITestContext testContext) {
 		
+		logger.info("******* Test Case execution finished"+timeStamp+" ******");
 		extent.flush();
+		
 		
 		//To open report on desktop..
 		String pathOfExtentReport = System.getProperty("user.dir")+"\\reports\\"+repName;
@@ -115,7 +239,6 @@ public class ExtentReportManager implements ITestListener {
 		//sendEmail(sender email,sender password(encrypted),recipient email);
 		//sendEmail(xyz@gmail.com","encrypted password","abc@gmail.com");
 	}
-	
 
 
 }

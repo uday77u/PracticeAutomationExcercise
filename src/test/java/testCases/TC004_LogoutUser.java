@@ -17,7 +17,6 @@ package testCases;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 
-import org.testng.Reporter;
 import org.testng.annotations.Test;
 
 import BaseTest.BaseClass;
@@ -30,53 +29,53 @@ public class TC004_LogoutUser extends BaseClass {
     public void verifyLogoutUserFlow() throws InterruptedException {
 		try {
 		//logger.debug("");
-		//logger.info("Step ");
+		//logger.info("STEP ");
 		logger.debug("logging started");
 		logger.info("starting TC004_LogoutUser");
 			    
 		HomePage home = new HomePage(driver);
 
-		// Step 1-3: Navigate to home page and  Verify that home page is visible successfully
-		 logger.info("Step 1: Launching the browser");
-		 logger.info("Step 2: Navigating to baseURL: " + baseURL);
-		 driver.get(baseURL);
+		// STEP 1-3: Navigate to home page and  Verify that home page is visible successfully
+		 logger.info("STEP 1: Launching the browser");
+		 logger.info("STEP 2: Navigating to baseURL: " + BASE_URL);
+		 driver.get(BASE_URL);
 	 
-        // Step 4-5: Click on 'Sign up/Login' button and Verify 'Login to your account' is visible 
-		logger.info("Step 4: Click on 'Sign up / Login' button");
-        home.clickSignup();
+        // STEP 4-5: Click on 'Sign up/Login' button and Verify 'Login to your account' is visible 
+		logger.info("STEP 4: Click on 'Sign up / Login' button");
+        home.clickSignupOrLoginLink();
 
-        logger.info("Step 5. Verify 'Login to your account' is visible");
+        logger.info("STEP 5. Verify 'Login to your account' is visible");
         assertTrue(home.msgLoginToAccountVisible(), "'Login to your account' is not visible");
-        Reporter.log("'Login to your account' is visible", false);
+        logger.info("'Login to your account' is visible");
         
         
-        // Step 6-7: Enter correct email address and password, Click 'login' button,
-        logger.info("Step 6. Enter correct email address and password ");
-        home.setEmailAddressLogin(userEmail);
-        home.setPassword(password);
+        // STEP 6-7: Enter correct email address and password, Click 'login' button,
+        logger.info("STEP 6. Enter correct email address and password ");
+        home.setEmailAddressLogin(USER_EMAIL);
+        home.setPassword(PASSWORD);
         
-        logger.info("Step 7. Click 'login' button");
+        logger.info("STEP 7. Click 'login' button");
         home.clickLogin();
-        Reporter.log("Entered correct email address and password, Clicked 'login' button", false);
+        logger.info("Entered correct email address and password, Clicked 'login' button");
         Thread.sleep(5000);
         
         logger.info("Navigating to the user home Page");
         assertEquals(driver.getTitle(), "Automation Exercise","Login page title is mis-match");
-        Reporter.log("Login page is displayed");
+        logger.info("Login page is displayed");
         
-        //step 8: Verify that 'Logged in as username' is visible
-        logger.info("Step 8. Verify that 'Logged in as user name' is visible");
+        //STEP 8: Verify that 'Logged in as username' is visible
+        logger.info("STEP 8. Verify that 'Logged in as user name' is visible");
         LoginPage Login=new LoginPage(driver);
-        assertEquals(Login.msgLoginAsUserName().contains(userName),true,"'Logged in as username' is mis-match with username");
-        Reporter.log("Verified that 'Logged in as username' is visible and matched with user name");
+        assertTrue(Login.msgLoginAsUserName().contains(USER_NAME),"'Logged in as username' is mis-match with username");
+        logger.info("Verified that 'Logged in as username' is visible and matched with user name");
         
-        //step 9-10:Click 'Logout' button,Verify that user is navigated to login page
-        logger.info("Step 9. Click 'Logout' button");
+        //STEP 9-10:Click 'Logout' button,Verify that user is navigated to login page
+        logger.info("STEP 9. Click 'Logout' button");
         Login.clickLogout();
         
-        logger.info("Step 10. Verify that user is navigated to login page");
+        logger.info("STEP 10. Verify that user is navigated to login page");
         assertEquals(driver.getTitle(), "Automation Exercise - Signup / Login","Login page title is mis-match");
-        Reporter.log("Clicked 'Logout' button,\nVerified that user is navigated to login page");
+        logger.info("Clicked 'Logout' button,\nVerified that user is navigated to login page");
         Thread.sleep(3000);
         
 		}

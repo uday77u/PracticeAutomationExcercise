@@ -88,7 +88,7 @@ private WebElement mobileNumber;
 	
 
 
-@FindBy(xpath="//b[normalize-space()='Account Created!']") 
+@FindBy(xpath="//b[contains(text(),'Created')]") 
 @CacheLookup private WebElement accountCreated;
 
 //@FindBy(xpath="//p[contains(text(),'Congratulations! Your new account has been success')]") @CacheLookup private WebElement congratulationsYourNewAcco;
@@ -195,7 +195,14 @@ public void setmobileNumber(String user) {
 }
 public void clickcreateAccount()
 {
-	createAccount.click();
+	try {
+		createAccount.click();
+		
+	} catch (Exception e) {
+		createAccount.submit();
+		System.out.println("click using submit");
+	}
+	
 }
 	
 public Boolean msgAccountCreated() {
@@ -227,11 +234,11 @@ public void clickContinueD()
 
 //Example additions in SignupPage.java
 public By locatorEnterAccountInfo() {
- return By.xpath("//*[text()='Enter Account Information']"); // Replace with your actual locator
+ return By.xpath("//p[contains(text(),'Information')]"); // Replace with your actual locator
 }
 
 public By locatorAccountCreated() {
- return By.xpath("//*[text()='Account Created!']");
+ return By.xpath("//b[text()='Account Created!']");
 }
 
 public By locatorLoggedInAs() {

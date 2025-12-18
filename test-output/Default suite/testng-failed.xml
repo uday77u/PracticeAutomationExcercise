@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practiceTopics.TC013_ClickEvents">
+      <class name="testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider">
         <methods>
-          <include name="ClickEvents"/>
           <include name="tearDown"/>
+          <include name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- practiceTopics.TC013_ClickEvents -->
+      </class> <!-- testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

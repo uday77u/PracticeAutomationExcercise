@@ -12,100 +12,143 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Reporter;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import org.apache.logging.log4j.Logger;
 import org.apache.logging.log4j.LogManager;
-import utilities.ReadConfig;
 
-public class BaseClass {
-	//read configuration values
-	ReadConfig readConfig=new ReadConfig();
-	public String baseURL=readConfig.getBaseURL();
-	public String userName=readConfig.getUsername();
-	public String userEmail="User1New@gmail.com";
-	public String password=readConfig.getPassword();
-	
-	public static WebDriver driver;
+
+public class BaseClass implements FW_Constants{
+
+	public WebDriver driver;
 	public Logger logger;
 	
-	@BeforeClass
-	@Parameters({"Browser"})
-	public void setup(@Optional("chrome") String Br)//
+	@BeforeMethod(alwaysRun = true)
+	@Parameters({"browser"})
+	public void setup(@Optional("chrome") String Browser)//
 	{
 		logger=LogManager.getLogger(this.getClass());
 		
-		//browsers 
-		if (Br.equalsIgnoreCase("chrome")) {
-			driver=new ChromeDriver();
-			Reporter.log("Chrome browser is Launched.", true);
+		try {
+			driver=BrowserFactory.initBrowser(Browser,HEADLESS_EXECUTION);
+			if (driver == null) {
+	            throw new RuntimeException("Driver initialization failed");
+	        }
+			
+			if(HEADLESS_EXECUTION)
+				logger.info(Browser+" launched in HEADLESS mode.");
+				else
+					logger.info(Browser+" launched in NORMAL mode.");
+				
+				driver.manage().window().maximize();
+				//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+				logger.info("Browser Window is maximized.");
+				driver.get(BASE_URL);
+			
+		} catch (Exception e) {
+			logger.error("Setup failed", e);
+	        throw e;
 		}
-		else if (Br.equalsIgnoreCase("firefox")) {
-			driver=new FirefoxDriver();
-			Reporter.log("Firefox browser is Launched.", true);
-		}
-		else if(Br.equalsIgnoreCase("edge"))
-		{
-			driver=new EdgeDriver();
-			Reporter.log("Edge Browser is Launched.", true);
-		}
-		else
-		{
-			Reporter.log("Enter Proper Browser name.", true);return;
-		}
-	
-		//driver=new ChromeDriver();
-		//Reporter.log("Chrome browser is Launched.", true);
 		
-		driver.manage().window().maximize();
-		driver.manage().timeouts().getImplicitWaitTimeout();
-		Reporter.log("Browser Window is maximized.", true);
 		
-		driver.get(baseURL);
+		
 	}
 	
-	@AfterClass
+	@AfterMethod (alwaysRun = true)
 	public void tearDown() {
+		if(driver!=null) {
 		driver.quit();
-		Reporter.log("Browser is closed.\n",true);
+		logger.info("Browser is closed.\n");
+		}
 	}
 	
-	
+	/*
+    @AfterMethod
+	public void tearDown(ITestResult result) {
+
+	    try {
+	        if (result.getStatus() == ITestResult.FAILURE) {
+	            String path = getScreenshot(result.getName());
+	            result.setAttribute("screenshotPath", path); // ⭐ store it
+	        }
+	    } catch (Exception e) {
+	        System.out.println("Screenshot error: " + e.getMessage());
+	    } finally {
+	        if (driver != null) {
+	            driver.quit();
+	        }
+	    }
+	}
+	 */
+	/*
 public String getScreenshot(String tname) throws IOException {
 		
-		if (driver == null)
-			System.out.println("driver is null");
-		
-		String timeStamp = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-		TakesScreenshot ts=(TakesScreenshot) driver;
-		File source = ts.getScreenshotAs(OutputType.FILE);
-		
-		String targetFilePath=System.getProperty("user.dir")+"\\Screenshots\\" + tname + "_" + timeStamp + ".png";
-		File targetFile=new File(targetFilePath);
-		
-		//source.renameTo(targetFile);
-		FileUtils.copyFile(source, targetFile);
-		return targetFilePath;
+		String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+		try {
+			if (driver == null) {
+		        System.out.println("Driver is null. Screenshot cannot be captured.");
+		        return null;
+		    }
+	        TakesScreenshot ts = (TakesScreenshot) driver;
+	        File source = ts.getScreenshotAs(OutputType.FILE);
+
+	        String targetFilePath = System.getProperty("user.dir") +
+	                "\\Screenshots\\" + tname + "_" + timeStamp + ".png";
+
+	        File targetFile = new File(targetFilePath);
+	        FileUtils.copyFile(source, targetFile);
+
+	        return targetFilePath;
+
+	    } catch (Exception e) {
+	        System.out.println("Screenshot capture failed: " + e.getMessage());
+	        return null;
+	    }
 			
 			
+	}*/
+	
+	public String getScreenshot(String testName) throws IOException {
+
+		 // ✅ Ensure logger is always available
+	    if (logger == null) {
+	        logger = LogManager.getLogger(this.getClass());
+	    }
+	    
+	    if (driver == null) {
+	        logger.error("Driver is null. Screenshot skipped.");
+	        return null;
+	    }
+
+	    TakesScreenshot ts = (TakesScreenshot) driver;
+	    File source = ts.getScreenshotAs(OutputType.FILE);
+
+	    String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
+	    String targetPath = System.getProperty("user.dir")
+	            + File.separator + "Screenshots"
+	            + File.separator + testName + "_" + timeStamp + ".png";
+
+	    File targetFile = new File(targetPath);
+	    targetFile.getParentFile().mkdirs();
+	    FileUtils.copyFile(source, targetFile);
+
+	    return targetPath;
 	}
+
 	//utility method to verify the current page URL contains segment
 	public boolean isCurrentUrlWithSegment(String segment) {
-		return driver.getCurrentUrl().contains(segment);
+		return driver.getCurrentUrl().toLowerCase().contains(segment.toLowerCase());
 	}
 	
 	//utility method to verify the current page Title contains segment
 	public boolean isCurrentTitleWithSegment(String segment) {
-		return driver.getTitle().contains(segment);
+		return driver.getTitle().toLowerCase().contains(segment.toLowerCase());
 	}
 	
 	//utility method to explicit wait for web element to be click able
@@ -115,9 +158,9 @@ public String getScreenshot(String tname) throws IOException {
 	}
 	
 	//utility method to drag the element to view
-	public void dragToViewWebElement(WebDriver driver,WebElement webelement) {
+	public void scrollToViewWebElement(WebDriver driver,WebElement webelement) {
 		JavascriptExecutor js=(JavascriptExecutor) driver;
-		js.executeScript("arguments[0].scrollIntoView", webelement);
+		js.executeScript("arguments[0].scrollIntoView(true);", webelement);
 	}
 
 	//utility wait for visibility of an element

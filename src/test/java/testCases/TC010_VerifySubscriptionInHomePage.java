@@ -34,8 +34,8 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
 
      // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
-        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-        driver.get(baseURL);
+        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+        driver.get(BASE_URL);
         
         logger.info("Step 3: Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
@@ -61,7 +61,7 @@ public class TC010_VerifySubscriptionInHomePage extends BaseClass{
         
         //step 6: Enter email address in input and click arrow button
         logger.info("Step 6: Enter email address in input and click arrow button");
-        home.setSusbscribeEmailname(userEmail);
+        home.setSusbscribeEmailname(USER_EMAIL);
         home.clickbtnSubscribeArrow();
 
         //step 7: Verify success message 'You have been successfully subscribed!' is visible

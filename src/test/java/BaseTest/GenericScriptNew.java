@@ -60,7 +60,7 @@ public class GenericScriptNew {
         String username = getRandomAlphabetic(4);
         String email = getRandomEmail();
 
-        home.clickSignup();
+        home.clickSignupOrLoginLink();
         Reporter.log("Clicked on Signup link", false);
 
         assertEquals(home.msgSignupVisible(), true, "'New User Signup!' is not visible");

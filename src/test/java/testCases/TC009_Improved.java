@@ -23,8 +23,8 @@ public class TC009_Improved extends BaseClass {
 	        HomePage home = new HomePage(driver);
 
 	        // Step 1-3: Navigate to home page and verify
-	        logger.info("Step 1: Launching browser and navigating to: " + baseURL);
-	        driver.get(baseURL);
+	        logger.info("Step 1: Launching browser and navigating to: " + BASE_URL);
+	        driver.get(BASE_URL);
 
 	        logger.info("Step 2: Verifying home page title");
 	        assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");

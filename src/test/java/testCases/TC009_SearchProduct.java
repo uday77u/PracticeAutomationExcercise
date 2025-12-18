@@ -36,12 +36,12 @@ public class TC009_SearchProduct extends BaseClass{
         
         // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
-        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-        driver.get(baseURL);
+        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+        driver.get(BASE_URL);
 
         logger.info("Step 3: Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
-        Reporter.log("Home Page is displayed successfully", false);
+        logger.info("Home Page is displayed successfully", false);
 
         
         
@@ -51,7 +51,7 @@ public class TC009_SearchProduct extends BaseClass{
         
         logger.info("Step 5: Verifying user is navigated to ALL PRODUCTS page successfully");
         assertEquals(driver.getTitle(), "Automation Exercise - All Products","Product page title mismatch");
-        Reporter.log("Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully");
+        logger.info("Click on 'Products' button,Verify user is navigated to ALL PRODUCTS page successfully");
         
         
         //step 6-7: Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible
@@ -65,7 +65,7 @@ public class TC009_SearchProduct extends BaseClass{
         
         logger.info("Step 7: Verify 'SEARCHED PRODUCTS' is visible");
         assertEquals(products.msgSearchedProductsExist(), true,"msg SearchedProducts is not exist");
-        Reporter.log("Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible");
+        logger.info("Enter product name in search input and click search button, Verify 'SEARCHED PRODUCTS' is visible");
  
         //step 8: Verify all the products related to search are visible
         /* Improved alternate
@@ -76,7 +76,7 @@ public class TC009_SearchProduct extends BaseClass{
             String productName = product.getText().toLowerCase();
             assertEquals(productName.contains("shirt"), true, "Product not matching search: " + productName);
         }
-        Reporter.log("All searched products contain the keyword 'shirt'", false);
+        logger.info("All searched products contain the keyword 'shirt'", false);
         */
 
       //step 8: Verify all the products related to search are visible
@@ -88,7 +88,7 @@ public class TC009_SearchProduct extends BaseClass{
         	String productName=productContainer.getText().toLowerCase();
         	assertEquals(productName.contains(searchedKey), true,"Product not matching search: " + productName+"\tsearchedkey: "+searchedKey);
         }
-        Reporter.log(" Verified all the products related to search are visible");
+        logger.info(" Verified all the products related to search are visible");
         
 		} catch (Throwable t) { // catch both Exception & AssertionError
 	        logger.error("Test failed", t);

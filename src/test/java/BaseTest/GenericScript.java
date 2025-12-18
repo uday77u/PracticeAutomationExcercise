@@ -73,7 +73,7 @@ public class GenericScript{
 	//------------Create Account With RandomData in AutomationExcercise----------
 	public void CreateAccountWithRandomData(HomePage home) throws IOException {
 		
-	    home.clickSignup();
+	    home.clickSignupOrLoginLink();
 	    Reporter.log("Clicked on Signup link", false);
 
 	    assertEquals(home.msgSignupVisible(), true, "'New User Signup!'- is not visible");

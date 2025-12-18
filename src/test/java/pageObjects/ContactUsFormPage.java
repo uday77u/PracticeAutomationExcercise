@@ -1,5 +1,7 @@
 package pageObjects;
 
+import java.io.File;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -44,8 +46,8 @@ public void setSubject(String sub) {
 public void setYourMessageHere(String sub) {
 	YourMessageHere.sendKeys(sub);}
 
-public void clickUploadFile() {
-	UploadFile.click();
+public void clickAnduploadToUploadFile(String filePath) {
+	UploadFile.sendKeys(new File(filePath).getAbsolutePath());
 }
 
 public void clickSubmit() {

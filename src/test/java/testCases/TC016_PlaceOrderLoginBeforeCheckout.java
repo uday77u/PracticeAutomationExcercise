@@ -54,8 +54,8 @@ public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
 
      // Step 1-3: Navigate to home page and  Verify that home page is visible successfully
         logger.info("Step 1: Launching the browser");
-        logger.info("Step 2: Navigating to baseURL: " + baseURL);
-        driver.get(baseURL);
+        logger.info("Step 2: Navigating to baseURL: " + BASE_URL);
+        driver.get(BASE_URL);
         
         logger.info("Step 3: Verifying that home page is visible successfully");
         assertEquals(driver.getTitle(), "Automation Exercise", "Home page title mismatch");
@@ -64,16 +64,16 @@ public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
         //step 4-6: Click 'Signup / Login' button,Fill email,password and click 'Login' button,
         //Verify 'Logged in as username' at top
         logger.info("4. Click 'Signup / Login' button");
-        Home.clickSignup();
+        Home.clickSignupOrLoginLink();
         
         logger.info("5. Fill email, password and click 'Login' button");
-        Home.setEmailAddressLogin(userEmail);
-        Home.setPassword(password);
+        Home.setEmailAddressLogin(USER_EMAIL);
+        Home.setPassword(PASSWORD);
         Home.clickLogin();
         
         logger.info("6. Verify 'Logged in as username' at top");
         assertEquals(driver.getTitle(), "Automation Exercise","Login page title is mis-match");
-        assertTrue(Login.msgLoginAsUserName().contains(userName), "mis match in user name");
+        assertTrue(Login.msgLoginAsUserName().contains(USER_NAME), "mis match in user name");
         
         //step 7-9:Add products to cart, Click 'Cart' button, Verify that cart page is displayed
         logger.info(" 7. Add products to cart");
@@ -94,8 +94,8 @@ public class TC016_PlaceOrderLoginBeforeCheckout extends BaseClass{
         assertTrue(driver.getCurrentUrl().contains("checkout"), "Checkout page is not displayed");
         SoftAssert sa= new SoftAssert();
         Thread.sleep(3000);
-        sa.assertTrue(Checkout.getDispBillingAddressFirstLastname().contains(userName),"user name:'"+userName+"' and address name:'"+Checkout.getDispBillingAddressFirstLastname()+"' are mis match");
-        sa.assertTrue(Checkout.getDispDeliveryAddressFirstLastname().contains(userName),"user name:"+userName+" and address name:'"+Checkout.getDispDeliveryAddressFirstLastname()+"' are mis match");
+        sa.assertTrue(Checkout.getDispBillingAddressFirstLastname().contains(USER_NAME),"user name:'"+USER_NAME+"' and address name:'"+Checkout.getDispBillingAddressFirstLastname()+"' are mis match");
+        sa.assertTrue(Checkout.getDispDeliveryAddressFirstLastname().contains(USER_NAME),"user name:"+USER_NAME+" and address name:'"+Checkout.getDispDeliveryAddressFirstLastname()+"' are mis match");
         sa.assertAll();
         Reporter.log("Verified Address Details");
         
