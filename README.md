@@ -1,21 +1,40 @@
-# Practice Automation Exercise
+# 🚀 Selenium Automation Framework – Practice Automation Exercise
 
-This project is a Selenium-based test automation framework designed to automate test scenarios on the [Automation Practice](http://automationpractice.com/) demo website. It demonstrates the use of Selenium WebDriver, TestNG, and Java to automate UI workflows for learning and practice purposes.
+## 📖 Project Overview
+This repository contains a **robust and scalable Selenium automation framework** built using **Java, TestNG, and Maven**.  
+The framework automates end-to-end user flows on a demo e-commerce application and is designed to follow **real-world enterprise automation standards**, not just basic Selenium scripting.
 
-## 📌 Project Purpose
-
-This repository was created as part of self-learning and skill development in test automation. It simulates real-world test case implementations and follows basic automation best practices.
+It supports **parallel execution, cross-browser testing, data-driven testing, retry logic, screenshot capture on failure, and Extent Reports**, making it **production-style, resume-ready, and interview-ready**.
 
 ---
 
-## 🚀 Technologies Used
+## 🛠 Technology Stack
+- Java  
+- Selenium WebDriver  
+- TestNG  
+- Maven  
+- Extent Reports  
+- Apache POI (Excel support)  
+- JSON data handling  
+- Git / GitHub  
 
-- **Java**
-- **Selenium WebDriver**
-- **TestNG**
-- **Maven** (for build management)
-- **Git** (for version control)
-- **IDE**: IntelliJ IDEA or Eclipse
+---
+
+## ⭐ Framework Highlights
+
+✔ Cross-Browser Testing (Chrome, Firefox, etc.)  
+✔ Parallel Test Execution using TestNG  
+✔ Thread-Safe WebDriver Management (ThreadLocal)  
+✔ Page Object Model (POM) Design Pattern  
+✔ Data-Driven Testing (Excel & JSON)  
+✔ Retry Mechanism for Flaky Tests  
+✔ Screenshot Capture on Test Failure  
+✔ Extent Reports Integration  
+✔ Reusable Base and Utility Classes  
+✔ Configurable TestNG Suites  
+✔ Scalable and Maintainable Architecture  
+
+> This framework demonstrates how modern Selenium automation frameworks are built and maintained in enterprise environments.
 
 ---
 
@@ -57,6 +76,43 @@ java/
 
 ---
 
+
+---
+
+## 🧪 Automated Test Scenarios
+- User registration
+- Login & logout
+- Product search and selection
+- Add to cart
+- Checkout process
+- Order confirmation
+
+---
+
+## ⚙️ Parallel & Cross-Browser Execution
+
+Parallel execution is configured using **TestNG** with browser parameterization.
+
+Example `crossBrowser.xml`:
+
+```xml
+<suite name="Automation Suite" parallel="tests" thread-count="3">
+    <test name="Chrome Tests">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Firefox Tests">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="tests.LoginTest"/>
+        </classes>
+    </test>
+</suite>
+
+
 ## ⚙️ How to Run the Tests
 
 1. **Clone the repository**
@@ -77,9 +133,6 @@ Maven will automatically download dependencies via pom.xml.
 bash: mvn test
 
 ## 📖 Future Improvements
-- Add Extent Reports or Allure for reporting
-
-- Parameterize tests using TestNG DataProvider
 
 - Integrate with Jenkins for CI
 

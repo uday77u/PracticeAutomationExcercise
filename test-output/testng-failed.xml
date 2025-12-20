@@ -1,69 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="classes" name="Failed suite [Master-Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Master-Suite]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="utilities.ExtentReportManager"/>
     <listener class-name="utilities.RetryListener"/>
   </listeners>
-  <test thread-count="5" parallel="classes" name="Chrome Test(failed)">
+  <test thread-count="5" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="testCases.TC001b_RegisterUser">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifySignupRegistration"/>
-        </methods>
-      </class> <!-- testCases.TC001b_RegisterUser -->
-      <class name="testCases.TC007_VerifyTestCasesPage">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyContactUsForm"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC007_VerifyTestCasesPage -->
-      <class name="testCases.TC005_RegisterUserWithExistingEmail">
-        <methods>
-          <include name="verifyRegisterUserWithExistingEmailFlow"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC005_RegisterUserWithExistingEmail -->
-      <class name="testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider -->
-      <class name="testCases.TC003_LoginUserIncorrectEmailAndPassword">
-        <methods>
-          <include name="tearDown"/>
-          <include name="setup"/>
-          <include name="verifyLoginUserIncorrectEmailAndPasswordFlow"/>
-        </methods>
-      </class> <!-- testCases.TC003_LoginUserIncorrectEmailAndPassword -->
-      <class name="testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete">
-        <methods>
-          <include name="verifyLoginUserWithCorrectEmailAndPasswordAndDeletion"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC002b_LoginUserWithCorrectEmailAndPasswordAndDelete -->
-      <class name="testCases.TC004_LogoutUser">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyLogoutUserFlow"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC004_LogoutUser -->
-      <class name="testCases.TC010_VerifySubscriptionInHomePage">
-        <methods>
-          <include name="tearDown"/>
-          <include name="VerifySubscriptionInHomePage"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC010_VerifySubscriptionInHomePage -->
       <class name="testCases.TC009_SearchProduct">
         <methods>
           <include name="VerifySearchProduct"/>
@@ -71,13 +15,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC009_SearchProduct -->
-      <class name="testCases.TC002a_LoginUserWithCorrectEmailAndPassword">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyLoginUserWithCorrectEmailAndPassword"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC002a_LoginUserWithCorrectEmailAndPassword -->
       <class name="testCases.TC008_VerifyAllProductsAndProductDetailPage">
         <methods>
           <include name="tearDown"/>
@@ -85,13 +22,6 @@
           <include name="VerifyAllProductsAndProductDetailPage"/>
         </methods>
       </class> <!-- testCases.TC008_VerifyAllProductsAndProductDetailPage -->
-      <class name="testCases.TC006_ContactUsForm">
-        <methods>
-          <include name="verifyContactUsForm"/>
-          <include name="tearDown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- testCases.TC006_ContactUsForm -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Master-Suite] -->

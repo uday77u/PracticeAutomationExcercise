@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 18 23:30:08 IST 2025</td>
+<td>Started on:</td><td>Sat Dec 20 17:35:54 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>15 seconds (15199 ms)</td>
+<tr><td>Total time:</td><td>79 seconds (79737 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,15 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider()'><b>verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider</b><br>Test class: testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider<br>Test method: Verify Login User with incorrect email and password (DDT)</td>
-<td><div><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
-Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.lang.String) FAIL,(java.lang.String) ]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+<td title='testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider()'><b>verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider</b><br>Test class: testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider<br>Test method: Verify Login User with incorrect email and password (DDT)<br>Parameters: abc@gmail.com, wrong123, FAIL</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -105,15 +107,83 @@ Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.l
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1126112943", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1126112943'><pre>org.testng.internal.reflect.MethodMatcherException: 
-[public void testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(java.lang.String,java.lang.String,java.lang.String) throws java.lang.InterruptedException] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
-Data provider mismatch
-Method: verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider([java.lang.String arg0, java.lang.String arg1, java.lang.String arg2])
-Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.lang.String) FAIL,(java.lang.String) ]
-	at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:46)
-	at org.testng.internal.Parameters.injectParameters(Parameters.java:915)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+</pre></div><a href='#' onClick='toggleBox("stack-trace508864177", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace508864177'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>23</td>
+<td>testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider@7ce026d3</td></tr>
+<tr>
+<td title='testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider()'><b>verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider</b><br>Test class: testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider<br>Test method: Verify Login User with incorrect email and password (DDT)<br>Parameters: test@mail.com, 123456, FAIL</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace494842224", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace494842224'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider(TC003b_LoginUserIncorrectEmailAndPassword_DataProvider.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
@@ -136,7 +206,7 @@ Arguments: [(java.lang.String) abc@gmail.com,(java.lang.String) wrong123,(java.l
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>14</td>
-<td>testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider@5386659f</td></tr>
+<td>testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider@7ce026d3</td></tr>
 </table><p>
 </body>
 </html>

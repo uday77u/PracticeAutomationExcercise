@@ -6,7 +6,7 @@
       <class name="testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider">
         <methods>
           <include name="tearDown"/>
-          <include name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider"/>
+          <include name="verifyLoginUserIncorrectEmailAndPasswordUsingDataProvider" invocation-numbers="0 1"/>
           <include name="setup"/>
         </methods>
       </class> <!-- testCases.TC003b_LoginUserIncorrectEmailAndPassword_DataProvider -->

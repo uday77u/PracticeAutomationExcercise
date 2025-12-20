@@ -35,7 +35,9 @@ public class DataProviders {
         String sheet = "TestData";
 
         int rows = excel.getRowCount(sheet);
-        int cols = excel.getCellCount(sheet, 0);
+       // int cols = excel.getCellCount(sheet, 0);
+        
+        int cols = 3; // Email, Password, Expected
 
         Object[][] data = new Object[rows - 1][cols]; // excluding header
 
