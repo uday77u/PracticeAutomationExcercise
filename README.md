@@ -1,22 +1,42 @@
-# 🚀 Selenium Automation Framework – Practice Automation Exercise
 
-## 📖 Project Overview
-This repository contains a **robust and scalable Selenium automation framework** built using **Java, TestNG, and Maven**.  
-The framework automates end-to-end user flows on a demo e-commerce application and is designed to follow **real-world enterprise automation standards**, not just basic Selenium scripting.
+# 🚀 PracticeAutomationExercise – Selenium Test Automation Framework
 
-It supports **parallel execution, cross-browser testing, data-driven testing, retry logic, screenshot capture on failure, and Extent Reports**, making it **production-style, resume-ready, and interview-ready**.
+## 📌 Overview
+This project is a **scalable Selenium test automation framework** built using **Java, TestNG, Maven**, and industry best practices.  
+It automates **end-to-end functional UI test scenarios** for an e-commerce demo application and is designed with **maintainability, reusability, and reporting** in mind.
+
+The framework demonstrates hands-on experience with **Page Object Model (POM)**, **data-driven testing**, and **advanced reporting**, simulating a real-world automation setup.
 
 ---
 
-## 🛠 Technology Stack
-- Java  
-- Selenium WebDriver  
-- TestNG  
-- Maven  
-- Extent Reports  
-- Apache POI (Excel support)  
-- JSON data handling  
-- Git / GitHub  
+## 🎯 Key Objectives
+- Design a **robust and modular automation framework**
+- Implement **data-driven test execution**
+- Generate **detailed and user-friendly test reports**
+- Follow **clean code principles** and test automation best practices
+- Create a framework suitable for **enterprise-level scaling**
+
+---
+
+## 🛠️ Tech Stack
+- **Programming Language:** Java  
+- **Automation Tool:** Selenium WebDriver  
+- **Test Framework:** TestNG  
+- **Build Tool:** Maven  
+- **Reporting:** Extent Reports  
+- **Design Pattern:** Page Object Model (POM)  
+- **IDE Support:** IntelliJ IDEA / Eclipse  
+
+---
+
+## 🧩 Framework Features
+- Page Object Model (POM) for better maintainability  
+- **Data-Driven Testing** using external test data  
+- **Extent Reports** with step-level logging and screenshots  
+- Centralized WebDriver management  
+- Reusable utility and helper classes  
+- Cross-browser execution support (configurable)  
+- Maven-based dependency management  
 
 ---
 
@@ -76,6 +96,18 @@ java/
 
 ---
 
+PracticeAutomationExcercise/
+├── src/main/java
+│   ├── base/            # Base test and driver initialization
+│   ├── pages/           # Page Object classes
+│   ├── utils/           # Utilities (config, data reader, helpers)
+│
+├── src/test/java
+│   ├── tests/           # Test classes
+│
+├── testng.xml           # TestNG suite configuration
+├── pom.xml              # Maven dependencies & plugins
+├── README.md            # Project documentation
 
 ---
 
